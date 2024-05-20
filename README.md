@@ -25,3 +25,8 @@ Name: DONGMO DJOUAKE LEONEL MAKEN
 Email: leonel.dongmo2@facsciences-uy1.cm
 Role:  Concepteur Modéle mathématique
 ```
+```
+Name: FONKOUE FOTSING YANN CABREL
+Email: yann.fonkoue@facsciences-uy1.cm
+Role:  Frontend Developper
+```
