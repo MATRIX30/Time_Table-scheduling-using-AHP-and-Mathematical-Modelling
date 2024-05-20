@@ -1,6 +1,6 @@
 ## Time table scheduling using Analytical Hierachical processing and Mathemematical modelling 
 ## Description
-This project is a project carried out by Masters I  studendts  of the university of Yaounde I for their
+This project is a project carried out by Masters I  students  of the university of Yaounde I for their
 final project presentation on the course INF4178 Software Engineering II
 
 Core to this project is the Application of AHP and Mathematical Modelling to realizing a time table scheduling
