@@ -21,7 +21,7 @@ Role: Course Teaching Assistant
 ```
 
 ```
-Name: 
-Email:
-Role:
+Name: DONGMO DJOUAKE LEONEL MAKEN
+Email: leonel.dongmo2@facsciences-uy1.cm
+Role:  Concepteur Modéle mathématique
 ```
