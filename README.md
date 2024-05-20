@@ -42,3 +42,9 @@ Email : ivan.tomdieu@facsciences-uy1.cm
 Role  : Frontend Developper
 ```
 
+```
+Name  : FOMUBAD BORISTA FONDI
+Email : borista.fomubad@facsciences-uy1.cm
+Role  : Data Collection
+```
+
