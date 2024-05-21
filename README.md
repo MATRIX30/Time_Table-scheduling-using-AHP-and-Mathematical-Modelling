@@ -55,4 +55,11 @@ Role  : Backend Developper & Conceptor
 ```
 
 
+```
+Name  : POUATCHA OUANKO Belvain Aubry
+Email : belvain.pouatcha@facsciences-uy1.cm
+Role  : Data Collection section
+```
+
+
 
