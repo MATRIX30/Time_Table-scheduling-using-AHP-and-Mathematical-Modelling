@@ -60,6 +60,8 @@ Name  : POUATCHA OUANKO Belvain Aubry
 Email : belvain.pouatcha@facsciences-uy1.cm
 Role  : Data Collection section
 ```
-
+Name  : TCHAPTCHET KOUDJO CEDRIC YOHANN
+Email : tchaptchetyohann@gmail.com
+Role  : Concepteur Modéle mathématique
 
 
