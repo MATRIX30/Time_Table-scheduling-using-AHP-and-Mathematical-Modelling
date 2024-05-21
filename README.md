@@ -48,5 +48,11 @@ Email : borista.fomubad@facsciences-uy1.cm
 Role  : Data Collection section
 ```
 
+```
+Name  : CHEDJOUN KENGUEP Dave
+Email : dave.chedjoun@facsciences-uy1.cm
+Role  : Backend Developper & Conceptor
+```
+
 
 
