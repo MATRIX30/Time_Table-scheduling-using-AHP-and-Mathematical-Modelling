@@ -1,0 +1,1403 @@
+{
+  "facultes": {
+    "sciences": {
+      "departement": {
+        "Informatique": {
+          "niveau": {
+            "1": {
+              "s1": {
+                "subjects": [
+                  {
+                    "name": "",
+                    "code": "INF",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  }
+                ]
+              },
+              "s2": {
+                "subjects": [
+                  {
+                    "name": "",
+                    "code": "INFO122",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INFO132",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INFO142",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INFO152",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "FRA152",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "PPE112",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "MAT112",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "ENG",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  }
+                ]
+              }
+            },
+            "2": {
+              "s1": {
+                "subjects": [
+                  {
+                    "name": "FORMATION BILINGUE II",
+                    "code": "FBL211",
+                    "credit": 6,
+                    "category": "COMPLEMENTAIRE"
+                  },
+                  {
+                    "name": "PROGRAMMATION ORIENTÉE OBJET",
+                    "code": "INF211",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "BASES DE DONNEES ET MODELISATION",
+                    "code": "INF221",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "METHODES ALGORITHMIQUES ET STRUCTURES DE DONNEES",
+                    "code": "INF231",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "ALGEBRE 2A : THEORIE SPECTRALE ET ALGEBRE MULTILINEAIRE",
+                    "code": "MAT211",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "GENIE LOGICIEL ET SYSTEMES D'INFORMATION",
+                    "code": "INF251",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  }
+                ]
+              },
+              "s2": {
+                "subjects": [
+                  {
+                    "name": "PROGRAMMATION WEB",
+                    "code": "INF222",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "STATISTIQUES ET ANALYSE DE DONNEES",
+                    "code": "INF232",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "MATHEMATIQUES DISCRETES",
+                    "code": "INF212",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "SCIENCE DES DONNEES",
+                    "code": "INF242",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "SECURITE INFORMATIQUE",
+                    "code": "INF252",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "PROJET PROFESSIONNEL ET PRE-IMMERSION",
+                    "code": "PPE212",
+                    "credit": 3,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "CALCUL INTEGRAL SUR Rn",
+                    "code": "MAT232",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  }
+                ]
+              }
+            },
+            "3": {
+              "s1": {
+                "subjects": ["INF"]
+              },
+              "s2": {
+                "subjects": [
+                  {
+                    "name": "",
+                    "code": "INF382",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INF372",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INF322",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INF362",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+
+                  {
+                    "name": "",
+                    "code": "INF352",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INF342",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INF316",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "INF332",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "",
+                    "code": "PPE312",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  }
+                ]
+              }
+            },
+            "4": {
+              "s1": {
+                "subjects": [
+                  {
+                    "name": "COMPLEXITÉ ET ALGORITHMIQUE AVANCÉE",
+                    "code": "INF4017",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "GÉNIE LOGICIEL",
+                    "code": "INF4027",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "ARCHITECTURES LOGICIELLES",
+                    "code": "INF4057",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "UML ET DESIGN PATTERNS",
+                    "code": "INF4067",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "PROGRAMMATION DES TERMINAUX MOBILES",
+                    "code": "INF4077",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "RÉSEAUX II",
+                    "code": "INF4087",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "PRINCIPES DE CONCEPTION DES SYSTÈMES D'EXPLOITATION",
+                    "code": "INF4097",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "CLOUD COMPUTING",
+                    "code": "INF4107",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "FOUILLE DE DONNÉES II",
+                    "code": "INF4117",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "TECHNIQUES D'OPTIMISATION II",
+                    "code": "INF4127",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "ANALYSE DES DONNÉES",
+                    "code": "INF4137",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "SÉCURITÉ INFORMATIQUE",
+                    "code": "INF4147",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "SÉCURITÉ LOGICIELLE",
+                    "code": "INF4157",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "CRYPTOGRAPHIE SYMÉTRIQUE",
+                    "code": "INF4167",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  }
+                ]
+              },
+              "s2": {
+                "subjects": [
+                  {
+                    "name": "BASE DE DONNÉES DISTRIBUÉES",
+                    "code": "INF4038",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "COMPILATION",
+                    "code": "INF4048",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "GÉNIE LOGICIEL I",
+                    "code": "INF4178",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "WEB SÉMANTIQUE ET APPLICATIONS",
+                    "code": "INF4188",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "PROJET II",
+                    "code": "INF4198",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "COMPILATION",
+                    "code": "INF4048",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "RÉSEAUX MOBILES ET SANS FILS",
+                    "code": "INF4208",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "PROGRAMMATION DISTRIBUÉE",
+                    "code": "INF4218",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "PROJET II",
+                    "code": "INF4228",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "VISION PAR ORDINATEUR",
+                    "code": "INF4238",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "APPRENTISSAGE ARTIFICIEL II",
+                    "code": "INF4248",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "PROJET II",
+                    "code": "INF4258",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "CRYPTOGRAPHIE ASYMÉTRIQUE",
+                    "code": "INF4268",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "COURBES ELLIPTIQUES 1",
+                    "code": "INF4278",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "PROJET II",
+                    "code": "INF4288",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  }
+                ]
+              }
+            },
+            "5": {
+              "subjects": ["INF"]
+            }
+          }
+        },
+        "Physique": {
+          "niveau": {
+            "1": {
+              "s1": [
+                {
+                  "name": "CHIMIE GENERALE POUR LES SCIENCES PHYSIQUES",
+                  "code": "CHM141",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELÉMENTS D'ANALYSE POUR LES SCIENCES PHYSIQUES ",
+                  "code": "MAT161",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ÉLECTROSTATIQUE",
+                  "code": "PHY111",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "OPTIQUE GEOMETRIQUE",
+                  "code": "PHY121",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "TRAVAUX PRATIQUES DE CHIMIE GENERALE POUR PHYSIQUE 1",
+                  "code": "CHM161",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": " COMMUNICATION ET EXPRESSION ECRITE ET PARLEE POUR LA PHYSIQUE 1",
+                  "code": "COM111",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "INTRODUCTION À L'ALGORITHMIQUE ET À LA PROGRAMMATION",
+                  "code": "INF111",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "CALCUL DIFFERENTIEL ET GEOMETRIE POUR LES SCIENCES PHYSIQUES",
+                  "code": "MAT162",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELECTROCINETIQUE ET MAGNETOSTATIQUE ",
+                  "code": "PHY112",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MECANIQUE DU POINT",
+                  "code": "PHY122",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": " TRAVAUX PRATIQUES DE PHYSIQUE",
+                  "code": "PHY132",
+                  "credit": 6,
+
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PROFESSIONNALISATION ET EDUCATION A LA CITOYENNETE I",
+                  "code": "PPE112",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "2": {
+              "s1": [
+                {
+                  "name": "CHIMIE ORGANIQUE ET INORGANIQUE GENERALES ",
+                  "code": "CHM261",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ALGEBRE ET ANALYSE POUR LES SCIENCES PHYSIQUES",
+                  "code": "MAT251",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELECTROMAGNÉTISME ET RELATIVITÉ RESTREINTE",
+                  "code": "PHY211",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MÉCANIQUE DU SOLIDE",
+                  "code": "PHY221",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "COMMUNICATION ET EXPRESSION ECRITE ET PARLEE POUR LA PHYSIQUE 2",
+                  "code": "COM211",
+                  "credit": 6,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "BASES DE DONNEES ET MODELISATION ",
+                  "code": "INF221",
+                  "credit": 6,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "PROBABILITES ET STATISTIQUES POUR LES SCIENCES PHYSIQUES",
+                  "code": "MAT272",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "INTRODUCTION A LA PHYSIQUE QUANTIQUE",
+                  "code": "PHY212",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "THERMODYNAMIQUE",
+                  "code": "PHY222",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
+                  "code": "PHY232",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "BASES D'ELECTRONIQUE ET D'ELECTROTECHNIQUE",
+                  "code": "PHY252",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "PROFESSIONNALISATION ET EDUCATION A LA CITOYENNETE II",
+                  "code": "PPE212",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "3": {
+              "s1": [
+                {
+                  "name": "VIBRATION ET PHÉNOMÈNES DE PROPAGATION",
+                  "code": "PHY3015",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MÉCANIQUE QUANTIQUE",
+                  "code": "PHY3025",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
+                  "code": "PHY3035",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PHYSIQUE ATOMIQUE ET NUCLÉAIRE",
+                  "code": "PHY3045",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "BASES DES MÉTHODES NUMÉRIQUES",
+                  "code": "PHY3055",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PROPRIÉTÉS DE LA MATIÈRE CONDENSÉE",
+                  "code": "PHY3136",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ENGLISH II",
+                  "code": "ENG3005",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "MÉCANIQUE DES FLUIDES PARFAITS",
+                  "code": "PHY3135",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "TECHNIQUES MATHÉMATIQUES POUR LA PHYSIQUE",
+                  "code": "MAT3136",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "VIBRATIONS LUMINEUSES ET OPTIQUE COHÉRENTE",
+                  "code": "PHY3146",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PHYSIQUE STATISTIQUE",
+                  "code": "PHY3156",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PROJET PERSONNEL ET ENTREPRENARIAT",
+                  "code": "PPE3006",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "4": {
+              "s1": [
+                {
+                  "name": "TECHNIQUES MATHÉMATIQUES",
+                  "code": "MAT4317",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MÉCANIQUE QUANTIQUE",
+                  "code": "PHY4017",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MÉTHODES NUMÉRIQUES",
+                  "code": "PHY4027",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PHYSIQUE ATOMIQUE ET MOLÉCULAIRE",
+                  "code": "PHY4037",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "BASES PHYSIQUES DE LA CHIMIE ET TECHNIQUES D'INVESTIGATION DES BIOMOLÉCULE",
+                  "code": "PHY4057",
+                  "credit": 6,
+                  "category": "Fundamental"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "PHYSIQUE STATISTIQUE",
+                  "code": "PHY4258",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "NFORMATION ET CALCUL QUANTIQUES",
+                  "code": "PHY4268",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PRINCIPES DE BIOCHIMIE ET BASES MOLÉCULAIRES DE LA BIOLOGIE",
+                  "code": "PHY4318",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PHYSIQUE DU VIVANT ET PHYSIOLOGIE MÉDICALE",
+                  "code": "PHY4328",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "BIOPHYSIQUE DES RADIATIONS ET RADIOBIOLOGIE",
+                  "code": "PHY4308",
+                  "credit": 6,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            }
+          }
+        },
+        "Chimie": {
+          "niveau": {
+            "1": {
+              "s1": [
+                {
+                  "name": "ATOMISTIQUE ET LIAISON CHIMIQUE",
+                  "code": "CHM1011",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "TRAVAUX PRATIQUES DE CHIMIE GÉNÉRALE",
+                  "code": "CHM1021",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+
+                {
+                  "name": "ELÉMENTS D'ANALYSE POUR LES SCIENCES PHYSIQUES",
+                  "code": "MAT1101",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ÉLECTROSTATIQUE",
+                  "code": "PHY1011",
+                  "credit": 6,
+                  "category": "Fundamental"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "LES BASES DE LA THERMODYNAMIQUE",
+                  "code": "CHM1032",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "INTRODUCTION À LA CHIMIE ORGANIQUE",
+                  "code": "CHM1042",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "EQUILIBRES EN SOLUTION ET CINÉTIQUE CHIMIQUE",
+                  "code": "CHM1052",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
+                  "code": "PHY1032",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELÉMENTS DE BIOLOGIE",
+                  "code": "BIO1052",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "ENGLISH FOR CHEMISTRY",
+                  "code": "ENG1022",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "PROJET PROFESSIONNEL DE L'ETUDIANT I",
+                  "code": "PPE1002",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "2": {
+              "s1": [
+                {
+                  "name": "CHIMIE ORGANIQUE GÉNÉRALE ET ÉLÉMENT DE SPECTROSCOPIE",
+                  "code": "CHM2013",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "CHIMIE INORGANIQUE GÉNÉRALE ET DIAGRAMMES DE PHASES",
+                  "code": "CHM2023",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "TRAVAUX PRATIQUES DE CHIMIE II",
+                  "code": "CHM2033",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELECTROMAGNÉTISME ET RELATIVITÉ RESTREINTE",
+                  "code": "PHY2013",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELÉMENT DE BIOLOGIE 2 A",
+                  "code": "BIO2083",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "ANGLAIS POUR SCIENCES PHYSIQUES",
+                  "code": "ENG2023",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "PRINCIPALES FONCTIONS DE LA CHIMIE ORGANIQUE",
+                  "code": "CHM2044",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "CHIMIE ANALYTIQUE GÉNÉRALE",
+                  "code": "CHM2054",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELÉMENTS DE CRISTALLOGRAPHIE ET STRUCTURE DES SOLIDES",
+                  "code": "CHM2064",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "PROBABILITÉ ET STATISTIQUES",
+                  "code": "MAT2124",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELÉMENTS DE BIOLOGIE 2 B",
+                  "code": "BIO2054",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "PROJET PERSONNEL DE L'ÉTUDIANT - ENTREPRENARIAT",
+                  "code": "PPE2004",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "3": {
+              "s1": [
+                {
+                  "name": "MÉCANISME RÉACTIONNEL A",
+                  "code": "CHM3015",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "CHIMIE ORGANIQUE STRUCTURALE ET ANALYTIQUE",
+                  "code": "CHM3025",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "THERMODYNAMIQUE CHIMIQUE",
+                  "code": "CHM3035",
+                  "credit": 5,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "INTRODUCTION À LA CHIMIE DE COORDINATION ET À LA CHIMIE MINÉRALE",
+                  "code": "CHM3045",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MÉTABOLISME",
+                  "code": "ANGLAIS POUR SCIENCES PHYSIQUES",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "CINÉTIQUE CHIMIQUE ET CATALYSE",
+                  "code": "CHM3076",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MÉCANISME RÉACTIONNEL B",
+                  "code": "CHM3086",
+                  "credit": 5,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "TRAVAUX PRATIQUES DE CHIMIE III",
+                  "code": "CHM3096",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "BIOCHIMIE ANALYTIQUE",
+                  "code": "BCH3136",
+                  "credit": 5,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "PHARMACOGNOSIE",
+                  "code": "CHM3126",
+                  "credit": 5,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "ANGLAIS POUR SCIENCES PHYSIQUES",
+                  "code": "ENG3025",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                },
+                {
+                  "name": "PROJET PERSONNEL DE L'ÉTUDIANT  ET ENTREPRENARIAT",
+                  "code": "PPE3006",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "4": {
+              "s1": [
+                {
+                  "name": "MÉCANISMES RÉACTIONNELS",
+                  "code": "CHM4017",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "CHIMIE DE COORDINATION",
+                  "code": "CHM4027",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MÉTHODES D'ANALYSE ET TECHNIQUES DE SÉPARATIONS EN CHIMIE",
+                  "code": "CHM4037",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "MÉTHODES MODERNES DE SPECTROSCOPIE",
+                  "code": "CHM4047",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "CHIMIE DES SUBSTANCES NATURELLES",
+                  "code": "CHM4067",
+                  "credit": 6,
+                  "category": "Fundamental"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "PRINCIPALES MÉTHODES DE SYNTHÈSE ORGANIQUE",
+                  "code": "CHM4078",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "INTERACTION DES PRINCIPES ACTIFS",
+                  "code": "CHM4118",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ENZYMOLOGIE",
+                  "code": "BCH4XY8",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "CHIMIE DES MACROMOLÉCULES ET CHIMIE INDUSTRIELLE",
+                  "code": "CHM4138",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "ELEMENTS DE PHARMACOLOGIE",
+                  "code": "CHM4158",
+                  "credit": 6,
+                  "category": "Fundamental"
+                }
+              ]
+            },
+            "5": {
+              "s1": [
+                {
+                  "name": "SPECTROSCOPIE RMN ET MASSE APPLIQUÉE AUX BIOMOLÉCULES",
+                  "code": "CHM543",
+                  "credit": 5,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "SYNTHÈSE ET CATALYSE STÉRÉOSÉLECTIVE / SYNTHESE AND REGIOSELECVTIVE CATALYSIS",
+                  "code": "CHM551",
+                  "credit": 5,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "SYNTHESES ORGANIQUES / ORGANIC SYNTHESIS",
+                  "code": "CHM561",
+                  "credit": 5,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "METHODOLOGIE DE RECHERCHE ET COMMUNICATION / RESEARCH METHODOLOGY AND COMMUNICATION",
+                  "code": "CHM567",
+                  "credit": 5,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "CHIMIE DE L'ENVIRONNEMENT / CHEMISTRY OF ENVIRONMENT",
+                  "code": "CHM565",
+                  "credit": 5,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ],
+              "s2": [
+                {
+                  "name": "MÉMOIRE",
+                  "code": "CHM500",
+                  "credit": 30,
+                  "category": "Fundamental"
+                }
+              ]
+            }
+          }
+        },
+        "Biosciences": {
+          "niveau": {
+            "1": {},
+            "2": {},
+            "3": {},
+            "4": {},
+            "5": {}
+          }
+        },
+        "Giosciences": {
+          "niveau": {
+            "1": {},
+            "2": {
+              "s1": [],
+              "s2": [
+                {
+                  "name": "",
+                  "code": "GEO 274",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "GEO 284",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "PHY 281",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT 287",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "ENG",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "FRA",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "PPE 214",
+                  "credit": 6,
+                  "category": "Fundamental"
+                }
+              ]
+            }
+          }
+        },
+        "Mathematiques": {
+          "niveau": {
+            "1": {
+              "s1": [],
+              "s2": [
+                {
+                  "name": "",
+                  "code": "MAT 112",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "ENG",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "PHY 112",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT 122",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT 132",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT 142",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "PPE 112",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "2": {
+              "s1": [],
+              "s2": [
+                {
+                  "name": "",
+                  "code": "MAT 212",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT 222",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT 242",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "PHY 222",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "CHM 252",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT 252",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+
+                {
+                  "name": "",
+                  "code": "MAT 252",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT 232",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "PPE 200",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "3": {
+              "s1": [],
+              "s2": [
+                {
+                  "name": "",
+                  "code": "MAT352",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT361",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT322",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "INF332",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT332",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT342",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT351",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT312",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "PPE 316",
+                  "credit": 3,
+                  "category": "COMPLEMENTAIRE"
+                }
+              ]
+            },
+            "4": {
+              "s1": [],
+              "s2": [
+                {
+                  "name": "",
+                  "code": "MAT4087",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4228",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4198",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MATH4128",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4118",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4108",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4218",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4158",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4248",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4298",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4178",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4308",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4268",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4188",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4168",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4138",
+                  "credit": 6,
+                  "category": "Fundamental"
+                },
+                {
+                  "name": "",
+                  "code": "MAT4208",
+                  "credit": 6,
+                  "category": "Fundamental"
+                }
+              ]
+            },
+            "5": {
+              "s1": [],
+              "s2": []
+            }
+          }
+        }
+      }
+    }
+  }
+}
