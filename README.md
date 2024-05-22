@@ -39,7 +39,7 @@ Role:  Frontend Developper
 ```
 Name  : TOMDIEU TCHADIEUKO IVAN GOTTFRIED
 Email : ivan.tomdieu@facsciences-uy1.cm
-Role  : Frontend Developper
+Role  : Frontend Developper & Data Collection
 ```
 
 ```
