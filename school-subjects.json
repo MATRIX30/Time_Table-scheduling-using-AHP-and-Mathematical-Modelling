@@ -1,22 +1,72 @@
 {
   "facultes": {
     "sciences": {
-      "departement": {
+      "filiere": {
         "Informatique": {
           "niveau": {
             "1": {
               "s1": {
                 "subjects": [
                   {
-                    "name": "",
-                    "code": "INF",
+                    "name": "INTRODUCTION À L'ALGORITHMIQUE ET À LA PROGRAMMATION",
+                    "code": "INF111",
                     "credit": 6,
                     "category": "Fundamental"
+                  },
+
+                  {
+                    "name": "INTRODUCTION À L'ARCHITECTURE DES ORDINATEURS",
+                    "code": "INF121",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+
+                  {
+                    "name": "INTRODUCTION AUX SYSTÈMES ET RÉSEAUX",
+                    "code": "INF131",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "ANALYSE DE LA DROITE REELLE",
+                    "code": "MAT131",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "FORMATION BILINGUE I",
+                    "code": "FBL111",
+                    "credit": 3,
+                    "category": "COMPLEMENTAIRE"
+                  },
+                  {
+                    "name": "INTRODUCTION À LA SÉCURITÉ INFORMATIQUE",
+                    "code": "INF141",
+                    "credit": 3,
+                    "category": "COMPLEMENTAIRE"
+                  },
+                  {
+                    "name": "EXPLORATION PROFESSIONNELLE, ORIENTATION ET EDUCATION A LA CITOYENETE",
+                    "code": "PPE111",
+                    "credit": 3,
+                    "category": "COMPLEMENTAIRE"
                   }
                 ]
               },
               "s2": {
                 "subjects": [
+                  {
+                    "name": "INTRODUCTION AUX STRUCTURES DE DONNEES",
+                    "code": "INF112",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
+                  {
+                    "name": "FONDEMENTS MATHEMATIQUES DE L'INFORMATIQUE",
+                    "code": "INF122",
+                    "credit": 6,
+                    "category": "Fundamental"
+                  },
                   {
                     "name": "",
                     "code": "INFO122",
@@ -24,44 +74,27 @@
                     "category": "Fundamental"
                   },
                   {
-                    "name": "",
+                    "name": "PROGRAMMATION STRUCTUREE EN C",
                     "code": "INFO132",
                     "credit": 6,
                     "category": "Fundamental"
                   },
                   {
-                    "name": "",
+                    "name": "INTRODUCTION À LA SCIENCE DES DONNÉES",
                     "code": "INFO142",
-                    "credit": 6,
+                    "credit": 3,
                     "category": "Fundamental"
                   },
+
                   {
-                    "name": "",
-                    "code": "INFO152",
-                    "credit": 6,
-                    "category": "Fundamental"
-                  },
-                  {
-                    "name": "",
-                    "code": "FRA152",
-                    "credit": 6,
-                    "category": "Fundamental"
-                  },
-                  {
-                    "name": "",
-                    "code": "PPE112",
-                    "credit": 6,
-                    "category": "Fundamental"
-                  },
-                  {
-                    "name": "",
+                    "name": "ALGEBRE 1B",
                     "code": "MAT112",
                     "credit": 6,
                     "category": "Fundamental"
                   },
                   {
                     "name": "",
-                    "code": "ENG",
+                    "code": "INFO152",
                     "credit": 6,
                     "category": "Fundamental"
                   }
@@ -158,7 +191,44 @@
             },
             "3": {
               "s1": {
-                "subjects": ["INF"]
+                "subjects": [
+                  {
+                    "name":"ENGLISH FOR MATHEMATICS AND COMPUTER SCIENCE II",
+                    "code":"ENG3035",
+                    "credit":3,
+                    "category":"COMPLEMENTAIRE"
+                  },
+                  {
+                    "name":"FRANÇAIS POUR SCIENCES MATHÉMATIQUES ET INFORMATIQUES II",
+                    "code":"FRA3045",
+                    "credit":3,
+                    "category":"COMPLEMENTAIRE"
+                  },
+                  {
+                    "name":"CONCEPTION ET ANALYSE DES ALGORITHMES",
+                    "code":"INF3015",
+                    "credit":6,
+                    "category":"Fundamental"
+                  },
+                  {
+                    "name":"CALCUL SCIENTIFIQUE",
+                    "code":"INF3025",
+                    "credit":6,
+                    "category":"Fundamental"
+                  },
+                  {
+                    "name":"FOUILLE DE DONNÉES I",
+                    "code":"INF3115",
+                    "credit":6,
+                    "category":"Fundamental",
+                    "specialite":"SD"
+                  },
+                  {
+                    "name":"ANALYSES STATISTIQUES",
+                    "code":"INF3125",
+                    "credit":6
+                  }
+                ]
               },
               "s2": {
                 "subjects": [
@@ -212,7 +282,7 @@
                     "category": "Fundamental"
                   },
                   {
-                    "name": "",
+                    "name": "PROJET PROFESSIONNEL DE L'ETUDIANT III",
                     "code": "PPE312",
                     "credit": 6,
                     "category": "Fundamental"
