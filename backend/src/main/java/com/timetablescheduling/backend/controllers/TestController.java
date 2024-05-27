@@ -16,6 +16,10 @@ import java.io.IOException;
 
 @RestController
 public class TestController {
+    /*
+        All about endpoints connection should be implements in the controller package.
+        If you have a new things to manage, please create his controller class
+     */
     @Autowired
     FileStorageImpl fileStorage;
 
