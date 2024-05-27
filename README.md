@@ -66,6 +66,11 @@ Name  : TCHAPTCHET KOUDJO CEDRIC YOHANN
 Email : tchaptchetyohann@gmail.com
 Role  : Concepteur Modéle mathématique
 ```
+...
+Name  : TCHIAGUIA christophe
+Email : tchiaguiachristophe25@gmail.com
+Role  : Backend Developper
+...
 
 ```
 Name  : KAMDA MALVINA EVA
