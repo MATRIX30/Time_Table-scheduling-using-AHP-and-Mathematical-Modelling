@@ -14,7 +14,7 @@ const GeneratingPage = () => {
       {/* form */}
       <form className='h-full w-full lg:w-1/2'>
           <h1 className='text-lg text-gray-800'>Timetable Scheduling System</h1>
-          <p className='text-sm text-gray-400 md:max-w-xl'>Easily generate your class timetables in an optimal way with this tool designed using the AHP (Analytical Herarchical process) method</p>
+          <p className='text-sm text-gray-400 md:max-w-xl'>Easily generate your class timetables in an optimal way with this tool designed using the AHP (Analytical Hierachical processing) method</p>
           <div className='flex flex-col gap-4 md:w-2/3 pt-5'>
             {inputSelectElement.map(elt => (<InputSelect inputName={elt.name} options={elt.options}/>))}
             <Button>Generate</Button>
