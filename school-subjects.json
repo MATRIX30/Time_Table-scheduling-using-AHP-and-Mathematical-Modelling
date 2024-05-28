@@ -11,27 +11,33 @@
                     "name": "INTRODUCTION À L'ALGORITHMIQUE ET À LA PROGRAMMATION",
                     "code": "INF111",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
-
                   {
                     "name": "INTRODUCTION À L'ARCHITECTURE DES ORDINATEURS",
                     "code": "INF121",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
-
                   {
                     "name": "INTRODUCTION AUX SYSTÈMES ET RÉSEAUX",
                     "code": "INF131",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "ANALYSE DE LA DROITE REELLE",
                     "code": "MAT131",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "FORMATION BILINGUE I",
@@ -59,44 +65,57 @@
                     "name": "INTRODUCTION AUX STRUCTURES DE DONNEES",
                     "code": "INF112",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "FONDEMENTS MATHEMATIQUES DE L'INFORMATIQUE",
                     "code": "INF122",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "",
                     "code": "INFO122",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROGRAMMATION STRUCTUREE EN C",
                     "code": "INFO132",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "INTRODUCTION À LA SCIENCE DES DONNÉES",
                     "code": "INFO142",
                     "credit": 3,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
-
                   {
                     "name": "ALGEBRE 1B",
                     "code": "MAT112",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "",
                     "code": "INFO152",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   }
                 ]
               }
@@ -114,31 +133,41 @@
                     "name": "PROGRAMMATION ORIENTÉE OBJET",
                     "code": "INF211",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "BASES DE DONNEES ET MODELISATION",
                     "code": "INF221",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "METHODES ALGORITHMIQUES ET STRUCTURES DE DONNEES",
                     "code": "INF231",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "ALGEBRE 2A : THEORIE SPECTRALE ET ALGEBRE MULTILINEAIRE",
                     "code": "MAT211",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "GENIE LOGICIEL ET SYSTEMES D'INFORMATION",
                     "code": "INF251",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   }
                 ]
               },
@@ -148,43 +177,57 @@
                     "name": "PROGRAMMATION WEB",
                     "code": "INF222",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "STATISTIQUES ET ANALYSE DE DONNEES",
                     "code": "INF232",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "MATHEMATIQUES DISCRETES",
                     "code": "INF212",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "SCIENCE DES DONNEES",
                     "code": "INF242",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "SECURITE INFORMATIQUE",
                     "code": "INF252",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROJET PROFESSIONNEL ET PRE-IMMERSION",
                     "code": "PPE212",
                     "credit": 3,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "CALCUL INTEGRAL SUR Rn",
                     "code": "MAT232",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   }
                 ]
               }
@@ -193,40 +236,40 @@
               "s1": {
                 "subjects": [
                   {
-                    "name":"ENGLISH FOR MATHEMATICS AND COMPUTER SCIENCE II",
-                    "code":"ENG3035",
-                    "credit":3,
-                    "category":"COMPLEMENTAIRE"
+                    "name": "ENGLISH FOR MATHEMATICS AND COMPUTER SCIENCE II",
+                    "code": "ENG3035",
+                    "credit": 3,
+                    "category": "COMPLEMENTAIRE"
                   },
                   {
-                    "name":"FRANÇAIS POUR SCIENCES MATHÉMATIQUES ET INFORMATIQUES II",
-                    "code":"FRA3045",
-                    "credit":3,
-                    "category":"COMPLEMENTAIRE"
+                    "name": "FRANÇAIS POUR SCIENCES MATHÉMATIQUES ET INFORMATIQUES II",
+                    "code": "FRA3045",
+                    "credit": 3,
+                    "category": "COMPLEMENTAIRE"
                   },
                   {
-                    "name":"CONCEPTION ET ANALYSE DES ALGORITHMES",
-                    "code":"INF3015",
-                    "credit":6,
-                    "category":"Fundamental"
+                    "name": "CONCEPTION ET ANALYSE DES ALGORITHMES",
+                    "code": "INF3015",
+                    "credit": 6,
+                    "category": "Fundamental"
                   },
                   {
-                    "name":"CALCUL SCIENTIFIQUE",
-                    "code":"INF3025",
-                    "credit":6,
-                    "category":"Fundamental"
+                    "name": "CALCUL SCIENTIFIQUE",
+                    "code": "INF3025",
+                    "credit": 6,
+                    "category": "Fundamental"
                   },
                   {
-                    "name":"FOUILLE DE DONNÉES I",
-                    "code":"INF3115",
-                    "credit":6,
-                    "category":"Fundamental",
-                    "specialite":"SD"
+                    "name": "FOUILLE DE DONNÉES I",
+                    "code": "INF3115",
+                    "credit": 6,
+                    "category": "Fundamental",
+                    "specialite": "SD"
                   },
                   {
-                    "name":"ANALYSES STATISTIQUES",
-                    "code":"INF3125",
-                    "credit":6
+                    "name": "ANALYSES STATISTIQUES",
+                    "code": "INF3125",
+                    "credit": 6
                   }
                 ]
               },
@@ -236,56 +279,73 @@
                     "name": "",
                     "code": "INF382",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "",
                     "code": "INF372",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "",
                     "code": "INF322",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "",
                     "code": "INF362",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
-
                   {
                     "name": "",
                     "code": "INF352",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "",
                     "code": "INF342",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "",
                     "code": "INF316",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "",
                     "code": "INF332",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROJET PROFESSIONNEL DE L'ETUDIANT III",
                     "code": "PPE312",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   }
                 ]
               }
@@ -297,85 +357,113 @@
                     "name": "COMPLEXITÉ ET ALGORITHMIQUE AVANCÉE",
                     "code": "INF4017",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "GÉNIE LOGICIEL",
                     "code": "INF4027",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "ARCHITECTURES LOGICIELLES",
                     "code": "INF4057",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "UML ET DESIGN PATTERNS",
                     "code": "INF4067",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROGRAMMATION DES TERMINAUX MOBILES",
                     "code": "INF4077",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "RÉSEAUX II",
                     "code": "INF4087",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PRINCIPES DE CONCEPTION DES SYSTÈMES D'EXPLOITATION",
                     "code": "INF4097",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "CLOUD COMPUTING",
                     "code": "INF4107",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "FOUILLE DE DONNÉES II",
                     "code": "INF4117",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "TECHNIQUES D'OPTIMISATION II",
                     "code": "INF4127",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "ANALYSE DES DONNÉES",
                     "code": "INF4137",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "SÉCURITÉ INFORMATIQUE",
                     "code": "INF4147",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "SÉCURITÉ LOGICIELLE",
                     "code": "INF4157",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "CRYPTOGRAPHIE SYMÉTRIQUE",
                     "code": "INF4167",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   }
                 ]
               },
@@ -385,97 +473,129 @@
                     "name": "BASE DE DONNÉES DISTRIBUÉES",
                     "code": "INF4038",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "COMPILATION",
                     "code": "INF4048",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "GÉNIE LOGICIEL I",
                     "code": "INF4178",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "WEB SÉMANTIQUE ET APPLICATIONS",
                     "code": "INF4188",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROJET II",
                     "code": "INF4198",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "COMPILATION",
                     "code": "INF4048",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "RÉSEAUX MOBILES ET SANS FILS",
                     "code": "INF4208",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROGRAMMATION DISTRIBUÉE",
                     "code": "INF4218",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROJET II",
                     "code": "INF4228",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "VISION PAR ORDINATEUR",
                     "code": "INF4238",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "APPRENTISSAGE ARTIFICIEL II",
                     "code": "INF4248",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROJET II",
                     "code": "INF4258",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "CRYPTOGRAPHIE ASYMÉTRIQUE",
                     "code": "INF4268",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "COURBES ELLIPTIQUES 1",
                     "code": "INF4278",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   },
                   {
                     "name": "PROJET II",
                     "code": "INF4288",
                     "credit": 6,
-                    "category": "Fundamental"
+                    "category": "Fundamental",
+                    "professeur 1": "",
+                    "professeur 2": ""
                   }
                 ]
               }
             },
             "5": {
-              "subjects": ["INF"]
+              "subjects": [
+                "INF"
+              ]
             }
           }
         },
@@ -487,25 +607,33 @@
                   "name": "CHIMIE GENERALE POUR LES SCIENCES PHYSIQUES",
                   "code": "CHM141",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELÉMENTS D'ANALYSE POUR LES SCIENCES PHYSIQUES ",
                   "code": "MAT161",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ÉLECTROSTATIQUE",
                   "code": "PHY111",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "OPTIQUE GEOMETRIQUE",
                   "code": "PHY121",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE GENERALE POUR PHYSIQUE 1",
@@ -531,26 +659,33 @@
                   "name": "CALCUL DIFFERENTIEL ET GEOMETRIE POUR LES SCIENCES PHYSIQUES",
                   "code": "MAT162",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELECTROCINETIQUE ET MAGNETOSTATIQUE ",
                   "code": "PHY112",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MECANIQUE DU POINT",
                   "code": "PHY122",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": " TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY132",
                   "credit": 6,
-
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PROFESSIONNALISATION ET EDUCATION A LA CITOYENNETE I",
@@ -566,25 +701,33 @@
                   "name": "CHIMIE ORGANIQUE ET INORGANIQUE GENERALES ",
                   "code": "CHM261",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ALGEBRE ET ANALYSE POUR LES SCIENCES PHYSIQUES",
                   "code": "MAT251",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELECTROMAGNÉTISME ET RELATIVITÉ RESTREINTE",
                   "code": "PHY211",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MÉCANIQUE DU SOLIDE",
                   "code": "PHY221",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "COMMUNICATION ET EXPRESSION ECRITE ET PARLEE POUR LA PHYSIQUE 2",
@@ -604,25 +747,33 @@
                   "name": "PROBABILITES ET STATISTIQUES POUR LES SCIENCES PHYSIQUES",
                   "code": "MAT272",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "INTRODUCTION A LA PHYSIQUE QUANTIQUE",
                   "code": "PHY212",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "THERMODYNAMIQUE",
                   "code": "PHY222",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY232",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "BASES D'ELECTRONIQUE ET D'ELECTROTECHNIQUE",
@@ -644,37 +795,49 @@
                   "name": "VIBRATION ET PHÉNOMÈNES DE PROPAGATION",
                   "code": "PHY3015",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MÉCANIQUE QUANTIQUE",
                   "code": "PHY3025",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY3035",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PHYSIQUE ATOMIQUE ET NUCLÉAIRE",
                   "code": "PHY3045",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "BASES DES MÉTHODES NUMÉRIQUES",
                   "code": "PHY3055",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PROPRIÉTÉS DE LA MATIÈRE CONDENSÉE",
                   "code": "PHY3136",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ENGLISH II",
@@ -694,19 +857,25 @@
                   "name": "TECHNIQUES MATHÉMATIQUES POUR LA PHYSIQUE",
                   "code": "MAT3136",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "VIBRATIONS LUMINEUSES ET OPTIQUE COHÉRENTE",
                   "code": "PHY3146",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PHYSIQUE STATISTIQUE",
                   "code": "PHY3156",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PROJET PERSONNEL ET ENTREPRENARIAT",
@@ -722,31 +891,41 @@
                   "name": "TECHNIQUES MATHÉMATIQUES",
                   "code": "MAT4317",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MÉCANIQUE QUANTIQUE",
                   "code": "PHY4017",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MÉTHODES NUMÉRIQUES",
                   "code": "PHY4027",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PHYSIQUE ATOMIQUE ET MOLÉCULAIRE",
                   "code": "PHY4037",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "BASES PHYSIQUES DE LA CHIMIE ET TECHNIQUES D'INVESTIGATION DES BIOMOLÉCULE",
                   "code": "PHY4057",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 }
               ],
               "s2": [
@@ -754,25 +933,33 @@
                   "name": "PHYSIQUE STATISTIQUE",
                   "code": "PHY4258",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "NFORMATION ET CALCUL QUANTIQUES",
                   "code": "PHY4268",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PRINCIPES DE BIOCHIMIE ET BASES MOLÉCULAIRES DE LA BIOLOGIE",
                   "code": "PHY4318",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PHYSIQUE DU VIVANT ET PHYSIOLOGIE MÉDICALE",
                   "code": "PHY4328",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "BIOPHYSIQUE DES RADIATIONS ET RADIOBIOLOGIE",
@@ -792,26 +979,33 @@
                   "name": "ATOMISTIQUE ET LIAISON CHIMIQUE",
                   "code": "CHM1011",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE GÉNÉRALE",
                   "code": "CHM1021",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
-
                 {
                   "name": "ELÉMENTS D'ANALYSE POUR LES SCIENCES PHYSIQUES",
                   "code": "MAT1101",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ÉLECTROSTATIQUE",
                   "code": "PHY1011",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 }
               ],
               "s2": [
@@ -819,25 +1013,33 @@
                   "name": "LES BASES DE LA THERMODYNAMIQUE",
                   "code": "CHM1032",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "INTRODUCTION À LA CHIMIE ORGANIQUE",
                   "code": "CHM1042",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "EQUILIBRES EN SOLUTION ET CINÉTIQUE CHIMIQUE",
                   "code": "CHM1052",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY1032",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELÉMENTS DE BIOLOGIE",
@@ -865,25 +1067,33 @@
                   "name": "CHIMIE ORGANIQUE GÉNÉRALE ET ÉLÉMENT DE SPECTROSCOPIE",
                   "code": "CHM2013",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "CHIMIE INORGANIQUE GÉNÉRALE ET DIAGRAMMES DE PHASES",
                   "code": "CHM2023",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE II",
                   "code": "CHM2033",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELECTROMAGNÉTISME ET RELATIVITÉ RESTREINTE",
                   "code": "PHY2013",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELÉMENT DE BIOLOGIE 2 A",
@@ -903,25 +1113,33 @@
                   "name": "PRINCIPALES FONCTIONS DE LA CHIMIE ORGANIQUE",
                   "code": "CHM2044",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "CHIMIE ANALYTIQUE GÉNÉRALE",
                   "code": "CHM2054",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELÉMENTS DE CRISTALLOGRAPHIE ET STRUCTURE DES SOLIDES",
                   "code": "CHM2064",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "PROBABILITÉ ET STATISTIQUES",
                   "code": "MAT2124",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELÉMENTS DE BIOLOGIE 2 B",
@@ -943,25 +1161,33 @@
                   "name": "MÉCANISME RÉACTIONNEL A",
                   "code": "CHM3015",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "CHIMIE ORGANIQUE STRUCTURALE ET ANALYTIQUE",
                   "code": "CHM3025",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "THERMODYNAMIQUE CHIMIQUE",
                   "code": "CHM3035",
                   "credit": 5,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "INTRODUCTION À LA CHIMIE DE COORDINATION ET À LA CHIMIE MINÉRALE",
                   "code": "CHM3045",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MÉTABOLISME",
@@ -975,19 +1201,25 @@
                   "name": "CINÉTIQUE CHIMIQUE ET CATALYSE",
                   "code": "CHM3076",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MÉCANISME RÉACTIONNEL B",
                   "code": "CHM3086",
                   "credit": 5,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE III",
                   "code": "CHM3096",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "BIOCHIMIE ANALYTIQUE",
@@ -1021,31 +1253,41 @@
                   "name": "MÉCANISMES RÉACTIONNELS",
                   "code": "CHM4017",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "CHIMIE DE COORDINATION",
                   "code": "CHM4027",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MÉTHODES D'ANALYSE ET TECHNIQUES DE SÉPARATIONS EN CHIMIE",
                   "code": "CHM4037",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "MÉTHODES MODERNES DE SPECTROSCOPIE",
                   "code": "CHM4047",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "CHIMIE DES SUBSTANCES NATURELLES",
                   "code": "CHM4067",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 }
               ],
               "s2": [
@@ -1053,31 +1295,41 @@
                   "name": "PRINCIPALES MÉTHODES DE SYNTHÈSE ORGANIQUE",
                   "code": "CHM4078",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "INTERACTION DES PRINCIPES ACTIFS",
                   "code": "CHM4118",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ENZYMOLOGIE",
                   "code": "BCH4XY8",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "CHIMIE DES MACROMOLÉCULES ET CHIMIE INDUSTRIELLE",
                   "code": "CHM4138",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "ELEMENTS DE PHARMACOLOGIE",
                   "code": "CHM4158",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 }
               ]
             },
@@ -1087,25 +1339,33 @@
                   "name": "SPECTROSCOPIE RMN ET MASSE APPLIQUÉE AUX BIOMOLÉCULES",
                   "code": "CHM543",
                   "credit": 5,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "SYNTHÈSE ET CATALYSE STÉRÉOSÉLECTIVE / SYNTHESE AND REGIOSELECVTIVE CATALYSIS",
                   "code": "CHM551",
                   "credit": 5,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "SYNTHESES ORGANIQUES / ORGANIC SYNTHESIS",
                   "code": "CHM561",
                   "credit": 5,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "METHODOLOGIE DE RECHERCHE ET COMMUNICATION / RESEARCH METHODOLOGY AND COMMUNICATION",
                   "code": "CHM567",
                   "credit": 5,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "CHIMIE DE L'ENVIRONNEMENT / CHEMISTRY OF ENVIRONMENT",
@@ -1119,7 +1379,9 @@
                   "name": "MÉMOIRE",
                   "code": "CHM500",
                   "credit": 30,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 }
               ]
             }
@@ -1144,43 +1406,57 @@
                   "name": "",
                   "code": "GEO 274",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "GEO 284",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "PHY 281",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT 287",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "ENG",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "FRA",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "PPE 214",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 }
               ]
             }
@@ -1195,37 +1471,49 @@
                   "name": "",
                   "code": "MAT 112",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "ENG",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "PHY 112",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT 122",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT 132",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT 142",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
@@ -1242,50 +1530,65 @@
                   "name": "",
                   "code": "MAT 212",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT 222",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT 242",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "PHY 222",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "CHM 252",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT 252",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
-
                 {
                   "name": "",
                   "code": "MAT 252",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT 232",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
@@ -1302,49 +1605,65 @@
                   "name": "",
                   "code": "MAT352",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT361",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT322",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "INF332",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT332",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT342",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT351",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT312",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
@@ -1361,103 +1680,137 @@
                   "name": "",
                   "code": "MAT4087",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4228",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4198",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MATH4128",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4118",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4108",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4218",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4158",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4248",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4298",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4178",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4308",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4268",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4188",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4168",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4138",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 },
                 {
                   "name": "",
                   "code": "MAT4208",
                   "credit": 6,
-                  "category": "Fundamental"
+                  "category": "Fundamental",
+                  "professeur 1": "",
+                  "professeur 2": ""
                 }
               ]
             },
