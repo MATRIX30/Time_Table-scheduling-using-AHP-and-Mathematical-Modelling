@@ -8,8 +8,10 @@
 - ```assets:``` dossier contenant les images et les icons
 - ```components:``` dossier contenant 3 sous-dossiers importants
 - ```pages:``` dossier contenant les pages de l'application
-- ```components/molecules:``` dossier contenant des composants qui sont formés de composant plus petit
-- ```components/atoms:``` dossier contenant des componsants élémentaires et réutilisable
+- ```components/common:``` dossier contenant des composants qui sont formés de composant plus petit
+- ```components/layout:``` dossier contenant des componsants élémentaires et réutilisable
+- ```routes:``` dossier contenant les différentes routes et les pages correspondante
+- ```data:``` dossier contenant des mock data pour les tests
 
 ### 3. How to contribute ? 🚨🚨
 - Cloner le projet
