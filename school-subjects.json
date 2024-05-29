@@ -73,47 +73,40 @@
                     "code": "INF112",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["AMINOU","HALIDOU"],
+                    "Assitant lecturer": ["THOMAS","MESSI NGUELE"]
                   },
                   {
                     "name": "FONDEMENTS MATHEMATIQUES DE L'INFORMATIQUE",
                     "code": "INF122",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
-                  },
-                  {
-                    "name": ["",""],
-                    "code": "INFO122",
-                    "credit": 6,
-                    "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["KOUOKAM","KOUOKAM E. A."],
+                    "Assitant lecturer": ["NZEKON",""]
+                    
                   },
                   {
                     "name": "PROGRAMMATION STRUCTUREE EN C",
                     "code": "INFO132",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["TSOPZE","NORBERT"],
+                    "Assitant lecturer": ["TAPAMO","HYPPOLYTE"]
                   },
                   {
                     "name": "INTRODUCTION À LA SCIENCE DES DONNÉES",
                     "code": "INFO142",
                     "credit": 3,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["MELATAGIA","YONTA PAULIN"],
+                    "Assitant lecturer": ["NZEKON",""]
                   },
                   {
                     "name": "ALGEBRE 1B",
                     "code": "MAT112",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["OGADOA",""],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -121,8 +114,8 @@
                     "code": "INFO152",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["ADAMOU","HAMZA"],
+                    "Assitant lecturer": ["DOMGA","RODRIGUE"]
                   }
                 ]
               }
@@ -143,40 +136,41 @@
                     "code": "INF211",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["ABESSOLO","GHISLAIN"],
+                    "Assitant lecturer": ["JIOMEKONG","FIDEL AZANZI"]
                   },
                   {
                     "name": "BASES DE DONNEES ET MODELISATION",
                     "code": "INF221",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["ABESSOLO","GHISLAIN"],
+                    "Assitant lecturer": ["KOUOKAM","KOUOKAM E. A."]
                   },
                   {
                     "name": "METHODES ALGORITHMIQUES ET STRUCTURES DE DONNEES",
                     "code": "INF231",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["TAPAMO","HYPOLITE"],
+                    "Assitant lecturer": ["MESSI NGUELE","THOMAS"]
                   },
                   {
                     "name": "ALGEBRE 2A : THEORIE SPECTRALE ET ALGEBRE MULTILINEAIRE",
                     "code": "MAT211",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["MBIAKOP","Hilaire George"],
+                    "Assitant lecturer": ["OGADOA",""]
                   },
                   {
                     "name": "GENIE LOGICIEL ET SYSTEMES D'INFORMATION",
                     "code": "INF251",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["BAYEM","JACQUES NARCISSE"],
+                    "Assitant lecturer 1": ["ABESSOLO","GHISLAIN"],
+                    "Assitant lecturer 2": ["NKONDOCK","MI BAHANACK"]
                   }
                 ]
               },
@@ -187,16 +181,16 @@
                     "code": "INF222",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["MESSI NGEULE","THOMAS"],
+                    "Assitant lecturer": ["JIOMEKONG","FIDEL AZANZI"]
                   },
                   {
                     "name": "STATISTIQUES ET ANALYSE DE DONNEES",
                     "code": "INF232",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["MAKEMBE","S. OSWALD"],
+                    "Assitant lecturer": ["NZEKON",""]
                   },
                   {
                     "name": "MATHEMATIQUES DISCRETES",
