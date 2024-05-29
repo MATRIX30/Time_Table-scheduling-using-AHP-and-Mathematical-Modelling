@@ -12,50 +12,57 @@
                     "code": "INF111",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["ATSA","ETOUNDI ROGER"],
+                    "Assitant lecturer": ["TSOPZE","NORBERT"]
                   },
                   {
                     "name": "INTRODUCTION À L'ARCHITECTURE DES ORDINATEURS",
                     "code": "INF121",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["KOUOKAM","KOUOKAM E. A."],
+                    "Assitant lecturer": ["AMINOU","HALIDOU"]
                   },
                   {
                     "name": "INTRODUCTION AUX SYSTÈMES ET RÉSEAUX",
                     "code": "INF131",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["DOMGA","KOMGUEM Rodrigue"],
+                    "Assitant lecturer": ["ADAMOU","HAMZA"]
+                    
                   },
                   {
                     "name": "ANALYSE DE LA DROITE REELLE",
                     "code": "MAT131",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["BOGSO",""],
+                    "Assitant lecturer": ["TCHOUNDJA","Edgar Landry"]
                   },
                   {
                     "name": "FORMATION BILINGUE I",
                     "code": "FBL111",
                     "credit": 3,
-                    "category": "COMPLEMENTAIRE"
+                    "category": "COMPLEMENTAIRE",
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "INTRODUCTION À LA SÉCURITÉ INFORMATIQUE",
                     "code": "INF141",
                     "credit": 3,
-                    "category": "COMPLEMENTAIRE"
+                    "category": "COMPLEMENTAIRE",
+                    "Course Lecturer": ["EKODECK",""],
+                    "Assitant lecturer": ["EBELE","SERGE"]
                   },
                   {
                     "name": "EXPLORATION PROFESSIONNELLE, ORIENTATION ET EDUCATION A LA CITOYENETE",
                     "code": "PPE111",
                     "credit": 3,
-                    "category": "COMPLEMENTAIRE"
+                    "category": "COMPLEMENTAIRE",
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   }
                 ]
               },
@@ -66,56 +73,56 @@
                     "code": "INF112",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "FONDEMENTS MATHEMATIQUES DE L'INFORMATIQUE",
                     "code": "INF122",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INFO122",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROGRAMMATION STRUCTUREE EN C",
                     "code": "INFO132",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "INTRODUCTION À LA SCIENCE DES DONNÉES",
                     "code": "INFO142",
                     "credit": 3,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "ALGEBRE 1B",
                     "code": "MAT112",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INFO152",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   }
                 ]
               }
@@ -127,47 +134,49 @@
                     "name": "FORMATION BILINGUE II",
                     "code": "FBL211",
                     "credit": 6,
-                    "category": "COMPLEMENTAIRE"
+                    "category": "COMPLEMENTAIRE",
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROGRAMMATION ORIENTÉE OBJET",
                     "code": "INF211",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "BASES DE DONNEES ET MODELISATION",
                     "code": "INF221",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "METHODES ALGORITHMIQUES ET STRUCTURES DE DONNEES",
                     "code": "INF231",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "ALGEBRE 2A : THEORIE SPECTRALE ET ALGEBRE MULTILINEAIRE",
                     "code": "MAT211",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "GENIE LOGICIEL ET SYSTEMES D'INFORMATION",
                     "code": "INF251",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   }
                 ]
               },
@@ -178,56 +187,56 @@
                     "code": "INF222",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "STATISTIQUES ET ANALYSE DE DONNEES",
                     "code": "INF232",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "MATHEMATIQUES DISCRETES",
                     "code": "INF212",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "SCIENCE DES DONNEES",
                     "code": "INF242",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "SECURITE INFORMATIQUE",
                     "code": "INF252",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROJET PROFESSIONNEL ET PRE-IMMERSION",
                     "code": "PPE212",
                     "credit": 3,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "CALCUL INTEGRAL SUR Rn",
                     "code": "MAT232",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   }
                 ]
               }
@@ -239,13 +248,17 @@
                     "name": "ENGLISH FOR MATHEMATICS AND COMPUTER SCIENCE II",
                     "code": "ENG3035",
                     "credit": 3,
-                    "category": "COMPLEMENTAIRE"
+                    "category": "COMPLEMENTAIRE",
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "FRANÇAIS POUR SCIENCES MATHÉMATIQUES ET INFORMATIQUES II",
                     "code": "FRA3045",
                     "credit": 3,
-                    "category": "COMPLEMENTAIRE"
+                    "category": "COMPLEMENTAIRE",
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "CONCEPTION ET ANALYSE DES ALGORITHMES",
@@ -276,76 +289,76 @@
               "s2": {
                 "subjects": [
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INF382",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INF372",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INF322",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INF362",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INF352",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INF342",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INF316",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
-                    "name": "",
+                    "name": ["",""],
                     "code": "INF332",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROJET PROFESSIONNEL DE L'ETUDIANT III",
                     "code": "PPE312",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   }
                 ]
               }
@@ -358,112 +371,112 @@
                     "code": "INF4017",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "GÉNIE LOGICIEL",
                     "code": "INF4027",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "ARCHITECTURES LOGICIELLES",
                     "code": "INF4057",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "UML ET DESIGN PATTERNS",
                     "code": "INF4067",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROGRAMMATION DES TERMINAUX MOBILES",
                     "code": "INF4077",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "RÉSEAUX II",
                     "code": "INF4087",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PRINCIPES DE CONCEPTION DES SYSTÈMES D'EXPLOITATION",
                     "code": "INF4097",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "CLOUD COMPUTING",
                     "code": "INF4107",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "FOUILLE DE DONNÉES II",
                     "code": "INF4117",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "TECHNIQUES D'OPTIMISATION II",
                     "code": "INF4127",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "ANALYSE DES DONNÉES",
                     "code": "INF4137",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "SÉCURITÉ INFORMATIQUE",
                     "code": "INF4147",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "SÉCURITÉ LOGICIELLE",
                     "code": "INF4157",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "CRYPTOGRAPHIE SYMÉTRIQUE",
                     "code": "INF4167",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   }
                 ]
               },
@@ -474,120 +487,120 @@
                     "code": "INF4038",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "COMPILATION",
                     "code": "INF4048",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "GÉNIE LOGICIEL I",
                     "code": "INF4178",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "WEB SÉMANTIQUE ET APPLICATIONS",
                     "code": "INF4188",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROJET II",
                     "code": "INF4198",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "COMPILATION",
                     "code": "INF4048",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "RÉSEAUX MOBILES ET SANS FILS",
                     "code": "INF4208",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROGRAMMATION DISTRIBUÉE",
                     "code": "INF4218",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROJET II",
                     "code": "INF4228",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "VISION PAR ORDINATEUR",
                     "code": "INF4238",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "APPRENTISSAGE ARTIFICIEL II",
                     "code": "INF4248",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROJET II",
                     "code": "INF4258",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "CRYPTOGRAPHIE ASYMÉTRIQUE",
                     "code": "INF4268",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "COURBES ELLIPTIQUES 1",
                     "code": "INF4278",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   },
                   {
                     "name": "PROJET II",
                     "code": "INF4288",
                     "credit": 6,
                     "category": "Fundamental",
-                    "professeur 1": "",
-                    "professeur 2": ""
+                    "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                   }
                 ]
               }
@@ -608,50 +621,56 @@
                   "code": "CHM141",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELÉMENTS D'ANALYSE POUR LES SCIENCES PHYSIQUES ",
                   "code": "MAT161",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ÉLECTROSTATIQUE",
                   "code": "PHY111",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "OPTIQUE GEOMETRIQUE",
                   "code": "PHY121",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE GENERALE POUR PHYSIQUE 1",
                   "code": "CHM161",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": " COMMUNICATION ET EXPRESSION ECRITE ET PARLEE POUR LA PHYSIQUE 1",
                   "code": "COM111",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "INTRODUCTION À L'ALGORITHMIQUE ET À LA PROGRAMMATION",
                   "code": "INF111",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -660,38 +679,40 @@
                   "code": "MAT162",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELECTROCINETIQUE ET MAGNETOSTATIQUE ",
                   "code": "PHY112",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MECANIQUE DU POINT",
                   "code": "PHY122",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": " TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY132",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROFESSIONNALISATION ET EDUCATION A LA CITOYENNETE I",
                   "code": "PPE112",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -702,44 +723,48 @@
                   "code": "CHM261",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ALGEBRE ET ANALYSE POUR LES SCIENCES PHYSIQUES",
                   "code": "MAT251",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELECTROMAGNÉTISME ET RELATIVITÉ RESTREINTE",
                   "code": "PHY211",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉCANIQUE DU SOLIDE",
                   "code": "PHY221",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "COMMUNICATION ET EXPRESSION ECRITE ET PARLEE POUR LA PHYSIQUE 2",
                   "code": "COM211",
                   "credit": 6,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "BASES DE DONNEES ET MODELISATION ",
                   "code": "INF221",
                   "credit": 6,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -748,44 +773,48 @@
                   "code": "MAT272",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "INTRODUCTION A LA PHYSIQUE QUANTIQUE",
                   "code": "PHY212",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "THERMODYNAMIQUE",
                   "code": "PHY222",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY232",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "BASES D'ELECTRONIQUE ET D'ELECTROTECHNIQUE",
                   "code": "PHY252",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROFESSIONNALISATION ET EDUCATION A LA CITOYENNETE II",
                   "code": "PPE212",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -796,60 +825,64 @@
                   "code": "PHY3015",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉCANIQUE QUANTIQUE",
                   "code": "PHY3025",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY3035",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PHYSIQUE ATOMIQUE ET NUCLÉAIRE",
                   "code": "PHY3045",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "BASES DES MÉTHODES NUMÉRIQUES",
                   "code": "PHY3055",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROPRIÉTÉS DE LA MATIÈRE CONDENSÉE",
                   "code": "PHY3136",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ENGLISH II",
                   "code": "ENG3005",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉCANIQUE DES FLUIDES PARFAITS",
                   "code": "PHY3135",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -858,30 +891,32 @@
                   "code": "MAT3136",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "VIBRATIONS LUMINEUSES ET OPTIQUE COHÉRENTE",
                   "code": "PHY3146",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PHYSIQUE STATISTIQUE",
                   "code": "PHY3156",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROJET PERSONNEL ET ENTREPRENARIAT",
                   "code": "PPE3006",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -892,40 +927,40 @@
                   "code": "MAT4317",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉCANIQUE QUANTIQUE",
                   "code": "PHY4017",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉTHODES NUMÉRIQUES",
                   "code": "PHY4027",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PHYSIQUE ATOMIQUE ET MOLÉCULAIRE",
                   "code": "PHY4037",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "BASES PHYSIQUES DE LA CHIMIE ET TECHNIQUES D'INVESTIGATION DES BIOMOLÉCULE",
                   "code": "PHY4057",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -934,38 +969,40 @@
                   "code": "PHY4258",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "NFORMATION ET CALCUL QUANTIQUES",
                   "code": "PHY4268",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PRINCIPES DE BIOCHIMIE ET BASES MOLÉCULAIRES DE LA BIOLOGIE",
                   "code": "PHY4318",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PHYSIQUE DU VIVANT ET PHYSIOLOGIE MÉDICALE",
                   "code": "PHY4328",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "BIOPHYSIQUE DES RADIATIONS ET RADIOBIOLOGIE",
                   "code": "PHY4308",
                   "credit": 6,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             }
@@ -980,32 +1017,32 @@
                   "code": "CHM1011",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE GÉNÉRALE",
                   "code": "CHM1021",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELÉMENTS D'ANALYSE POUR LES SCIENCES PHYSIQUES",
                   "code": "MAT1101",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ÉLECTROSTATIQUE",
                   "code": "PHY1011",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -1014,50 +1051,56 @@
                   "code": "CHM1032",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "INTRODUCTION À LA CHIMIE ORGANIQUE",
                   "code": "CHM1042",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "EQUILIBRES EN SOLUTION ET CINÉTIQUE CHIMIQUE",
                   "code": "CHM1052",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY1032",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELÉMENTS DE BIOLOGIE",
                   "code": "BIO1052",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ENGLISH FOR CHEMISTRY",
                   "code": "ENG1022",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROJET PROFESSIONNEL DE L'ETUDIANT I",
                   "code": "PPE1002",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -1068,44 +1111,48 @@
                   "code": "CHM2013",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "CHIMIE INORGANIQUE GÉNÉRALE ET DIAGRAMMES DE PHASES",
                   "code": "CHM2023",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE II",
                   "code": "CHM2033",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELECTROMAGNÉTISME ET RELATIVITÉ RESTREINTE",
                   "code": "PHY2013",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELÉMENT DE BIOLOGIE 2 A",
                   "code": "BIO2083",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ANGLAIS POUR SCIENCES PHYSIQUES",
                   "code": "ENG2023",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -1114,44 +1161,48 @@
                   "code": "CHM2044",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "CHIMIE ANALYTIQUE GÉNÉRALE",
                   "code": "CHM2054",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELÉMENTS DE CRISTALLOGRAPHIE ET STRUCTURE DES SOLIDES",
                   "code": "CHM2064",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROBABILITÉ ET STATISTIQUES",
                   "code": "MAT2124",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELÉMENTS DE BIOLOGIE 2 B",
                   "code": "BIO2054",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROJET PERSONNEL DE L'ÉTUDIANT - ENTREPRENARIAT",
                   "code": "PPE2004",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -1162,38 +1213,40 @@
                   "code": "CHM3015",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "CHIMIE ORGANIQUE STRUCTURALE ET ANALYTIQUE",
                   "code": "CHM3025",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "THERMODYNAMIQUE CHIMIQUE",
                   "code": "CHM3035",
                   "credit": 5,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "INTRODUCTION À LA CHIMIE DE COORDINATION ET À LA CHIMIE MINÉRALE",
                   "code": "CHM3045",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉTABOLISME",
                   "code": "ANGLAIS POUR SCIENCES PHYSIQUES",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -1202,48 +1255,56 @@
                   "code": "CHM3076",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉCANISME RÉACTIONNEL B",
                   "code": "CHM3086",
                   "credit": 5,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE III",
                   "code": "CHM3096",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "BIOCHIMIE ANALYTIQUE",
                   "code": "BCH3136",
                   "credit": 5,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PHARMACOGNOSIE",
                   "code": "CHM3126",
                   "credit": 5,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ANGLAIS POUR SCIENCES PHYSIQUES",
                   "code": "ENG3025",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROJET PERSONNEL DE L'ÉTUDIANT  ET ENTREPRENARIAT",
                   "code": "PPE3006",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -1254,40 +1315,40 @@
                   "code": "CHM4017",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "CHIMIE DE COORDINATION",
                   "code": "CHM4027",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉTHODES D'ANALYSE ET TECHNIQUES DE SÉPARATIONS EN CHIMIE",
                   "code": "CHM4037",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉTHODES MODERNES DE SPECTROSCOPIE",
                   "code": "CHM4047",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "CHIMIE DES SUBSTANCES NATURELLES",
                   "code": "CHM4067",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -1296,40 +1357,40 @@
                   "code": "CHM4078",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "INTERACTION DES PRINCIPES ACTIFS",
                   "code": "CHM4118",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ENZYMOLOGIE",
                   "code": "BCH4XY8",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "CHIMIE DES MACROMOLÉCULES ET CHIMIE INDUSTRIELLE",
                   "code": "CHM4138",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "ELEMENTS DE PHARMACOLOGIE",
                   "code": "CHM4158",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -1340,38 +1401,40 @@
                   "code": "CHM543",
                   "credit": 5,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "SYNTHÈSE ET CATALYSE STÉRÉOSÉLECTIVE / SYNTHESE AND REGIOSELECVTIVE CATALYSIS",
                   "code": "CHM551",
                   "credit": 5,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "SYNTHESES ORGANIQUES / ORGANIC SYNTHESIS",
                   "code": "CHM561",
                   "credit": 5,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "METHODOLOGIE DE RECHERCHE ET COMMUNICATION / RESEARCH METHODOLOGY AND COMMUNICATION",
                   "code": "CHM567",
                   "credit": 5,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "CHIMIE DE L'ENVIRONNEMENT / CHEMISTRY OF ENVIRONMENT",
                   "code": "CHM565",
                   "credit": 5,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -1380,8 +1443,8 @@
                   "code": "CHM500",
                   "credit": 30,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 }
               ]
             }
@@ -1403,60 +1466,60 @@
               "s1": [],
               "s2": [
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "GEO 274",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "GEO 284",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "PHY 281",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 287",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "ENG",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "FRA",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "PPE 214",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 }
               ]
             }
@@ -1468,58 +1531,60 @@
               "s1": [],
               "s2": [
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 112",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "ENG",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "PHY 112",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 122",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 132",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 142",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "PPE 112",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -1527,74 +1592,76 @@
               "s1": [],
               "s2": [
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 212",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 222",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 242",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "PHY 222",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "CHM 252",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 252",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 252",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT 232",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "PPE 200",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -1602,74 +1669,76 @@
               "s1": [],
               "s2": [
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT352",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT361",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT322",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "INF332",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT332",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT342",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT351",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT312",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "PPE 316",
                   "credit": 3,
-                  "category": "COMPLEMENTAIRE"
+                  "category": "COMPLEMENTAIRE",
+                  "Course Lecturer": ["",""],
+                    "Assitant lecturer": ["",""]
                 }
               ]
             },
@@ -1677,140 +1746,140 @@
               "s1": [],
               "s2": [
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4087",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4228",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4198",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MATH4128",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4118",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4108",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4218",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4158",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4248",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4298",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4178",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4308",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4268",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4188",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4168",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4138",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 },
                 {
-                  "name": "",
+                  "name": ["",""],
                   "code": "MAT4208",
                   "credit": 6,
                   "category": "Fundamental",
-                  "professeur 1": "",
-                  "professeur 2": ""
+                  "Course Lecturer": ["",""],
+                  "Assitant lecturer": ["",""]
                 }
               ]
             },
