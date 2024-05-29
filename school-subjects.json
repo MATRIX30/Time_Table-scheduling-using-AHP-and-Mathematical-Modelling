@@ -197,7 +197,7 @@
                     "code": "INF212",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["NDOUNDAM","RENE"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -205,31 +205,31 @@
                     "code": "INF242",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["MELATAGIA","YONTA PAULIN"],
+                    "Assitant lecturer": ["MESSI NGUELE","THOMAS"]
                   },
                   {
                     "name": "SECURITE INFORMATIQUE",
                     "code": "INF252",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["NKONDOCK","BAHANACK N."],
+                    "Assitant lecturer": ["BAYEM","JACQUES NARCISSE"]
                   },
                   {
                     "name": "PROJET PROFESSIONNEL ET PRE-IMMERSION",
                     "code": "PPE212",
                     "credit": 3,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["TAPAMO","HYPOLITE"],
+                    "Assitant lecturer": ["MEFOUMA",""]
                   },
                   {
                     "name": "CALCUL INTEGRAL SUR Rn",
                     "code": "MAT232",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["FOKAM",""],
                     "Assitant lecturer": ["",""]
                   }
                 ]
@@ -365,7 +365,7 @@
                     "code": "INF4017",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["NDOUNDAM","RENE"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -373,7 +373,7 @@
                     "code": "INF4027",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["ATSA","ETOUNDI ROGER"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -381,7 +381,7 @@
                     "code": "INF4057",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["DJAM KIMBI","XAVERIA YOUHEP"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -389,7 +389,7 @@
                     "code": "INF4067",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["VALERY","MONTHE"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -397,7 +397,7 @@
                     "code": "INF4077",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["JIOMEKONG","FIDEL AZANZI"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -405,7 +405,7 @@
                     "code": "INF4087",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["AMINOU","HALIDOU"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -413,7 +413,7 @@
                     "code": "INF4097",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["ADAMOU","HAMZA"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -421,7 +421,7 @@
                     "code": "INF4107",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["MONTHE","VALERY"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -429,7 +429,7 @@
                     "code": "INF4117",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["TSOPZE","NORBERT"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -437,7 +437,7 @@
                     "code": "INF4127",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["MELATAGIA","YONTA PAULIN"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -445,7 +445,7 @@
                     "code": "INF4137",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["NZEKON",""],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -453,7 +453,7 @@
                     "code": "INF4147",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["EBELLE",""],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -461,7 +461,7 @@
                     "code": "INF4157",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["DJAM KIMBI","XAVERIA YOUHEP"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -469,7 +469,7 @@
                     "code": "INF4167",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["EBELLE",""],
                     "Assitant lecturer": ["",""]
                   }
                 ]
@@ -481,7 +481,7 @@
                     "code": "INF4038",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["TAPAMO","HYPOLITE"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -489,15 +489,15 @@
                     "code": "INF4048",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["KOUOKAM","KOUOKAM E. A."],
+                    "Assitant lecturer": ["THOMAS","MESSI NGUELE"]
                   },
                   {
                     "name": "GÉNIE LOGICIEL I",
                     "code": "INF4178",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["DJAM KIMBI","XAVERIA YOUHEP"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -505,7 +505,7 @@
                     "code": "INF4188",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["JIOMEKONG","FIDEL AZANZI"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -513,7 +513,7 @@
                     "code": "INF4198",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["JIOMEKONG","FIDEL AZANZI"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -521,15 +521,15 @@
                     "code": "INF4048",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                    "Course Lecturer": ["KOUOKAM","KOUOKAM E. A."],
+                    "Assitant lecturer": ["THOMAS","MESSI NGUELE"]
                   },
                   {
                     "name": "RÉSEAUX MOBILES ET SANS FILS",
                     "code": "INF4208",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["DOMGA","KOMGUEM Rodrigue"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -537,7 +537,7 @@
                     "code": "INF4218",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["ADAMOU","HAMZA"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -545,7 +545,7 @@
                     "code": "INF4228",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["AMINOU","HALIDOU"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -553,7 +553,7 @@
                     "code": "INF4238",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["TAPAMO","HYPOLITE"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -561,7 +561,7 @@
                     "code": "INF4248",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["MELATAGIA","YONTA PAULIN"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -569,7 +569,7 @@
                     "code": "INF4258",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["TSOPZE","NORBERT"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -577,7 +577,7 @@
                     "code": "INF4268",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["EKODECK",""],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -585,7 +585,7 @@
                     "code": "INF4278",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["NDOUNDAM","RENE"],
                     "Assitant lecturer": ["",""]
                   },
                   {
@@ -593,7 +593,7 @@
                     "code": "INF4288",
                     "credit": 6,
                     "category": "Fundamental",
-                    "Course Lecturer": ["",""],
+                    "Course Lecturer": ["EBELLE",""],
                     "Assitant lecturer": ["",""]
                   }
                 ]
