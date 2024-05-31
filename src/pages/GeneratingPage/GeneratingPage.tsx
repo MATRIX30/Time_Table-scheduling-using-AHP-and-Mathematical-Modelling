@@ -1,9 +1,12 @@
+import { Button, InputSelect } from '@/components/common';
+import Navbar from '@/components/layout/Navbar';
+import { inputSelectElement } from '@/data/dummy-data';
 import React from 'react';
 
-import { Navbar } from '../../components/layout';
+// import { Navbar } from '../../components/layout';
 import { IoCalendarOutline } from "react-icons/io5";
-import { Button, InputSelect } from '../../components/common';
-import { inputSelectElement } from '../../data/dummy-data';
+// import { Button, InputSelect } from '../../components/common';
+// import { inputSelectElement } from '../../data/dummy-data';
 import { LuDownload } from "react-icons/lu";
 
 const GeneratingPage = () => {
@@ -16,7 +19,7 @@ const GeneratingPage = () => {
           <h1 className='text-lg text-gray-800'>Timetable Scheduling System</h1>
           <p className='text-sm text-gray-400 md:max-w-xl'>Easily generate your class timetables in an optimal way with this tool designed using the AHP (Analytical Hierachical processing) method</p>
           <div className='flex flex-col gap-4 md:w-2/3 pt-5'>
-            {inputSelectElement.map(elt => (<InputSelect inputName={elt.name} options={elt.options}/>))}
+            {inputSelectElement.map(elt => (<InputSelect key={elt.name} inputName={elt.name} options={elt.options}/>))}
             <Button>Generate</Button>
           </div>
           
