@@ -1,6 +1,11 @@
 import React from 'react';
 
-const InputSelect = ({inputName, options}) => {
+type InputSelectProps = {
+    inputName: string;
+    options: string[];
+}
+
+const InputSelect = ({inputName, options}:InputSelectProps) => {
     return <React.Fragment>
         <div className='flex flex-col'>
         <label htmlFor={inputName} className='text-sm text-gray-900'>{inputName}</label>
