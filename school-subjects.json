@@ -615,32 +615,33 @@
                   "code": "CHM141",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["KENMEGNE",""],
+                  "Assitant lecturer": ["PATOUOSSA",""]
                 },
                 {
                   "name": "ELÉMENTS D'ANALYSE POUR LES SCIENCES PHYSIQUES ",
                   "code": "MAT161",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["FOKAM",""],
+                  "Assitant lecturer": ["BITYE",""],
+                  "Second Assitant lecturer": ["MBEHOU",""]
                 },
                 {
                   "name": "ÉLECTROSTATIQUE",
                   "code": "PHY111",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["BEN","BOLIE"],
+                  "Assitant lecturer": ["DJUIDJE",""]
                 },
                 {
                   "name": "OPTIQUE GEOMETRIQUE",
                   "code": "PHY121",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["HONA",""],
+                  "Assitant lecturer": ["EDONGUE",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE CHIMIE GENERALE POUR PHYSIQUE 1",
@@ -663,7 +664,7 @@
                   "code": "INF111",
                   "credit": 3,
                   "category": "COMPLEMENTAIRE",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["BAYEM",""],
                     "Assitant lecturer": ["",""]
                 }
               ],
@@ -673,24 +674,24 @@
                   "code": "MAT162",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["NYOUMB",""],
+                  "Assitant lecturer": ["CHENDJOU",""]
                 },
                 {
                   "name": "ELECTROCINETIQUE ET MAGNETOSTATIQUE ",
                   "code": "PHY112",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["BEN","BOLIE"],
+                  "Assitant lecturer": ["ENYEGUE",""] 
                 },
                 {
                   "name": "MECANIQUE DU POINT",
                   "code": "PHY122",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["NANA","NBENDJO"],
+                  "Assitant lecturer": ["DJUIDJE",""]
                 },
                 {
                   "name": " TRAVAUX PRATIQUES DE PHYSIQUE",
@@ -705,8 +706,8 @@
                   "code": "PPE112",
                   "credit": 3,
                   "category": "COMPLEMENTAIRE",
-                  "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["NTAM","ELISE"],
+                    "Assitant lecturer": ["MATIAFA",""]
                 }
               ]
             },
@@ -717,32 +718,34 @@
                   "code": "CHM261",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["TCHAKOUNTE",""],
+                  "Assitant lecturer": ["MVOT","AKAK"],
+                  "Second Assitant lecturer": ["NEBA"],
+                  "Third Assitant lecturer": ["TAGATSING"]
                 },
                 {
                   "name": "ALGEBRE ET ANALYSE POUR LES SCIENCES PHYSIQUES",
                   "code": "MAT251",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["TETSADJIO",""],
+                  "Assitant lecturer": ["MBAKOP",""]
                 },
                 {
                   "name": "ELECTROMAGNÉTISME ET RELATIVITÉ RESTREINTE",
                   "code": "PHY211",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["EDONGUE",""],
+                  "Assitant lecturer": ["ZEKENG",""]
                 },
                 {
                   "name": "MÉCANIQUE DU SOLIDE",
                   "code": "PHY221",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["WOAFA",""],
+                  "Assitant lecturer": ["NANA","NBENDJO"]
                 },
                 {
                   "name": "COMMUNICATION ET EXPRESSION ECRITE ET PARLEE POUR LA PHYSIQUE 2",
@@ -757,8 +760,8 @@
                   "code": "INF221",
                   "credit": 6,
                   "category": "COMPLEMENTAIRE",
-                  "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["KOUOKAM",""],
+                    "Assitant lecturer": ["EKODECK",""]
                 }
               ],
               "s2": [
@@ -767,7 +770,7 @@
                   "code": "MAT272",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["KIKI",""],
                   "Assitant lecturer": ["",""]
                 },
                 {
@@ -775,23 +778,23 @@
                   "code": "PHY212",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["SIMO",""],
+                  "Assitant lecturer": ["ABDOURAHIM",""]
                 },
                 {
                   "name": "THERMODYNAMIQUE",
                   "code": "PHY222",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["FEWO",""],
+                  "Assitant lecturer": ["DJUIDJE",""]
                 },
                 {
                   "name": "TRAVAUX PRATIQUES DE PHYSIQUE",
                   "code": "PHY232",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["MBINACK",""],
                   "Assitant lecturer": ["",""]
                 },
                 {
@@ -799,16 +802,16 @@
                   "code": "PHY252",
                   "credit": 3,
                   "category": "COMPLEMENTAIRE",
-                  "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["AYISSI","EYEBE"],
+                  "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "PROFESSIONNALISATION ET EDUCATION A LA CITOYENNETE II",
                   "code": "PPE212",
                   "credit": 3,
                   "category": "COMPLEMENTAIRE",
-                  "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["NTAM","ELISE"],
+                    "Assitant lecturer": ["MATIAFA",""]
                 }
               ]
             },
