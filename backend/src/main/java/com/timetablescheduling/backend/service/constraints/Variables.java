@@ -20,16 +20,25 @@ public class Variables {
 
     @Getter @Setter private int numRooms;
 
-    @Getter private Literal[][][][] courseSchedules;
+    @Getter private Literal[][][] roomSchedules;
 
-    @Getter private Literal[][][][] levelCourseSchedules;
+    @Getter private Literal[][] lecturerCourses;
+
+    @Getter private Literal[][][] courseSchedules;
+
+    @Getter private Literal[][] levelCourseSchedules;
     
     @Getter private Literal[][][][] teacherCourseSchedules;
 
+    @Getter private Literal[][][][][][] timeTableVariable;
+
 
     public void initialiseVariables() {
-        courseSchedules = new Literal[numCourses][numDays][numTimeSlots][numRooms];
-        levelCourseSchedules = new Literal[numLevels][numCourses][numTimeSlots][numDays];
+        roomSchedules = new Literal[numRooms][numTimeSlots][numDays];
+        lecturerCourses = new Literal[numTeachers][numCourses];
+        courseSchedules = new Literal[numCourses][numTimeSlots][numDays];
+        levelCourseSchedules = new Literal[numLevels][numCourses];
         teacherCourseSchedules = new Literal[numTeachers][numCourses][numTimeSlots][numDays];
+        timeTableVariable = new Literal[numCourses][numLevels][numTeachers][numRooms][numTimeSlots][numDays];    
     }
 }
