@@ -79,3 +79,9 @@ Email : tchiaguiachristophe25@gmail.com
 Role  : Backend Developper
 ```
 
+```
+Name  : NJONTA DJANTENG WILFREED KEVIN
+Email : wilfreed.njonta@facsciences-uy1.cm
+Role  : Data Collection section
+```
+
