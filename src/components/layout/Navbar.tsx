@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <a href="/" className="flex items-center justify-center">
+        <a href="/" className="flex items-center justify-center space-x-2">
           <IoCalendarOutline className="h-6 w-6" />
-          <span className="sr-only">Sheduling</span>
+          <span className="">Sheduling</span>
         </a>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <a
@@ -24,7 +24,7 @@ const Navbar = () => {
           >
             Schedules
           </a>
-          <a
+          {/* <a
             href="#"
             className="text-sm font-medium hover:underline underline-offset-4"
           >
@@ -35,7 +35,7 @@ const Navbar = () => {
             className="text-sm font-medium hover:underline underline-offset-4"
           >
             Students
-          </a>
+          </a> */}
         </nav>
       </header>
     </React.Fragment>
