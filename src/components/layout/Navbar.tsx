@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <a href="#" className="flex items-center justify-center">
+        <a href="/" className="flex items-center justify-center">
           <IoCalendarOutline className="h-6 w-6" />
           <span className="sr-only">Sheduling</span>
         </a>
