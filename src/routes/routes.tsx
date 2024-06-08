@@ -1,6 +1,12 @@
-import { GeneratingPage } from '../pages';
+import { GeneratingPage, LandingPage } from "../pages";
 
-export const routesConfig = [{
-    page: <GeneratingPage/>,
-    path: '/'
-}];
+export const routesConfig = [
+  {
+    page: <GeneratingPage />,
+    path: "/shedules",
+  },
+  {
+    page: <LandingPage />,
+    path: "/",
+  },
+];
