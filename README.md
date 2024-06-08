@@ -14,7 +14,8 @@ platform for the University of Yaounde I.
 
 ## Technologies used
 
-- `To do`
+- `Backend : Java Spring Boot`
+- `Frontend : `
 
 ## Team Members
 
