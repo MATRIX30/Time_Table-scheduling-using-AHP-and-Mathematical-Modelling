@@ -20,6 +20,18 @@ public class Variables {
 
     @Getter @Setter private int numRooms;
 
+    public Variables () {}
+
+    public Variables(int numCourses, int numLevels, int numTeachers, int numDays, int numTimeSlots, int numRooms) {
+        this();
+        this.numCourses = numCourses;
+        this.numLevels = numLevels;
+        this.numTeachers = numTeachers;
+        this.numDays = numDays;
+        this.numTimeSlots = numTimeSlots;
+        this.numRooms = numRooms;
+    }   
+
     @Getter private Literal[][][] roomSchedules;
 
     @Getter private Literal[][] lecturerCourses;
