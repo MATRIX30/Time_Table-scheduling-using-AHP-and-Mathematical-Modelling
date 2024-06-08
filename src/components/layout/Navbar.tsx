@@ -13,7 +13,7 @@ const Navbar = () => {
         </a>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <a
-            href="#"
+            href="/classes"
             className="text-sm font-medium hover:underline underline-offset-4"
           >
             Classes
