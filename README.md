@@ -1,6 +1,6 @@
 ## Time table scheduling using Analytical Hierachical processing and Mathemematical modelling
 
-## Description
+### Description
 
 This project is a project carried out by Masters I  students  of the university of Yaounde I for their
 final project presentation on the course INF4178 Software Engineering II
@@ -8,46 +8,46 @@ final project presentation on the course INF4178 Software Engineering II
 Core to this project is the Application of AHP and Mathematical Modelling to realizing a time table scheduling
 platform for the University of Yaounde I.
 
-## Features of Application
+### Features of Application
 
-# Application to gets preferences of teachers
+#### Application to gets preferences of teachers
 - Login
 - Sign in
 - Save a review for a preference
 - Modify a saved review for a preference
 
   
-# Application to gets preferences of students
+####  Application to gets preferences of students
 - Login
 - Sign in
 - Save a review for a preference
 - Modify a saved review for a preference
 
-# Application to gets preferences of administration
+####  Application to gets preferences of administration
 - Login
 - Sign in
 - Save a review for a preference
 - Modify a saved review for a preference
 
 
-# Application to gets preferences of administration
+####  Application to gets preferences of administration
 - Login
 - Sign in
 - Save a review for a preference
 - Modify a saved review for a preference
 
-# Application to gets all the preferences and have an holistic view of the datas
+####  Application to gets all the preferences and have an holistic view of the datas
 - Login
 - Sign in
 - List all the data's in our databse
 
-# Application of generating timetables
+####  Application of generating timetables
 - Login
 - Sign in
 - Create a timetable
 - Export the created timetable
 
-## Technologies used
+### Technologies used
 
 - BACKEND : Spring Boot
 - FRONTEND : ANGULAR, REACT 
@@ -57,7 +57,7 @@ platform for the University of Yaounde I.
 - DESIGN : Drawio
 - OTHERS : GOOGLE OR-TOOLS
 
-## Team Members
+### Team Members
 
 ```bash
 Name: Tekoh Palma
