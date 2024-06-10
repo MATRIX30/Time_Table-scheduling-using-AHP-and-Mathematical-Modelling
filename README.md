@@ -10,11 +10,52 @@ platform for the University of Yaounde I.
 
 ## Features of Application
 
-- `To do`
+# Application to gets preferences of teachers
+- Login
+- Sign in
+- Save a review for a preference
+- Modify a saved review for a preference
+
+  
+# Application to gets preferences of students
+- Login
+- Sign in
+- Save a review for a preference
+- Modify a saved review for a preference
+
+# Application to gets preferences of administration
+- Login
+- Sign in
+- Save a review for a preference
+- Modify a saved review for a preference
+
+
+# Application to gets preferences of administration
+- Login
+- Sign in
+- Save a review for a preference
+- Modify a saved review for a preference
+
+# Application to gets all the preferences and have an holistic view of the datas
+- Login
+- Sign in
+- List all the data's in our databse
+
+# Application of generating timetables
+- Login
+- Sign in
+- Create a timetable
+- Export the created timetable
 
 ## Technologies used
 
-- `To do`
+- BACKEND : Spring Boot
+- FRONTEND : ANGULAR, REACT 
+- STYLE : TAILWINDCSS
+- MOBILE : FLUTTER
+- DATABASE : MONGODB
+- DESIGN : Drawio
+- OTHERS : GOOGLE OR-TOOLS
 
 ## Team Members
 
@@ -22,6 +63,11 @@ platform for the University of Yaounde I.
 Name: Tekoh Palma
 Email: <Tekohpalma@gmail.com>
 Role: Course Teaching Assistant
+```
+```
+Name: ATEZONG YMELE CARICK APPOLINAIRE
+Email: Carick.atezong@facsciences-uy1.cm
+Role: Scrum master
 ```
 
 ```
