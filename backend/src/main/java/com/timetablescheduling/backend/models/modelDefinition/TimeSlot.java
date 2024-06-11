@@ -1,0 +1,30 @@
+package com.timetablescheduling.backend.models.modelDefinition;
+
+import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
+@Document
+public class TimeSlot {
+    private int id;
+    private String time;
+
+    public TimeSlot(String time) {
+        this.time = time;
+    }
+
+
+    public static List<TimeSlot> createTimeSlots() {
+        List<TimeSlot> timeSlots = new ArrayList<>();
+        int hour = 7;
+        while (hour < 21) {
+            timeSlots.add(new TimeSlot(String.format("%02d:00 - %02d:00", hour, hour + 3)));
+            hour += 3;
+        }
+        return timeSlots;
+    }
+
+}
