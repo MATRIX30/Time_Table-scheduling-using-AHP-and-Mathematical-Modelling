@@ -1,19 +1,27 @@
-package com.timetablescheduling.backend.models.modelDefinition;
+package com.timetablescheduling.backend.models.mainModels;
 
+import com.timetablescheduling.backend.models.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Document
-public class TimeSlot {
-    private int id;
+public class TimeSlot extends BaseEntity {
+    @Indexed(unique = true)
     private String time;
 
     public TimeSlot(String time) {
         this.time = time;
+    }
+
+    public TimeSlot() {
+
     }
 
 

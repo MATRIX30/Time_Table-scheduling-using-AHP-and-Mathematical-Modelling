@@ -1,12 +1,11 @@
 package com.timetablescheduling.backend.models.collected_data;
 
-import com.timetablescheduling.backend.models.modelDefinition.*;
+import com.timetablescheduling.backend.models.mainModels.*;
 import lombok.Data;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -28,78 +27,77 @@ public class DataParsing {
         }
         return false;
    }
+   private Filiere returnExistingFiliere(String nomFiliere){
+       for (Filiere existingFiliere : existingFilieres) {
+           if (existingFiliere.getName().equals(nomFiliere)) {
+               return existingFiliere;
+           }
+       }
+       return null ;
+   }
 
-    private boolean levelExist(String nomFiliere) {
-        for (Filiere existingFiliere : existingFilieres) {
-            if (existingFiliere.getName().equals(nomFiliere)) {
-                return true;
+    private StudentLevel returnExistingLevel(String nomLevel) {
+        for (StudentLevel existingLevel : existingLevel) {
+            if (existingLevel.getName().equals(nomLevel)) {
+                return existingLevel;
             }
         }
-        return false;
+        return null;
     }
 
-    private boolean semesterExist(String nomFiliere) {
-        for (Filiere existingFiliere : existingFilieres) {
-            if (existingFiliere.getName().equals(nomFiliere)) {
-                return true;
+    private Semestre returnExistingSemester(String nomSemestre) {
+        for (Semestre existingSemester : existingSemestre) {
+            if (existingSemester.getName().equals(nomSemestre)) {
+                return existingSemester;
             }
         }
-        return false;
+        return null;
     }
 
 
-    public RoomAndFiliereParsingResult getRoomAndFiliere() {
+    public List<Room> getRoom() {
         List<Room> rooms = new ArrayList<>();
         JSONObject filiereObj = dataRoom.getJSONObject("facultes").getJSONObject("sciences").getJSONObject("filiere");
-
         for (String nomFiliere : filiereObj.keySet()) {
-            Filiere filiere = new Filiere(nomFiliere);
-            if (filiereExists(nomFiliere)) {
-                existingFilieres.add(filiere);
-            }
+            Filiere filiere = returnExistingFiliere(nomFiliere);
             JSONArray roomArray = filiereObj.getJSONArray(nomFiliere);
-
             for (int i = 0; i < roomArray.length(); i++) {
                 JSONObject salleObj = roomArray.getJSONObject(i);
                 if (!Objects.equals(salleObj.getString("capacite"), "") && !Objects.equals(salleObj.getString("num"), "")  && !Objects.equals(salleObj.getString("batiment"), "")) {
                     Room room = new Room(Integer.parseInt(salleObj.getString("capacite")), salleObj.getString("num"), salleObj.getString("batiment"));
+                    room.setFiliere(filiere);
                     rooms.add(room);
-                    filiere.setRooms(rooms);
                 }
             }
         }
 
-        return RoomAndFiliereParsingResult.builder()
-                .filieres(existingFilieres)
-                .rooms(rooms)
-                .build();
+        return rooms;
     }
 
-    public LevelLecturerAndCoursesResultParsing getLevelLecturerAndCourses() {
-        List<Lecturer> lecturers = new ArrayList<>();
-        List<Course> courses = new ArrayList<>();
-
+    public ParsingResult getLevelLecturerAndCourses() {
+        List<Lecturer> lecturersToReturn = new ArrayList<>();
+        List<Course> coursesToReturn = new ArrayList<>();
+        List<Room> roomsToReturn = getRoom();
+        // Récupération of filiere object
         JSONObject filiereObj = dataCourse.getJSONObject("facultes").getJSONObject("sciences").getJSONObject("filiere");
 
         for (String nomFiliere : filiereObj.keySet()) {
-            Filiere filiere = new Filiere(nomFiliere);
-            if (filiereExists(nomFiliere)) {
-                existingFilieres.add(filiere);
-            }
+            Filiere filiere = returnExistingFiliere(nomFiliere);
+            // Récupération of levels objects
             JSONObject niveauObj = filiereObj.getJSONObject(nomFiliere).getJSONObject("niveau");
+            // In the filieres objects we take the levels objects to work on it
             for (String niveau : niveauObj.keySet()) {
                 JSONObject semestreObj = niveauObj.getJSONObject(niveau);
-                StudentLevel level = new StudentLevel(niveau);
-                if (levelExist(niveau)) {
-                    existingLevel.add(level);
-                }
+                // Recuperation of existing object level
+                StudentLevel level = returnExistingLevel(niveau);
+                // In the levels objects we take semesters objects to work on it
                 for (String semestre : semestreObj.keySet()) {
+                    // Recuperation of semester object
+                    Semestre semestre1 = returnExistingSemester(semestre);
+                    // In the semesters objects we take subjects objects to work on it
                     JSONArray subjectsArray = semestreObj.getJSONObject(semestre).getJSONArray("subjects");
-                    Semestre semestre1 = new Semestre(semestre);
-                    if (semesterExist(semestre)) {
-                        existingSemestre.add(semestre1);
-                    }
                     for (int i = 0; i < subjectsArray.length(); i++) {
+                        // Logic for add a course
                         String name, category;
                         int credit;
                         JSONArray lecturersArray = new JSONArray(), assistantLecturersArray = new JSONArray();
@@ -127,20 +125,36 @@ public class DataParsing {
 
                         String lecturerName = (getFullName(JSONArrayToArray(lecturersArray))).isEmpty() ? "Lecturer - " + code : getFullName(JSONArrayToArray(lecturersArray));
                         String assistantName = (getFullName(JSONArrayToArray(assistantLecturersArray))).isEmpty() ? "AssistantLecturer -" + code : getFullName(JSONArrayToArray(assistantLecturersArray));
-                        lecturers.add(new Lecturer(lecturerName, false));
-                        lecturers.add(new Lecturer(assistantName, true));
+                        Lecturer lecturer = new Lecturer(lecturerName, false);
+                        Lecturer assistant = new Lecturer(assistantName, true);
                         Course course = new Course(name, code, category);
                         course.setCredit(credit);
-                        course.setLecturer(lecturers);
-                        courses.add(course);
+                        // add the course for lecturer
+                        lecturer.setCourse(course);
+                        lecturer.setCourse(course);
+
+                        // add the filiere, the level and the semester for the course
+                        course.setLevel(level);
+                        course.setFiliere(filiere);
+                        course.setSemestre(semestre1);
+
+                        // setReturn value
+                        lecturersToReturn.add(lecturer);
+                        lecturersToReturn.add(assistant);
+                        coursesToReturn.add(course);
                     }
                 }
             }
         }
 
-        return LevelLecturerAndCoursesResultParsing.builder()
-                .lecturers(lecturers)
-                .courses(courses)
+
+        return ParsingResult.builder()
+                .lecturers(lecturersToReturn)
+                .courses(coursesToReturn)
+                .semestres(existingSemestre)
+                .filieres(existingFilieres)
+                .studentLevels(existingLevel)
+                .rooms(roomsToReturn)
                 .build();
     }
 

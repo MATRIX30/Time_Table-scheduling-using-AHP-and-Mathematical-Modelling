@@ -1,6 +1,8 @@
-package com.timetablescheduling.backend.models.modelDefinition;
+package com.timetablescheduling.backend.models.mainModels;
 
+import com.timetablescheduling.backend.models.BaseEntity;
 import lombok.Data;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
@@ -8,8 +10,8 @@ import java.util.List;
 
 @Data
 @Document
-public class Semestre {
-    private int id;
+public class Semestre extends BaseEntity {
+    @Indexed(unique = true)
     private String name;
 
     public Semestre(String name) {
@@ -18,8 +20,8 @@ public class Semestre {
 
     public static List<Semestre> createSemestre() {
         List<Semestre> semestres = new ArrayList<>();
-        semestres.add(new Semestre("S1"));
-        semestres.add(new Semestre("S2"));
+        semestres.add(new Semestre("s1"));
+        semestres.add(new Semestre("s2"));
         return semestres;
     }
 }

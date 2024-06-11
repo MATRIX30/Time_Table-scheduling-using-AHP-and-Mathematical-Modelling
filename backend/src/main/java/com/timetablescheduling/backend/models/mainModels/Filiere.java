@@ -1,25 +1,24 @@
-package com.timetablescheduling.backend.models.modelDefinition;
+package com.timetablescheduling.backend.models.mainModels;
 
+import com.timetablescheduling.backend.models.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Document
-public class Filiere {
-    private int id;
+public class Filiere extends BaseEntity {
+    @Indexed(unique = true)
     private String name;
-    private List<Room> rooms;
-    private List<Course> courses;
     public Filiere(String name){
         this.name = name;
     }
 
-    public Filiere() {
-
-    }
 
     public static List<Filiere> createFiliere() {
         List<Filiere> filieres = new ArrayList<>();
@@ -28,6 +27,7 @@ public class Filiere {
         filieres.add(new Filiere("Biosciences"));
         filieres.add(new Filiere("Giosciences"));
         filieres.add(new Filiere("Physique"));
+        filieres.add(new Filiere("Informatique"));
         return filieres;
     }
 

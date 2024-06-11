@@ -1,6 +1,6 @@
 package com.timetablescheduling.backend.models.collected_data;
 
-import com.timetablescheduling.backend.models.modelDefinition.*;
+import com.timetablescheduling.backend.models.mainModels.*;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -19,44 +19,48 @@ public class Main {
         dataParsing.setDataRoom(dataRoom);
         dataParsing.setDataCourse(dataCourse);
 
-        RoomAndFiliereParsingResult roomAndFiliereResult = dataParsing.getRoomAndFiliere();
-        LevelLecturerAndCoursesResultParsing levelLecturerAndCoursesResult = dataParsing.getLevelLecturerAndCourses();
+        ParsingResult parsingResult = dataParsing.getLevelLecturerAndCourses();
 
         System.out.println("\n================ Room ================\n");
-        for (Room room : roomAndFiliereResult.getRooms()) {
-            System.out.println(room.getName());
+        for (Room room : parsingResult.getRooms()) {
+            System.out.println(room);
         }
 
 
-        System.out.println("\n================ Semester ================\n");
-        for (Filiere filiere : Filiere.createFiliere()) {
-            System.out.println(filiere.getName());
+        System.out.println("\n================ Filière ================\n");
+        for (Filiere filiere : parsingResult.getFilieres()) {
+            System.out.println(filiere);
+        }
+
+        System.out.println("\n================ Level ================\n");
+        for (StudentLevel level : parsingResult.getStudentLevels()) {
+            System.out.println(level);
         }
 
         System.out.println("\n================ Semester ================\n");
-        for (Semestre semestre : Semestre.createSemestre()) {
-            System.out.println(semestre.getName());
+        for (Semestre semestre : parsingResult.getSemestres()) {
+            System.out.println(semestre);
         }
 
         System.out.println("\n================ Day ================\n");
         for (Day day : Day.createWeekDays()) {
-            System.out.println(day.getName());
+            System.out.println(day);
         }
 
         System.out.println("\n================ Timeslots ================\n");
         for (TimeSlot timeSlot : TimeSlot.createTimeSlots()) {
-            System.out.println(timeSlot.getTime());
+            System.out.println(timeSlot);
         }
 
         System.out.println("\n================ Lecturer ================\n");
 
-        for (Lecturer lecturer : levelLecturerAndCoursesResult.getLecturers()){
-            System.out.println(lecturer.getName());
+        for (Lecturer lecturer : parsingResult.getLecturers()){
+            System.out.println(lecturer);
         }
 
         System.out.println("\n================ Courses ================\n");
-        for (Course course: levelLecturerAndCoursesResult.getCourses()) {
-            System.out.println(course.getName());
+        for (Course course: parsingResult.getCourses()) {
+            System.out.println(course);
         }
 
     }
