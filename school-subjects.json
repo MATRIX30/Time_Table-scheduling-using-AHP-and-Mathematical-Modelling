@@ -664,7 +664,7 @@
                   "credit": 3,
                   "category": "COMPLEMENTAIRE",
                   "Course Lecturer": ["",""],
-                    "Assitant lecturer": ["",""]
+                  "Assitant lecturer": ["",""]
                 }
               ],
               "s2": [
@@ -918,10 +918,10 @@
               "s1": [
                 {
                   "name": "TECHNIQUES MATHÉMATIQUES",
-                  "code": "MAT4317",
+                  "code": "MAT4097",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["BOUETOU",""],
                   "Assitant lecturer": ["",""]
                 },
                 {
@@ -929,15 +929,15 @@
                   "code": "PHY4017",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["SAIDOU",""],
                   "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "MÉTHODES NUMÉRIQUES",
-                  "code": "PHY4027",
+                  "code": "PHY4047",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["BEN","BOLIE"],
                   "Assitant lecturer": ["",""]
                 },
                 {
@@ -945,16 +945,16 @@
                   "code": "PHY4037",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["NDOP","JOSEPH"],
                   "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "BASES PHYSIQUES DE LA CHIMIE ET TECHNIQUES D'INVESTIGATION DES BIOMOLÉCULE",
-                  "code": "PHY4057",
+                  "code": "PHY4027",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["WOAFO","PAUL"],
+                  "Assitant lecturer": ["MVOGO","ALAIN"]
                 }
               ],
               "s2": [
@@ -963,15 +963,15 @@
                   "code": "PHY4258",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["OTTOU",""],
                   "Assitant lecturer": ["",""]
                 },
                 {
                   "name": "NFORMATION ET CALCUL QUANTIQUES",
-                  "code": "PHY4268",
+                  "code": "PHY4468",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["SIMO",""],
                   "Assitant lecturer": ["",""]
                 },
                 {
@@ -979,15 +979,15 @@
                   "code": "PHY4318",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
-                  "Assitant lecturer": ["",""]
+                  "Course Lecturer": ["EKOBENA","FOUDA HENRI PAUL"],
+                  "Assitant lecturer": ["TEUMA",""]
                 },
                 {
                   "name": "PHYSIQUE DU VIVANT ET PHYSIOLOGIE MÉDICALE",
                   "code": "PHY4328",
                   "credit": 6,
                   "category": "Fundamental",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["MVOGO",""],
                   "Assitant lecturer": ["",""]
                 },
                 {
@@ -995,7 +995,7 @@
                   "code": "PHY4308",
                   "credit": 6,
                   "category": "COMPLEMENTAIRE",
-                  "Course Lecturer": ["",""],
+                  "Course Lecturer": ["MVOGO",""],
                     "Assitant lecturer": ["",""]
                 }
               ]
