@@ -1,8 +1,6 @@
 package com.timetablescheduling.backend.service.mainService;
 
-import com.timetablescheduling.backend.models.mainModels.Lecturer;
 import com.timetablescheduling.backend.models.mainModels.Semestre;
-import com.timetablescheduling.backend.repository.mainRepository.LecturerRepository;
 import com.timetablescheduling.backend.repository.mainRepository.SemestreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

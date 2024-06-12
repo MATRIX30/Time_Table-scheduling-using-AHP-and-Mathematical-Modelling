@@ -41,4 +41,9 @@ public class RoomController {
         return  ResponseEntity.ok(timeSlot);
     }
 
+    @GetMapping("/get_filiere/{filiere}")
+    public ResponseEntity<?> getFiliere(@PathVariable String filiere) {
+        return ResponseEntity.ok(service.getByFiliere(filiere));
+    }
+
 }

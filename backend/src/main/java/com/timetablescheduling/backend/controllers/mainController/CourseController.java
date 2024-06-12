@@ -19,12 +19,8 @@ public class CourseController {
     private CourseService service;
 
     @PostMapping("/add")
-    public ResponseEntity<?> create() {
-//        List<Course> obj = Course.createTimeSlots();
-//        for (Course element : obj) {
-//            service.createCourse(element);
-//        }
-        return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
+    public ResponseEntity<?> create(@RequestBody Course course) {
+        return service.createCourse(course);
     }
 
     @GetMapping("/get_all")
@@ -38,5 +34,39 @@ public class CourseController {
         Optional<Course> timeSlot = service.getCourse(id);
         if (timeSlot.isEmpty()) return CustomResponseEntity.fromKey("RESSOURCE_INTROUVABLE", HttpStatus.OK);
         return  ResponseEntity.ok(timeSlot);
+    }
+    @GetMapping("/get_level/{level}")
+    public Iterable<Course> getCourseByLevel(@PathVariable String level) {
+        return  service.getCourseByLevel(level);
+    }
+
+    @GetMapping("/get_filiere/{filiere}")
+    public Iterable<Course> getCourseByFiliere(@PathVariable String filiere) {
+        return service.getCourseByFiliere(filiere);
+    }
+
+    @GetMapping("/get_semester/{semester}")
+    public Iterable<Course> getCourseBySemester( @PathVariable String semester) {
+        return service.getCourseBySemester(semester);
+    }
+
+    @GetMapping("/get_semester_filiere/{semester}/{filiere}")
+    public Iterable<Course> getCourseByFiliereAndSemester(@PathVariable String filiere, @PathVariable String semester) {
+        return service.getCourseByFiliereAndSemester(filiere, semester);
+    }
+
+    @GetMapping("/get_semester_level/{semester}/{level}")
+    public Iterable<Course> getCourseBySemesterAndLevel(@PathVariable String semester, @PathVariable String level) {
+        return service.getCourseBySemesterAndLevel(semester, level);
+    }
+
+    @GetMapping("/get_filiere_level/{filiere}/{level}")
+    public Iterable<Course> getCourseByFiliereAndLevel(@PathVariable String filiere, @PathVariable String level) {
+        return service.getCourseByFiliereAndLevel(filiere, level);
+    }
+
+    @GetMapping("/get_semester_filiere_level/{semester}/{filiere}/{level}")
+    public Iterable<Course> getCourseBySemesterFiliereAndLevel(@PathVariable String semester, @PathVariable String filiere, @PathVariable String level) {
+        return service.getCourseBySemesterFiliereAndLevel(semester, filiere, level);
     }
 }

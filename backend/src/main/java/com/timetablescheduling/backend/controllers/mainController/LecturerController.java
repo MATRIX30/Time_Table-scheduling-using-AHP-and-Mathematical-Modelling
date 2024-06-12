@@ -18,13 +18,12 @@ public class LecturerController {
 
     @Autowired
     private LecturerService service;
+    @Autowired
+    private LecturerService lecturerService;
 
     @PostMapping("/add")
-    public ResponseEntity<?> create() {
-//        List<Lecturer> obj =
-//        for (TimeSlot element : obj) {
-//            service.createTimeSlot(element);
-//        }
+    public ResponseEntity<?> create(@RequestBody Lecturer lecturer) {
+        lecturerService.create(lecturer);
         return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
     }
 
@@ -39,5 +38,11 @@ public class LecturerController {
         Optional<Lecturer> timeSlot = service.getTimeSlot(id);
         if (timeSlot.isEmpty()) return CustomResponseEntity.fromKey("RESSOURCE_INTROUVABLE", HttpStatus.OK);
         return  ResponseEntity.ok(timeSlot);
+    }
+
+    @GetMapping("/get_course/{course}")
+    public Iterable<Lecturer> getByCourse(@PathVariable String course) {
+        System.out.println(course);
+        return service.getByCourse(course);
     }
 }

@@ -22,13 +22,4 @@ public class ApplicationConfig{
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .authorizeRequests(authorizeRequests ->
-                        authorizeRequests.anyRequest().permitAll()
-                )
-                .csrf().disable();
-        return http.build();
-    }
 }

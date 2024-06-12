@@ -1,5 +1,6 @@
 package com.timetablescheduling.backend.service.mainService;
 
+import com.timetablescheduling.backend.models.mainModels.Course;
 import com.timetablescheduling.backend.models.mainModels.Filiere;
 import com.timetablescheduling.backend.models.mainModels.Lecturer;
 import com.timetablescheduling.backend.repository.mainRepository.FiliereRepository;
@@ -29,5 +30,9 @@ public class LecturerService {
 
     public Optional<Lecturer> getTimeSlot(int id) {
         return repository.findById(id);
+    }
+
+    public Iterable<Lecturer> getByCourse(String course) {
+        return repository.findByCourse(course);
     }
 }

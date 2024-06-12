@@ -20,15 +20,16 @@ public class RoomService {
             repository.save(obj);
         }
     }
-
     public List<Room> getAll() {
         return repository.findAll();
     }
     public Optional<Room> getByName(String name){
         return repository.findByName(name);
     }
-
     public Optional<Room> getRoom(int id) {
         return repository.findById(id);
+    }
+    public Iterable<Room> getByFiliere(String filiere) {
+        return repository.findByFiliere(filiere);
     }
 }
