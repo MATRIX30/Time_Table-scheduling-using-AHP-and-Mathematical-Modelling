@@ -1,0 +1,34 @@
+{
+  "USER_ALREADY_EXISTS": {
+    "en": "This user already exists",
+    "fr": "Cette utilisateur existe déjà"
+  },
+  "INVALID_CREDENTIALS": {
+    "en": "Incorrect login or password",
+    "fr": "Identifiant ou mot de passe incorrect"
+  },
+  "RESSOURCE_INTROUVABLE": {
+    "en": "The requested resource cannot be found",
+    "fr": "La ressource demandée est introuvable"
+  },
+  "TYPE_IMAGE_NON_PRIS_EN_CHARGE": {
+    "en": "File type not supported. We only accept JPEG, JPG or PNG images",
+    "fr": "Type du fichier non pris en charge. Nous n'acceptions que les images de type JPEG, JPG ou alors PNG"
+  },
+  "TYPE_CV_NON_PRIS_EN_CHARGE": {
+    "en": "File type not supported. We only accept a PDF version of your CV",
+    "fr": "Type du fichier non pris en charge. Nous n'acceptons qu'une version PDF de votre CV"
+  },
+  "ERREUR_TRAITEMENT_REQUETE": {
+    "en": "Error while processing request",
+    "fr": "Erreur lors du traitement de la requête"
+  },
+  "DELETE_SUCCESSFULLY": {
+    "en": "Deletion successfully completed",
+    "fr": "Suppression effectuée avec succès"
+  },
+  "TRAITEMENT_SUCCESS": {
+    "en": "Request successfully completed",
+    "fr": "Requête effectuée avec succès"
+  }
+}
