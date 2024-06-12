@@ -11,13 +11,15 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FormEvent } from "react";
+import { createPreference } from "@/actions";
+import { IPreferences } from "@/models/Prefernces";
 
 export default function PreferencesPage() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData);
-    const preference = {
+    const preference: Partial<IPreferences> = {
       hoursWeekend: parseInt(data.hoursWeekend as string, 10),
       equilibreProgrammation: parseInt(
         data.equilibreProgrammation as string,
@@ -30,6 +32,10 @@ export default function PreferencesPage() {
       userId: parseInt(data.userId as string, 10),
     };
 
+    console.log({ preference });
+
+    const pref = await createPreference(JSON.parse(JSON.stringify(preference)));
+    console.log({ pref });
   };
   return (
     <div className="h-screen w-full flex items-center justify-center">
