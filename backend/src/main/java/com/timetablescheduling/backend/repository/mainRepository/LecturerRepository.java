@@ -10,4 +10,5 @@ import java.util.Optional;
 @Repository
 public interface LecturerRepository extends MongoRepository<Lecturer, Integer> {
     Optional<Lecturer> findByName(String name);
+    boolean existsByName(String name);
 }

@@ -16,8 +16,7 @@ public class RoomService {
     private RoomRepository repository;
 
     public void create(Room obj) {
-        Optional<Room> existing = repository.findByName(obj.getName());
-        if (existing.isEmpty()) {
+        if (!repository.existsByName(obj.getName())) {
             repository.save(obj);
         }
     }

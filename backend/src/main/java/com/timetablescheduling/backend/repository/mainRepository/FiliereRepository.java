@@ -10,4 +10,5 @@ import java.util.Optional;
 @Repository
 public interface FiliereRepository extends MongoRepository<Filiere, Integer> {
     Optional<Filiere> findByName(String name);
+    boolean existsByName(String name);
 }

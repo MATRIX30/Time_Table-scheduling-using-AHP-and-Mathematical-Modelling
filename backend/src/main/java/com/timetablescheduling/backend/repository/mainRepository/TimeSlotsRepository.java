@@ -9,4 +9,5 @@ import java.util.Optional;
 @Repository
 public interface TimeSlotsRepository extends MongoRepository<TimeSlot, Integer> {
     Optional<TimeSlot> findByTime(String time);
+    boolean existsByTime(String name);
 }

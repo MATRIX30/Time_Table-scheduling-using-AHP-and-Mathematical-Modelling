@@ -15,8 +15,7 @@ public class LecturerService {
     private LecturerRepository repository;
 
     public void create(Lecturer obj) {
-        Optional<Lecturer> existing = repository.findByName(obj.getName());
-        if (existing.isEmpty()) {
+        if (!repository.existsByName(obj.getName())) {
             repository.save(obj);
         }
     }

@@ -10,4 +10,5 @@ import java.util.Optional;
 @Repository
 public interface StudentLevelRepository extends MongoRepository<StudentLevel,Integer> {
     Optional<StudentLevel> findByName(String name);
+    boolean existsByName(String name);
 }

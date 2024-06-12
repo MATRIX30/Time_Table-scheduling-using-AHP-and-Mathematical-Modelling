@@ -18,12 +18,9 @@ public class TimeSlotController {
     private TimeslotService service;
 
     @PostMapping("/add")
-    public ResponseEntity<?> create() {
-        List<TimeSlot> obj = TimeSlot.createTimeSlots();
-        for (TimeSlot element : obj) {
-            service.createTimeSlot(element);
-        }
-        return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
+    public ResponseEntity<?> create(@RequestBody TimeSlot timeSlot) {
+        TimeSlot _timeslot = service.create(timeSlot);
+        return ResponseEntity.status(HttpStatus.CREATED).body(_timeslot);
     }
 
     @GetMapping("/get_all")

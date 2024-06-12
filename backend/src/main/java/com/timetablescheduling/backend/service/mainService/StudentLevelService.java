@@ -7,6 +7,7 @@ import com.timetablescheduling.backend.repository.mainRepository.StudentLevelRep
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.swing.plaf.PanelUI;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,10 +16,16 @@ public class StudentLevelService {
     @Autowired
     private StudentLevelRepository repository;
 
-    public void create(StudentLevel obj) {
-        Optional<StudentLevel> existing = repository.findByName(obj.getName());
-        if (existing.isEmpty()) {
-            repository.save(obj);
+    public StudentLevel create(StudentLevel obj) {
+        return repository.save(obj);
+    }
+
+    public void createStudentLevel() {
+        List<StudentLevel> studentLevels = StudentLevel.createLevel();
+        for (StudentLevel studentLevel : studentLevels) {
+            if (!repository.existsByName(studentLevel.getName())){
+                repository.save(studentLevel);
+            }
         }
     }
 
@@ -28,7 +35,9 @@ public class StudentLevelService {
     public Optional<StudentLevel> getByName(String name){
         return repository.findByName(name);
     }
-
+    public boolean isPresent(String name) {
+        return repository.existsByName(name);
+    }
     public Optional<StudentLevel> getStudentLevel(int id) {
         return repository.findById(id);
     }

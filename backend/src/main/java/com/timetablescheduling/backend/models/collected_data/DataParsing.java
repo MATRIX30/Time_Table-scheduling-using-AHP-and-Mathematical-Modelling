@@ -131,7 +131,7 @@ public class DataParsing {
                         course.setCredit(credit);
                         // add the course for lecturer
                         lecturer.setCourse(course);
-                        lecturer.setCourse(course);
+                        assistant.setCourse(course);
 
                         // add the filiere, the level and the semester for the course
                         course.setLevel(level);
@@ -151,9 +151,6 @@ public class DataParsing {
         return ParsingResult.builder()
                 .lecturers(lecturersToReturn)
                 .courses(coursesToReturn)
-                .semestres(existingSemestre)
-                .filieres(existingFilieres)
-                .studentLevels(existingLevel)
                 .rooms(roomsToReturn)
                 .build();
     }

@@ -14,10 +14,16 @@ public class TimeslotService {
     @Autowired
     private TimeSlotsRepository repository;
 
-    public void createTimeSlot(TimeSlot timeSlot) {
-        Optional<TimeSlot> existingTimeSlot = repository.findByTime(timeSlot.getTime());
-        if (existingTimeSlot.isEmpty()) {
-            repository.save(timeSlot);
+    public TimeSlot create(TimeSlot timeSlot) {
+        return repository.save(timeSlot);
+    }
+
+    public void createTimeSlot() {
+        List<TimeSlot> obj = TimeSlot.createTimeSlots();
+        for (TimeSlot element : obj) {
+            if (!repository.existsByTime(element.getTime())) {
+                repository.save(element);
+            }
         }
     }
 

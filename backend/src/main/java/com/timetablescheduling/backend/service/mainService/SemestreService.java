@@ -15,10 +15,16 @@ public class SemestreService {
     @Autowired
     private SemestreRepository repository;
 
-    public void create(Semestre obj) {
-        Optional<Semestre> existing = repository.findByName(obj.getName());
-        if (existing.isEmpty()) {
-            repository.save(obj);
+    public Semestre create(Semestre obj) {
+        return repository.save(obj);
+    }
+
+    public void createSemestre(){
+        List<Semestre> semestre = Semestre.createSemestre();
+        for (Semestre s : semestre) {
+            if (!repository.existsByName(s.getName())){
+                repository.save(s);
+            }
         }
     }
 
@@ -28,7 +34,9 @@ public class SemestreService {
     public Optional<Semestre> getByName(String name){
         return repository.findByName(name);
     }
-
+    public boolean isPresent(String name) {
+        return repository.existsByName(name);
+    }
     public Optional<Semestre> getSemestre(int id) {
         return repository.findById(id);
     }

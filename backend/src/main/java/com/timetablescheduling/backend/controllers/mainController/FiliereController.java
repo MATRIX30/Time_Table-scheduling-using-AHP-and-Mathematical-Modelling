@@ -20,12 +20,9 @@ public class FiliereController {
     private FiliereService service;
 
     @PostMapping("/add")
-    public ResponseEntity<?> create() {
-        List<Filiere> obj = Filiere.createFiliere();
-        for (Filiere element : obj) {
-            service.create(element);
-        }
-        return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
+    public ResponseEntity<?> create(@RequestBody Filiere filiere) {
+        Filiere _filiere = service.create(filiere);
+        return ResponseEntity.status(HttpStatus.CREATED).body(_filiere);
     }
 
     @GetMapping("/get_all")

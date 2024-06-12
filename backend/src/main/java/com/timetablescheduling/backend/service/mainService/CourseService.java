@@ -15,8 +15,7 @@ public class CourseService {
     private CourseRepository courseRepository;
 
     public void createCourse(Course course) {
-        Optional<Course> existingCourse = courseRepository.findByName(course.getName());
-        if (existingCourse.isEmpty()) {
+        if (!courseRepository.existsByName(course.getName())) {
             courseRepository.save(course);
         }
     }
@@ -26,6 +25,9 @@ public class CourseService {
     }
     public Optional<Course> getByName(String name){
         return courseRepository.findByName(name);
+    }
+    public boolean isPresent(String name) {
+        return courseRepository.existsByName(name);
     }
 
     public Optional<Course> getCourse(int id) {

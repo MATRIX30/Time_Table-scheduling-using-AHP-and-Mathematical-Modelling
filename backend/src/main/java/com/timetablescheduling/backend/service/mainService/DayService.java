@@ -14,10 +14,16 @@ public class DayService {
     @Autowired
     private DayRepository repository;
 
-    public void create(Day day) {
-        Optional<Day> existingDay = repository.findByName(day.getName());
-        if (existingDay.isEmpty()) {
-            repository.save(day);
+    public Day create(Day day) {
+        return repository.save(day);
+    }
+
+    public void createDay(){
+        List<Day> days = Day.createWeekDays();
+        for (Day day : days) {
+            if(!repository.existsByName(day.getName())){
+                repository.save(day);
+            }
         }
     }
 

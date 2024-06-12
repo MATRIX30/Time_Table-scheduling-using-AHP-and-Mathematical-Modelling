@@ -19,12 +19,9 @@ public class DayController {
     private DayService service;
 
     @PostMapping("/add")
-    public ResponseEntity<?> create() {
-        List<Day> obj = Day.createWeekDays();
-        for (Day element : obj) {
-            service.create(element);
-        }
-        return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
+    public ResponseEntity<?> create(@RequestBody Day day) {
+        Day _day = service.create(day);
+        return ResponseEntity.status(HttpStatus.CREATED).body(_day);
     }
 
     @GetMapping("/get_all")

@@ -20,12 +20,9 @@ public class StudentLevelController {
 
 
     @PostMapping("/add")
-    public ResponseEntity<?> create() {
-//        List<StudentLevel> obj = StudentLevel.();
-//        for (StudentLevel element : obj) {
-//            service.create(element);
-//        }
-        return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
+    public ResponseEntity<?> create(@RequestBody StudentLevel studentLevel) {
+        StudentLevel _studentLevel = service.create(studentLevel);
+        return ResponseEntity.status(HttpStatus.CREATED).body(_studentLevel);
     }
 
     @GetMapping("/get_all")

@@ -20,12 +20,9 @@ public class SemestreController {
     private SemestreService service;
 
     @PostMapping("/add")
-    public ResponseEntity<?> create() {
-        List<Semestre> obj = Semestre.createSemestre();
-        for (Semestre element : obj) {
-            service.create(element);
-        }
-        return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
+    public ResponseEntity<?> create(@RequestBody Semestre semestre) {
+        Semestre _semestre  = service.create(semestre);
+        return ResponseEntity.status(HttpStatus.CREATED).body(_semestre);
     }
 
     @GetMapping("/get_all")

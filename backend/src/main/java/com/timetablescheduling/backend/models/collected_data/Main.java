@@ -28,17 +28,17 @@ public class Main {
 
 
         System.out.println("\n================ Filière ================\n");
-        for (Filiere filiere : parsingResult.getFilieres()) {
+        for (Filiere filiere : Filiere.createFiliere()) {
             System.out.println(filiere);
         }
 
         System.out.println("\n================ Level ================\n");
-        for (StudentLevel level : parsingResult.getStudentLevels()) {
+        for (StudentLevel level : StudentLevel.createLevel()) {
             System.out.println(level);
         }
 
         System.out.println("\n================ Semester ================\n");
-        for (Semestre semestre : parsingResult.getSemestres()) {
+        for (Semestre semestre : Semestre.createSemestre()) {
             System.out.println(semestre);
         }
 

@@ -9,10 +9,7 @@ import java.util.List;
 @Data
 @Builder
 public class ParsingResult {
-    private List<StudentLevel> studentLevels;
     private List<Course> courses;
-    private List<Semestre> semestres;
     private List<Lecturer> lecturers;
-    private List<Filiere> filieres;
     private List<Room> rooms;
 }

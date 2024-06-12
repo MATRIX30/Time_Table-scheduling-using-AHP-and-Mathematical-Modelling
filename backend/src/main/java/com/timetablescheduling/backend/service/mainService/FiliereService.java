@@ -14,10 +14,16 @@ public class FiliereService {
     @Autowired
     private FiliereRepository repository;
 
-    public void create(Filiere filiere) {
-        Optional<Filiere> existing = repository.findByName(filiere.getName());
-        if (existing.isEmpty()) {
-            repository.save(filiere);
+    public Filiere create(Filiere filiere) {
+        return repository.save(filiere);
+    }
+
+    public void createFiliere() {
+        List<Filiere> filieres = Filiere.createFiliere();
+        for (Filiere filiere : filieres) {
+            if (!repository.existsByName(filiere.getName())) {
+                repository.save(filiere);
+            }
         }
     }
 
@@ -26,6 +32,9 @@ public class FiliereService {
     }
     public Optional<Filiere> getByName(String name){
         return repository.findByName(name);
+    }
+    public boolean isPresent(String name) {
+        return repository.existsByName(name);
     }
 
     public Optional<Filiere> getFiliere(int id) {

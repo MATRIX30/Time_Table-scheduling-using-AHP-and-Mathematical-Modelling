@@ -10,4 +10,5 @@ import java.util.Optional;
 @Repository
 public interface DayRepository extends MongoRepository<Day, Integer> {
     Optional<Day> findByName(String name);
+    boolean existsByName(String name);
 }
