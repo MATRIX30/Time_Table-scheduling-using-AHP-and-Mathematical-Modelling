@@ -11,8 +11,6 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FormEvent } from "react";
-import { PreferenceModel } from "@/model";
-// import { createPreference, Preference } from "@/actions";
 
 export default function PreferencesPage() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -31,11 +29,7 @@ export default function PreferencesPage() {
       ),
       userId: parseInt(data.userId as string, 10),
     };
-    // await createPreference(preference).then((data) => {
-    //   console.log("Data : ", { data });
-    // });
 
-    PreferenceModel.create(preference).then(console.log);
   };
   return (
     <div className="h-screen w-full flex items-center justify-center">
