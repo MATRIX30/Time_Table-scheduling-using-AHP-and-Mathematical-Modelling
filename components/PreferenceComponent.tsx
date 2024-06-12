@@ -18,7 +18,6 @@ import {
 } from "@/components/ui/form";
 import { createPreference, updatePreference } from "@/actions";
 import { usePreferenceStore } from "@/hooks/use-preferences";
-import { useRouter } from "next/navigation";
 import { Loader } from "lucide-react";
 
 type PreferenceComponentProps = {
