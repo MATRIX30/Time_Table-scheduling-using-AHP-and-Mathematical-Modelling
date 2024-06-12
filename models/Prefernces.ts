@@ -28,10 +28,10 @@ export const preferenceSchema: Schema = new mongoose.Schema({
 
 let Preference: mongoose.Model<IPreferences>;
 
-if (!mongoose.models["Preference"]) {
-  Preference = mongoose.model<IPreferences>("Preference", preferenceSchema);
+if (!mongoose.models["AdminPreference"]) {
+  Preference = mongoose.model<IPreferences>("AdminPreference", preferenceSchema);
 } else {
-  Preference = mongoose.models["Preference"];
+  Preference = mongoose.models["AdminPreference"];
 }
 
 // mongoose.models.Preference || mongoose.model<IPreferences>("Preference", preferenceSchema);

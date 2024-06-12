@@ -19,7 +19,7 @@ export default function PreferencesPage() {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData);
-    const preference: Partial<IPreferences> = {
+    const preference = {
       hoursWeekend: parseInt(data.hoursWeekend as string, 10),
       equilibreProgrammation: parseInt(
         data.equilibreProgrammation as string,
@@ -34,8 +34,15 @@ export default function PreferencesPage() {
 
     console.log({ preference });
 
-    const pref = await createPreference(JSON.parse(JSON.stringify(preference)));
-    console.log({ pref });
+    fetch("/api/preferences", {
+      method: "POST",
+      body: JSON.stringify(preference),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Saved");
+        console.log({ data });
+      });
   };
   return (
     <div className="h-screen w-full flex items-center justify-center">

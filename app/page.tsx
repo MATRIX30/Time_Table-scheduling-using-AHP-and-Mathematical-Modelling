@@ -1,8 +1,13 @@
 "use client";
 import { getPreferences } from "@/actions";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Preferences from "@/components/preferences";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+export const fetchCache = 'force-no-store';
 
 export default function Home() {
   const fetchPreferences = async () => {
@@ -20,8 +25,10 @@ export default function Home() {
   }, []);
   console.log({preferences})
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Link href={"/preferences"}>Preferences</Link>
+    <main className="flex min-h-screen flex-col">
+      <Header/>
+      <Preferences/>
+      <Footer/>
     </main>
   );
 }

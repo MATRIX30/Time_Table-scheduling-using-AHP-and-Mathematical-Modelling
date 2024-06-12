@@ -1,23 +1,30 @@
 "use server";
 import dbConnect from "@/lib/dbConnect";
 import Preference, { IPreferences } from "@/models/Prefernces";
+import { revalidatePath } from "next/cache";
+
+export const revalidatePage = (page:string)=>{
+  return revalidatePath(page)
+}
 
 export async function getPreferences() {
   await dbConnect();
   try {
     const preferences = await Preference.find({});
-    return preferences;
+    return preferences.map(pref=>JSON.parse(JSON.stringify(pref.toJSON())));
   } catch (error: any) {
     return error.message;
   }
 }
 
-export async function createPreference(body:any) {
+export async function createPreference(body:PrferenceType) {
   await dbConnect();
   try {
     
     const newPreference = await Preference.create(body);
-    return newPreference;
+    revalidatePath("/")
+
+    return JSON.parse(JSON.stringify(newPreference.toJSON())) as PrferenceType;
   } catch (error: any) {
     return error.message;
   }
@@ -37,7 +44,9 @@ export async function updatePreference(
     if (!updatedPreference) {
       throw new Error("Preference not found");
     }
-    return updatedPreference;
+    revalidatePath("/")
+
+    return JSON.parse(JSON.stringify(updatedPreference.toJSON()));
   } catch (error: any) {
     return error.message;
   }
@@ -51,7 +60,8 @@ export async function deletePreference(id: string) {
     if (!deletedPreference) {
       throw new Error("Preference not found");
     }
-    return deletedPreference;
+    revalidatePath("/")
+    return JSON.parse(JSON.stringify(deletedPreference.toJSON()));
   } catch (error: any) {
     return error.message;
   }
