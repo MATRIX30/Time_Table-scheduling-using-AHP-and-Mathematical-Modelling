@@ -1,22 +1,20 @@
-import Classes from "@/pages/Classes/Classes";
-import { GeneratingPage, LandingPage } from "../pages";
-import ClassDetail from "@/pages/Classes/ClassDetail";
+import { GeneratingPage, LandingPage, SignInPage, SignUpPage } from "../pages";
 
 export const routesConfig = [
   {
     page: <GeneratingPage />,
-    path: "/shedules",
+    path: "/generating",
   },
   {
     page: <LandingPage />,
     path: "/",
   },
   {
-    page:<Classes/>,
-    path:"/classes"
+    page: <SignInPage />,
+    path: "/sign-in",
   },
   {
-    page:<ClassDetail/>,
-    path:'/classes/:classN'
-  }
+    page: <SignUpPage />,
+    path: "/sign-up",
+  },
 ];
