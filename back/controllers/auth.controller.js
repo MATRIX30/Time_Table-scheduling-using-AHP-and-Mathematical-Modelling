@@ -59,7 +59,7 @@ login = async function login(req, res) {
 
 // Fonction pour générer un token d'accès
 function generateAccessToken(user) {
-    return jwt.sign({ id: user.id }, secretcharacter, { expiresIn: '15m' });
+    return 'Bearer ' + jwt.sign({ id: user.id }, secretcharacter, { expiresIn: '15m' });
 }
 
 // Fonction pour générer un token de rafraîchissement

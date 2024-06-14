@@ -20,39 +20,41 @@ const teacherPreferenceSchema = new mongoose.Schema({
         ref: 'User',
         required: true
     },
-    dayOffPreference: {
+
+    courseOnMorning: {
         type: Number,
         min: 1,
         max: 9,
         required: true
     },
-    coursedayPreference: {
+    courseOnEvening: {
         type: Number,
         min: 1,
         max: 9,
         required: true
     },
-    coursePeriodPreference: {
+    havingDayOff: {
         type: Number,
         min: 1,
-        max: 9,
+        max: 7,
         required: true
     },
-    breakBetweenCoursesPreference: {
+    preferredNumberOfHour: {
         type: Number,
-        min: 1,
-        max: 9,
-        required: true
-    },
-    // roomPreference: {
-    //     type: [mongoose.Schema.Types.ObjectId],
-    //     ref: 'Room',
-    //     required: true
-    // }
+        min: 0,
+        max: 15,
+        required: true,
+        validate: {
+            validator: function (value) {
+                return value % 3 === 0;
+            },
+            message: props => `${props.value} n'est pas un multiple de 3`
+        }
+    }
 });
 
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('Teacher', userSchema);
 const TeacherPreference = mongoose.model('TeacherPreference', teacherPreferenceSchema);
 
 module.exports = {
