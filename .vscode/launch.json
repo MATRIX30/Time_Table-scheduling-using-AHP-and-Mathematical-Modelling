@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BackendApplication",
+            "request": "launch",
+            "mainClass": "com.timetablescheduling.backend.BackendApplication",
+            "projectName": "Time_Table-scheduling-using-AHP-and-Mathematical-Modelling"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TimeTableSchedulingUsingAhpAndMathematicalModellingApplication<Time_Table-scheduling-using-AHP-and-Mathematical-Modelling>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.backend.TimeTableSchedulingUsingAhpAndMathematicalModellingApplication",
+            "projectName": "Time_Table-scheduling-using-AHP-and-Mathematical-Modelling",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=37543 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=Time_Table-scheduling-using-AHP-and-Mathematical-Modelling"
+        }
+    ]
+}
