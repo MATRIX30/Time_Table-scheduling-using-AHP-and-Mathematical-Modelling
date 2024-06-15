@@ -1,11 +1,12 @@
 package com.timetablescheduling.backend.repository.mainRepository;
 
-import com.timetablescheduling.backend.models.mainModels.Course;
+import java.util.Optional;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import com.timetablescheduling.backend.models.mainModels.Course;
 
 @Repository
 public interface CourseRepository extends MongoRepository<Course, Integer> {

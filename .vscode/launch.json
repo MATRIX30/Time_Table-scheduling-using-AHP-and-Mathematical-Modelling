@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BackendApplication",
+            "request": "launch",
+            "mainClass": "com.timetablescheduling.backend.BackendApplication",
+            "projectName": "backend"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BackendApplication<Time_Table-scheduling-using-AHP-and-Mathematical-Modelling>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.timetablescheduling.backend.BackendApplication",
+            "projectName": "Time_Table-scheduling-using-AHP-and-Mathematical-Modelling",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
