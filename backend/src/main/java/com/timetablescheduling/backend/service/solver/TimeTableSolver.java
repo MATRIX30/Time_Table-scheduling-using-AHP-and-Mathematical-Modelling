@@ -2,46 +2,52 @@ package com.timetablescheduling.backend.service.solver;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 import com.google.ortools.sat.CpModel;
 import com.google.ortools.sat.CpSolver;
 import com.google.ortools.sat.CpSolverStatus;
-import com.google.ortools.sat.LinearExpr;
 import com.google.ortools.sat.Literal;
+import com.timetablescheduling.backend.models.mainModels.Course;
+import com.timetablescheduling.backend.models.mainModels.Day;
+import com.timetablescheduling.backend.models.mainModels.Lecturer;
+import com.timetablescheduling.backend.models.mainModels.Room;
+import com.timetablescheduling.backend.models.mainModels.StudentLevel;
+import com.timetablescheduling.backend.models.mainModels.TimeSlot;
 
 public class TimeTableSolver {
 
-    	final int numCourses = 30;
-	    final int numDays = 8;
-	    final int numPeriods = 7;
-	    final int numRooms = 20;
-	    final int numTeachers = 20;
+	    private List<Course> allCourses;
+	    private List<Day> allDays;
+	    private List<TimeSlot> allTimeSlots;
+	    private List<Room> allRooms;
+	    private List<Lecturer> allLecturers;
+		private List<StudentLevel> allStudentLevels;
 
-
-	    final int[] allCourses = IntStream.range(0, numCourses).toArray();
-	    final int[] allDays = IntStream.range(0, numDays).toArray();
-	    final int[] allPeriods = IntStream.range(0, numPeriods).toArray();
-	    final int[] allRooms = IntStream.range(0, numRooms).toArray();
-	    final int[] allTeachers = IntStream.range(0, numTeachers).toArray();
-
-
-        private final CpModel cpModel;
-        private final CpSolver solver;
+		//variables and parameters
         private final Literal[][][][] courseSchedules;
 	    private final Literal[][] teacherSchedules;
 		private final Literal[][][] coursePerWeek;
 
+		private final CpModel cpModel;
+        private final CpSolver solver;
 
 
-        public TimeTableSolver() {
+
+        public TimeTableSolver(List<Lecturer> allLecturers, List<Day> allDays, List<TimeSlot> allTimeSlots, List<Course> allCourses, List<Room> allRooms, List<StudentLevel> allStudentLevels) {
+			this.allLecturers = allLecturers;
+			this.allCourses = allCourses;
+			this.allDays = allDays;
+			this.allTimeSlots = allTimeSlots;
+			this.allRooms = allRooms;
+			this.allStudentLevels = allStudentLevels;
+            this.courseSchedules = new Literal[allDays.size()][allTimeSlots.size()][allRooms.size()][allCourses.size()];
+    	    this.teacherSchedules = new Literal[allCourses.size()][allLecturers.size()];
+    		this.coursePerWeek = new Literal[allDays.size()][allTimeSlots.size()][allCourses.size()];
+
             this.cpModel = new CpModel();
-            this.courseSchedules = new Literal[numDays][numPeriods][numRooms][numCourses];
-    	    this.teacherSchedules = new Literal[numCourses][numTeachers];
-    		this.coursePerWeek = new Literal[numDays][numPeriods][numCourses];
             this.solver = new CpSolver();
-        }
 
+        }
 
         private void initialiseConstraints () {
                     // [END data]
@@ -50,21 +56,21 @@ public class TimeTableSolver {
     	    //intialize the variables
 
     	    //initialize the course schedules
-            for (int d : allDays) {
+            for (int d=0; d < allDays.size(); d++) {
 
-    	        for (int p : allPeriods) {
+    	        for (int t=0; t < allTimeSlots.size(); t++) {
 
-    				for (int c : allCourses) {
-    					coursePerWeek[d][p][c] = cpModel.newBoolVar("coursePerWeek" + d + "d" + p + "p" + c + "c");
+    				for (int c=0; c < allCourses.size(); c++) {
+    					coursePerWeek[d][t][c] = cpModel.newBoolVar("coursePerWeek" + d + "d" + t + "t" + c + "c");
 
-    					for (int t: allTeachers) {
-    						teacherSchedules[c][t] = cpModel.newBoolVar("teacherSchedule" + c + "c" + t + "t");
+    					for (int l=0; l < allLecturers.size(); l++) {
+    						teacherSchedules[c][l] = cpModel.newBoolVar("teacherSchedule" + c + "c" + l + "l");
     					}
     				}
 
-    			    for (int r : allRooms) {	
-    	        	    for (int c : allCourses) {
-    	       		   	    courseSchedules[d][p][r][c] = cpModel.newBoolVar("courseSchedule" + d + "d" + p + "p" + r + "r" + c + "c");
+    			    for (int r=0; r < allRooms.size(); r++) {	
+    	        	    for (int c=0; c < allCourses.size(); c++) {
+    	       		   	   	courseSchedules[d][t][r][c] = cpModel.newBoolVar("courseSchedule" + d + "d" + t + "t" + r + "r" + c + "c");
     	        	    }
     			    }
 
@@ -75,32 +81,35 @@ public class TimeTableSolver {
 
     		//constraints
 
-    		for (int d : allDays) {
-    			for (int p : allPeriods) {
+    		for (int d=0; d < allDays.size(); d++) {
+    			for (int t=0; t < allTimeSlots.size(); t++) {
     				// A room receives at most one course per period per day
-    				for (int r : allRooms) {
+    				for (int r=0; r < allRooms.size(); r++) {
+
     					List<Literal> courses = new ArrayList<>();
-    					for (int c: allCourses) {
-    						courses.add(courseSchedules[d][p][r][c]);
-                        
-    						List<Literal> teachers = new ArrayList<>();
-    						for (int t: allTeachers) {
-    							teachers.add(teacherSchedules[c][t]);
+    					for (int c=0; c < allCourses.size(); c++) {
+
+    							courses.add(courseSchedules[d][t][r][c]);
+
+    						List<Literal> lecturers = new ArrayList<>();
+    						for (int l=0; l < allLecturers.size(); l++) {
+    								lecturers.add(teacherSchedules[c][l]);
     						}
-    						this.cpModel.addExactlyOne(teachers);
+    						this.cpModel.addExactlyOne(lecturers);
     					}
+
     					this.cpModel.addAtMostOne(courses);
     				}
     			}
     		}
 
     		// Each course is scheduled exactly once per week
-    		for (int c : allCourses) {
+    		for (int c=0; c < allCourses.size(); c++) {
     			List<Literal> courseOccurrences = new ArrayList<>();
-    			for (int d : allDays) {
-    				for (int p : allPeriods) {
-    					for (int r : allRooms) {
-    						courseOccurrences.add(courseSchedules[d][p][r][c]);
+    			for (int d=0; d < allDays.size(); d++) {
+    				for (int t=0; t < allTimeSlots.size(); t++) {
+    					for (int r=0; r < allRooms.size(); r++) {
+    							courseOccurrences.add(courseSchedules[d][t][r][c]);
     					}
     				}
     			}
@@ -109,12 +118,11 @@ public class TimeTableSolver {
     		}
 
 			// Each teacher teaches at most 10 courses
-			for (int t : allTeachers) {
+			for (int l=0; l < allLecturers.size(); l++) {
 				List<Literal> teacherCourses = new ArrayList<>();
-				for (int c : allCourses) {
-					teacherCourses.add(teacherSchedules[c][t]);
+				for (int c=0; c < allCourses.size(); c++) {
+						teacherCourses.add(teacherSchedules[c][l]);
 				}
-				cpModel.addLessOrEqual(LinearExpr.sum(teacherCourses.toArray(new Literal[0])), 10);
 			}
 
 
@@ -125,7 +133,9 @@ public class TimeTableSolver {
         }
 
         public void solve () {
+			System.out.println("begin initialize constraints . . .");
             initialiseConstraints();
+			System.out.println("finished initialize constraints");
             // [START parameters]
             solver.getParameters().setLinearizationLevel(0);
             // Tell the solver to enumerate all solutions.
@@ -136,11 +146,11 @@ public class TimeTableSolver {
             final int solutionLimit = 8;
 
             // [END solution_printer]
-		VarArraySolutionPrinterWithLimit cb = new VarArraySolutionPrinterWithLimit(allCourses, allDays, allPeriods, allRooms, allTeachers, courseSchedules, teacherSchedules, solutionLimit);
+		VarArraySolutionPrinterWithLimit cb = new VarArraySolutionPrinterWithLimit(allCourses, allDays, allTimeSlots, allRooms, allLecturers, courseSchedules, teacherSchedules, solutionLimit);
 
             // Creates a solver and solves the model.
             // [START solve]
-		System.out.println("solving");
+		System.out.println("solving . . .");
             CpSolverStatus status = solver.solve(this.cpModel, cb);
             System.out.println("Status: " + status);
 		

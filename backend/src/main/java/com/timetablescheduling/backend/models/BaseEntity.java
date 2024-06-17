@@ -1,31 +1,31 @@
 package com.timetablescheduling.backend.models;
 
-import jakarta.persistence.MappedSuperclass;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
-import lombok.Data;
-import org.springframework.data.annotation.CreatedDate;
-
 import java.util.Date;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.Data;
+
+@Document
 @Data
-@MappedSuperclass
-public class BaseEntity {
+public abstract class BaseEntity {
 
     /*
         All about model of data should be implements in the repository package.
         If you have a new things to manage, please create his model class
      */
+    @Id
+    private String id;
 
-    @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
     private Date createdAt = new Date();
 
-    @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
     private Date updateAt;
 
-    @Temporal(TemporalType.TIMESTAMP)
+
     @CreatedDate
     private Date deleteAt;
 
