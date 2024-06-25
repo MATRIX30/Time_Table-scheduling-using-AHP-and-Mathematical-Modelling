@@ -2,7 +2,7 @@
 
 ### Description
 
-This project is a project carried out by Masters I  students  of the university of Yaounde I for their
+This project is a project carried out by Masters I students of the university of Yaounde I for their
 final project presentation on the course INF4178 Software Engineering II
 
 Core to this project is the Application of AHP and Mathematical Modelling to realizing a time table scheduling
@@ -11,37 +11,41 @@ platform for the University of Yaounde I.
 ### Features of Application
 
 #### Application to gets preferences of teachers
+
 - Login
 - Sign in
 - Save a review for a preference
 - Modify a saved review for a preference
 
-  
-####  Application to gets preferences of students
+#### Application to gets preferences of students
+
 - Login
 - Sign in
 - Save a review for a preference
 - Modify a saved review for a preference
 
-####  Application to gets preferences of administration
+#### Application to gets preferences of administration
+
 - Login
 - Sign in
 - Save a review for a preference
 - Modify a saved review for a preference
 
+#### Application to gets preferences of administration
 
-####  Application to gets preferences of administration
 - Login
 - Sign in
 - Save a review for a preference
 - Modify a saved review for a preference
 
-####  Application to gets all the preferences and have an holistic view of the datas
+#### Application to gets all the preferences and have an holistic view of the datas
+
 - Login
 - Sign in
 - List all the data's in our databse
 
-####  Application of generating timetables
+#### Application of generating timetables
+
 - Login
 - Sign in
 - Create a timetable
@@ -50,7 +54,7 @@ platform for the University of Yaounde I.
 ### Technologies used
 
 - BACKEND : Spring Boot
-- FRONTEND : ANGULAR, REACT 
+- FRONTEND : ANGULAR, REACT
 - STYLE : TAILWINDCSS
 - MOBILE : FLUTTER
 - DATABASE : MONGODB
@@ -64,6 +68,7 @@ Name: Tekoh Palma
 Email: <Tekohpalma@gmail.com>
 Role: Course Teaching Assistant
 ```
+
 ```
 Name: ATEZONG YMELE CARICK APPOLINAIRE
 Email: Carick.atezong@facsciences-uy1.cm
@@ -100,7 +105,6 @@ Email : dave.chedjoun@facsciences-uy1.cm
 Role  : Backend Developper & Conceptor
 ```
 
-
 ```
 Name  : POUATCHA OUANKO Belvain Aubry
 Email : belvain.pouatcha@facsciences-uy1.cm
@@ -130,4 +134,3 @@ Name  : NJONTA DJANTENG WILFREED KEVIN
 Email : wilfreed.njonta@facsciences-uy1.cm
 Role  : Data Collection section
 ```
-
