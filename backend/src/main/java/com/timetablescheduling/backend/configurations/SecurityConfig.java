@@ -31,7 +31,7 @@ public class SecurityConfig {
          httpSecurity
                 .csrf(csrf -> csrf.disable())
 //                .authorizeHttpRequests(ar -> ar.requestMatchers("/api/auth/**" ,"/swagger-ui/**", "/actuator/shutdown", "/api/v3/api-docs/**").permitAll())
-                .authorizeHttpRequests(ar -> ar.anyRequest().authenticated())
+                .authorizeHttpRequests(ar -> ar.anyRequest().permitAll())
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .oauth2ResourceServer(oa -> oa.jwt(Customizer.withDefaults()));
         return httpSecurity.build();

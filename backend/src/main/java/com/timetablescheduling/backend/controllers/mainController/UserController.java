@@ -1,7 +1,7 @@
 package com.timetablescheduling.backend.controllers.mainController;
 
 import com.timetablescheduling.backend.errors.CustomResponseEntity;
-import com.timetablescheduling.backend.models.mainModels.Users;
+import com.timetablescheduling.backend.models.mainModels.SuperUsers;
 import com.timetablescheduling.backend.service.mainService.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,14 +21,14 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/signUp")
-    public ResponseEntity<?> signIn(@RequestBody Users user) {
+    public ResponseEntity<?> signIn(@RequestBody SuperUsers user) {
         if (userService.existsByMatricule(user.getMatricule())) return CustomResponseEntity.fromKey("USER_ALREADY_EXISTS", HttpStatus.BAD_REQUEST);
         return ResponseEntity.ok(userService.register(user));
     }
 
     @PostMapping("/signIn")
     public ResponseEntity<?> signUp(@RequestBody LoginRequest user) {
-        Optional<Users> userSave = userService.getUser(user.getMatricule()); // recuperation de l'utilisateur sauvegardé en base de données
+        Optional<SuperUsers> userSave = userService.getUser(user.getMatricule()); // recuperation de l'utilisateur sauvegardé en base de données
         return userService.authenticate(userSave, user.getPassword());
     }
 }

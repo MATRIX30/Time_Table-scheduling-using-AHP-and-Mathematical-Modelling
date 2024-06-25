@@ -1,9 +1,13 @@
 package com.timetablescheduling.backend.service.AHP;
 
+import lombok.Setter;
+
 public final class AHP {
     private static AHP instance = null;
+    @Setter
     private Matrix matrix;
     private AHP() {}
+
     public static AHP getInstance() {
         if (instance == null) {
             instance = new AHP();
@@ -19,6 +23,7 @@ public final class AHP {
         }
         return instance;
     }
+
     private final Double[] RI = {0.0, 0.0, 0.58, 0.9, 1.12, 1.24, 1.32, 1.41, 1.45, 1.49, 1.51};
 
     Double[] calculateCriteriaWeights(){
