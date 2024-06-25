@@ -11,5 +11,10 @@ public class Main {
         Matrix matrix = new Matrix(Matrix.convertToDoubleMatrix(pairwiseMatrix));
         AHP ahp = AHP.getInstance(matrix);
         ahp.computeAHP();
+
+        // Test Weight for Preferences
+        // Each functions return an array of Double
+        PreferenceCompute.weightForStudentPreferences();
+        PreferenceCompute.weightForLecturerPreferences();
     }
 }

@@ -1,11 +1,10 @@
 package com.timetablescheduling.backend.service.mainService;
 
 import com.timetablescheduling.backend.errors.CustomResponseEntity;
-import com.timetablescheduling.backend.models.mainModels.Users;
+import com.timetablescheduling.backend.models.mainModels.SuperUsers;
 import com.timetablescheduling.backend.repository.mainRepository.UserRepository;
 import com.timetablescheduling.backend.security.JwtService;
 import lombok.Data;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,14 +24,14 @@ public class UserService {
     @Autowired
     private final JwtService jwtService;
 
-    public Users CreateUser(Users user){
+    public SuperUsers CreateUser(SuperUsers user){
         String encodePassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(encodePassword);
         userRepository.save(user);
         return user;
     }
 
-    public AuthentificationResponse register(Users user){
+    public AuthentificationResponse register(SuperUsers user){
         String encodePassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(encodePassword);
         userRepository.save(user);
@@ -43,7 +42,7 @@ public class UserService {
                 .build();
     }
 
-    public ResponseEntity<?> authenticate(Optional<Users> user, String password){
+    public ResponseEntity<?> authenticate(Optional<SuperUsers> user, String password){
         if (user.isEmpty())  return CustomResponseEntity.fromKey("INVALID_CREDENTIALS", HttpStatus.BAD_REQUEST);
         else if (!verifyPassword(password, user.get().getPassword()))  return CustomResponseEntity.fromKey("INVALID_CREDENTIALS", HttpStatus.BAD_REQUEST);
         var jwtToken = jwtService.generateToken(user.get());
@@ -62,7 +61,7 @@ public class UserService {
         return userRepository.existsByMatricule(matricule);
     }
 
-    public Optional<Users> getUser(String email){
+    public Optional<SuperUsers> getUser(String email){
         return userRepository.findByMatricule(email);
     }
 
