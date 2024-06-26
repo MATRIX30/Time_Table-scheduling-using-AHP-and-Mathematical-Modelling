@@ -1,0 +1,19 @@
+#background-image {
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover l'image pour remplir le container */
+    z-index: -1; /* met l'image en arrière-plan */
+}
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Positionner au centre verticalement */
+    left: 50%; /* Positionner au centre horizontalement */
+    transform: translate(-50%, -50%); /* Centrer */
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+}

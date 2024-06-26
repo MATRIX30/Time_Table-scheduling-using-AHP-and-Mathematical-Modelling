@@ -1,0 +1,82 @@
+/* Centrer le formulaire au milieu de la page */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px; /* Largeur fixe pour le formulaire */
+  margin: 100px auto; /* Centrer le formulaire verticalement et horizontalement */
+  padding: 20px; /* Ajouter du padding pour un espace intérieur */
+  border: 2px solid #ccc; /* Ajouter une bordure */
+  background-color: #EEE; /* Couleur de fond de la bordure */
+  border-radius: 10px; /* Coins arrondis pour le conteneur du formulaire */
+}
+
+/* Style pour chaque groupe de formulaire */
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style pour les labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style pour les inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* Style pour le bouton de soumission */
+button {
+  padding: 10px 20px;
+  background-color: #FF7648; /* Couleur verte pas trop foncée */
+  color: white;
+  border: 1px solid #4CAF50; /* Bordure de la même couleur que le bouton */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol pour le bouton de soumission */
+button:hover {
+  background-color: #FF7648;
+}
+
+/* Style pour le conteneur de chargement */
+.loading-container {
+  display: none; /* Masquer par défaut */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Style pour l'animation de chargement */
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #FF7648;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

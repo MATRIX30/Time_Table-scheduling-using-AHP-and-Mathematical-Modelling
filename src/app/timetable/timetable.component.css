@@ -1,0 +1,33 @@
+.timetable-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px black;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .timetable-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .timetable-card h3 {
+    margin: 0 0 10px 0;
+    color: #343a40;
+  }
+  
+  .timetable-card p {
+    margin: 5px 0;
+    color: #6c757d;
+  }
+  

@@ -1,0 +1,15 @@
+<div class="timetable-container">
+    <h2>Emplois du Temps</h2>
+    <div *ngIf="timetables.length > 0; else noTimetables">
+      <div *ngFor="let timetable of timetables" class="timetable-card">
+        <h3>{{ timetable.subject }}</h3>
+        <p><strong>Date:</strong> {{ timetable.date | date }}</p>
+        <p><strong>Heure:</strong> {{ timetable.time }}</p>
+        <p><strong>Professeur:</strong> {{ timetable.teacher }}</p>
+      </div>
+    </div>
+    <ng-template #noTimetables>
+      <p>Aucun emploi du temps disponible.</p>
+    </ng-template>
+  </div>
+  

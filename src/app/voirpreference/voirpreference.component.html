@@ -1,0 +1,19 @@
+<table>
+    <thead>
+      <tr>
+        <th>Cours très tôt</th>
+        <th>Cours très tard</th>
+        <th>Nombre de jours libres par semaine</th>
+        <th>Nombre d'heures de travail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let schedule of sheduleData">
+        <td>{{ schedule.courseOnEvening }}</td>
+        <td>{{ schedule.courseOnMorning }}</td>
+        <td>{{ schedule.havingDayOff }}</td>
+        <td>{{ schedule.preferredNumberOfHour}}</td>
+      </tr>
+    </tbody>
+  </table>
+  

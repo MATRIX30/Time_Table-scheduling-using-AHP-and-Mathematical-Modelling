@@ -1,0 +1,32 @@
+<div class="preferences-container">
+    <h1 class="title">VOS PREFERENCES</h1>
+    <!-- Le reste du contenu de votre composant "Mes préférences" -->
+</div>
+<div class="preferences-form-container">
+  <h2>Préférences pour la génération d'un emploi du temps</h2>
+  <form [formGroup]="preferencesForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="earlySchedule">Cours très tôt (0-10)</label>
+      <input id="earlySchedule" type="number" formControlName="earlySchedule" min="0" max="10">
+    </div>
+
+    <div class="form-group">
+      <label for="lateSchedule">Cours très tard (0-10)</label>
+      <input id="lateSchedule" type="number" formControlName="lateSchedule" min="0" max="10">
+    </div>
+
+    <div class="form-group">
+      <label for="freeDays">Nombre de jours libres par semaine (0-7)</label>
+      <input id="freeDays" type="number" formControlName="freeDays" min="0" max="7">
+    </div>
+
+    <div class="form-group">
+      <label for="workHours">Nombre d'heures de travail (multiple de 3 et inférieur à 15)</label>
+      <input id="workHours" type="number" formControlName="workHours" min="3" max="15" step="3">
+    </div>
+
+    <button type="submit" [disabled]="preferencesForm.invalid">Valider</button>
+  </form>
+</div>
+
+  

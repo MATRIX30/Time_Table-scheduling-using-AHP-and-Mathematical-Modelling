@@ -1,0 +1,41 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #00664F;
+  padding: 20px;
+  font-weight: bold;
+  z-index: 1000; /* Assurez-vous que le header reste au-dessus du contenu */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 100px; /* Ajustez cette valeur en fonction de la hauteur de votre header */
+}
+
+a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: white;
+  text-decoration: underline;
+}
+
+.menu1 {
+  float: right;
+  margin-right: 35px;
+}

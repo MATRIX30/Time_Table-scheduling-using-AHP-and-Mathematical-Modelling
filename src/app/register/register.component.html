@@ -1,0 +1,36 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" formControlName="name" type="text">
+      <div *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched" class="error-message">
+        Name is required
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email">
+      <div *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched" class="error-message">
+        Enter a valid email
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" formControlName="password" type="password">
+      <div *ngIf="myForm.get('password')?.invalid && myForm.get('password')?.touched" class="error-message">
+        Password is required and must be at least 6 characters long
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input id="phone" formControlName="phone" type="tel" placeholder="+237655781934">
+      <div *ngIf="myForm.get('phone')?.invalid && myForm.get('phone')?.touched" class="error-message">
+        Enter a valid phone number
+      </div>
+    </div>
+  
+    <button type="submit" [disabled]="myForm.invalid">Submit</button>
+  </form>
+  
