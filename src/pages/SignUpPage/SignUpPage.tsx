@@ -2,14 +2,13 @@ import React, { FormEvent, useState } from "react";
 import { URL_SERVER } from "@/constants/constants";
 
 import { Navbar } from "@/components/layout";
-import { Link, redirect } from "react-router-dom";
+import { Link, redirect, useNavigate } from "react-router-dom";
 import { IoCalendarOutline } from "react-icons/io5";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const SignUpPage = () => {
-  const [username, setUsername] = useState<string>("");
-  const [registerNumber, setRegisterNumber] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
@@ -18,15 +17,17 @@ const SignUpPage = () => {
     event.preventDefault();
 
     const userInformations = {
-      name: username,
-      matricule: registerNumber,
+      email : email,
       password: password,
     };
 
     setIsLoading(true);
 
+    const navigate = useNavigate();
+
+
     try {
-      const response = await fetch(URL_SERVER + "/api/user/signUp", {
+      const response = await fetch(URL_SERVER + "/auth/register", {
         method: "POST",
         body: JSON.stringify(userInformations),
         headers: {
@@ -44,7 +45,8 @@ const SignUpPage = () => {
       localStorage.setItem("user", data.users);
 
       setIsLoading(false);
-      redirect("/generating");
+     
+      navigate("/");
     } catch (err: any) {
       setIsLoading(false);
     }
@@ -74,17 +76,12 @@ const SignUpPage = () => {
               </h1>
             </div>
           )}
+
           <Input
             type="text"
-            placeholder="username"
+            placeholder="Enter your mail  "
             className="h-12"
-            onChange={(event) => setUsername(event.target.value)}
-          />
-          <Input
-            type="text"
-            placeholder="registration number"
-            className="h-12"
-            onChange={(event) => setRegisterNumber(event.target.value)}
+            onChange={(event) => setEmail(event.target.value)}
           />
           <Input
             type="password"

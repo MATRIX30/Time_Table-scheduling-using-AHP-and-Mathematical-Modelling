@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { IoCalendarOutline, IoLogOut, IoLogOutOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 // import avatarOne from "../../assets/avatar3.png";
 import {
@@ -12,6 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { URL_SERVER } from "@/constants/constants";
 
 const Navbar = () => {
   const [navbarItem, setNavbarItem] = useState<string>("");
@@ -20,13 +21,37 @@ const Navbar = () => {
     setNavbarItem(item);
   };
 
+
+
+
+  const navigate = useNavigate();
+  
   const logoutHandler = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
+    navigate("/");
   };
 
+
   const token = localStorage.getItem("token");
-  const user = JSON.parse(localStorage.getItem("user"));
+  const userString = localStorage.getItem("user");
+  let user = null;
+  
+  if (userString) {
+    try {
+      user = JSON.parse(userString);
+    } catch (error) {
+      console.error("Erreur lors du parsing JSON :", error);
+    }
+  } else {
+    console.log("Aucune valeur trouvée pour 'user' dans le localStorage.");
+  }
+  
+  // Maintenant 'user' contient soit l'objet utilisateur parsé, soit null si aucune valeur n'a été trouvée ou si le parsing a échoué.
+  console.log(user);
+  
+  
+
 
   return (
     <React.Fragment>
@@ -62,15 +87,15 @@ const Navbar = () => {
                     className="object-cover w-8 h-8"
                     src={avatarOne}
                   /> */}
-                  <h1 className="py-3">{user.name[0].toUpperCase()}</h1>
+                  <h1 className="py-3">{user.email[0].toUpperCase()}</h1>
                   <AvatarFallback />
                 </Avatar>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="mr-12">
-                <DropdownMenuItem className="flex items-center gap-3">
+                {/* <DropdownMenuItem className="flex items-center gap-3 disabled"> 
                   <IoCalendarOutline size={20} />
                   <Link to="/generating">Generate timetable</Link>
-                </DropdownMenuItem>
+                </DropdownMenuItem> */}
                 <DropdownMenuSeparator />
                 <DropdownMenuItem className="flex items-center gap-3">
                   <IoLogOutOutline size={20} />

@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const SignInPage = () => {
-  const [registerNumber, setRegisterNumber] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [error, setError] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -19,14 +19,14 @@ const SignInPage = () => {
     event.preventDefault();
 
     const userCredentials = {
-      matricule: registerNumber,
+      email: email,
       password: password,
     };
 
     setIsLoading(true);
 
     try {
-      const response = await fetch(URL_SERVER + "/api/user/signIn", {
+      const response = await fetch(URL_SERVER + "/auth/login", {
         method: "POST",
         body: JSON.stringify(userCredentials),
         headers: {
@@ -41,15 +41,18 @@ const SignInPage = () => {
 
       console.log(data);
       localStorage.setItem("token", data.token);
-      localStorage.setItem("user", JSON.stringify(data.users));
+      localStorage.setItem("user", JSON.stringify(data.user));
+      console.log(data.user);
 
       setIsLoading(false);
-      navigate("/generating");
+      navigate("/");
     } catch (err) {
       console.log(err);
       setIsLoading(false);
     }
   };
+
+  
 
   return (
     <React.Fragment>
@@ -78,9 +81,9 @@ const SignInPage = () => {
 
           <Input
             type="text"
-            placeholder="registration number"
+            placeholder="registration email"
             className="h-12"
-            onChange={(event) => setRegisterNumber(event.target.value)}
+            onChange={(event) => setEmail(event.target.value)}
           />
           <Input
             type="password"

@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CustomInput from '@/components/common/CustomInput';
 import ButtonIcon from '@/components/common/ButtonIcon';
+import { URL_SERVER } from '@/constants/constants';
 
 const Block2 = () => {
 
@@ -14,6 +15,34 @@ const Block2 = () => {
   const closeModal = () => {
     setShowModal(false);
   };
+
+
+
+
+
+  const [teacherPreferences, setTeacherPreferences] = useState([]);
+
+  useEffect(() => {
+    const fetchPreferences = async () => {
+      try {
+        const response = await fetch(URL_SERVER + "/preference", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        const preferences = await response.json();
+        setTeacherPreferences(preferences);
+      } catch (error) {
+        console.error('Erreur lors de la récupération des préférences :', error);
+        // Handle errors, e.g., show an error message to the user
+      }
+    };
+
+    fetchPreferences();
+  }, []); // Empty dependency array ensures this effect runs only once, like componentDidMount
+
+
 
 
 
@@ -50,72 +79,111 @@ const Block2 = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    // You can access all form values here using the state variables
+
+    const userString = localStorage.getItem("user");
+    if (!userString) {
+      console.error("Aucune donnée utilisateur trouvée dans localStorage");
+      return;
+    }
+
+    // const user = JSON.parse(userString);l
+    const formData = {
+      teacher: "60d5ecb8b392d7881236a8a0",   // Remplacez par l'ID du professeur approprié
+      courseOnMorning: 1,
+      courseOnEvening: 1,
+      havingDayOff: 1,
+      preferredNumberOfHour: 3,
+    };
+
+    try {
+
+      const response = await fetch(URL_SERVER + "/preference", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      // if (!response.ok) {
+      //   throw new Error('Erreur lors de la création des préférences d\'enseignant');
+      // }
+
+      const listpreference = await response.json();
+      console.log("Nouvelle préférence d'enseignant créée :", listpreference);
+      // Ici vous pourriez mettre à jour l'état de votre composant ou effectuer d'autres actions après la création réussie
+
+      closeModal();  // Fermer le modal après soumission réussie
+    } catch (error) {
+      console.error('Erreur lors de la création des préférences d\'enseignant :', error);
+      // Gérer les erreurs, par exemple afficher un message d'erreur à l'utilisateur
+    }
+
+
+
+
+
+
+
   };
 
 
   return (
     <div className="flex flex-col items-center mt-8">
-<div className="py-4 px-6" >       <ButtonIcon
+      <div className="py-4 px-6" >       <ButtonIcon
         title="Add preference"
-        bg="bg-green-500" onClick={openModal}
+        bg="bg-gray-700" onClick={openModal}
       /></div>
 
 
 
-      <div className="shadow-md sm:rounded-lg">
+      <div className="shadow-md sm:rounded-lg w-full">
         <table className="text-sm text-gray-500 dark:text-gray-400 w-full">
           <thead className="text-base text-white uppercase bg-gray-600">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Preferred working hours
+                Number of course on Morning
               </th>
               <th scope="col" className="px-6 py-3">
-                Number of days available per week
+                Number of course on Evening
               </th>
               <th scope="col" className="px-6 py-3">
-                Preference for very early classes
+                NUmber Dayoff
               </th>
               <th scope="col" className="px-6 py-3">
-                Preference for very late classes
+                Preference Number of Hour
               </th>
-              <th scope="col" className="px-6 py-3">
+              {/* <th scope="col" className="px-6 py-3">
                 Date de création
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Delete
-              </th>
+              </th> */}
             </tr>
           </thead>
           <tbody>
-            <tr className="bg-white dark:bg-gray-800">
-              <td className="px-6 py-4 whitespace-nowrap">9 hours</td>
-              <td className="px-6 py-4 whitespace-nowrap">5 days</td>
-              <td className="px-6 py-4 whitespace-nowrap">Yes</td>
-              <td className="px-6 py-4 whitespace-nowrap">No</td>
-              <td className="px-6 py-4 whitespace-nowrap">2023-05-15</td>
-              <td className="px-6 py-4 whitespace-nowrap">
+
+            {teacherPreferences.map(preference => (
+              <tr key={preference._id} className="bg-white dark:bg-gray-800">
+                <td className="px-6 py-4 whitespace-nowrap">{preference.courseOnMorning}</td>
+                <td className="px-6 py-4 whitespace-nowrap">{preference.courseOnEvening}</td>
+                {/*               
+              <td className="px-6 py-4 whitespace-nowrap">{preference.earlyClasses ? 'Yes' : 'No'}</td> */}
+                <td className="px-6 py-4 whitespace-nowrap">{preference.havingDayOff}</td>
+                <td className="px-6 py-4 whitespace-nowrap">{preference.preferredNumberOfHour}</td>
+                {/* <td className="px-6 py-4 whitespace-nowrap">{preference.createdAt}</td> */}
+                {/* Example button for deletion */}
+                {/* <td className="px-6 py-4 whitespace-nowrap">
                 <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                   Delete
                 </button>
-              </td>
-            </tr>
-            {/* Example Row 2 */}
-            <tr className="bg-white dark:bg-gray-800">
-              <td className="px-6 py-4 whitespace-nowrap">12 hours</td>
-              <td className="px-6 py-4 whitespace-nowrap">3 days</td>
-              <td className="px-6 py-4 whitespace-nowrap">No</td>
-              <td className="px-6 py-4 whitespace-nowrap">Yes</td>
-              <td className="px-6 py-4 whitespace-nowrap">2023-06-12</td>
-              <td className="px-6 py-4 whitespace-nowrap">
-                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-                  Delete
-                </button>
-              </td>
-            </tr>
+              </td> */}
+              </tr>
+            ))}
+
+
+
+
+
           </tbody>
         </table>
 

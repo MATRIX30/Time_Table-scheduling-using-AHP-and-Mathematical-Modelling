@@ -17,7 +17,28 @@ import ButtonIcon from '@/components/common/ButtonIcon';
 
 export default function LandingPage() {
 
+
+
+
+  const token = localStorage.getItem("token");
+  const userString = localStorage.getItem("user");
+  let user = null;
+
+  if (userString) {
+    try {
+      user = JSON.parse(userString);
+    } catch (error) {
+      console.error("Erreur lors du parsing JSON :", error);
+    }
+  } else {
+    console.log("Aucune valeur trouvée pour 'user' dans le localStorage.");
+  }
+
+  const isLoggedIn = user !== null && token !== null;
+
   const [activeBlock, setActiveBlock] = useState(1); // Par défaut, le Block 1 est actif
+
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <Navbar />
@@ -31,37 +52,52 @@ export default function LandingPage() {
                 <div className="flex items-center justify-center gap-5 ">
                   <ButtonIcon
                     title="Account"
-                    bg="bg-orange-500" onClick={() => setActiveBlock(1)}
+                    bg="bg-black" onClick={() => setActiveBlock(1)}
                   />
-                  <ButtonIcon title="Preferences" onClick={() => setActiveBlock(2)} bg="bg-cyan-500" />
-                  <ButtonIcon title="Time Table" onClick={() => setActiveBlock(3)} bg="bg-green-600" />
+                  <ButtonIcon title="Preferences" onClick={() => setActiveBlock(2)} bg="bg-black" />
+                  <ButtonIcon title="Time Table" onClick={() => setActiveBlock(3)} bg="bg-black" />
                 </div>
               </div>
-              <div className={`container flex flex-wrap  mx-auto items-center`}>
-
-                {/* Block 1 */}
-                {activeBlock === 1 && (
-                  <div className={`container flex flex-wrap  mx-auto items-center`}>
-                    <ProfileInfo />
-                    <UpdatePassword />
-                  </div>)}
-
-                {/* Block 2 */}
-
-                {activeBlock === 2 && (
-                  <div className="flex flex-col items-center justify-center space-y-24 text-center">
-                    <Block2 />
-                  </div>)}
-
-                {/* Block 3 */}
-                {activeBlock === 3 && (
-                  <div className={`container flex flex-wrap  mx-auto items-center`}>
-                    <Block3 />
+              <div className="container flex flex-wrap mx-auto items-center">
+                {!isLoggedIn && (
+                  <div className="flex justify-center mt-12 w-full">
+                    <div className="text-center pt-12">
+                      <span className="text-6xl" role="img" aria-label="cross emoji">
+                        ⚠️
+                      </span>
+                      <p className="mt-4">
+                        Please sign in or register to view this content.
+                      </p>
+                    </div>
                   </div>
-
                 )}
 
+                {/* Afficher les blocs seulement si l'utilisateur est connecté */}
+                {isLoggedIn && (
+                  <>
+                    {/* Block 1 */}
+                    {activeBlock === 1 && (
+                      <div className="container flex flex-wrap mx-auto items-center">
+                        <ProfileInfo />
+                        <UpdatePassword />
+                      </div>
+                    )}
 
+                    {/* Block 2 */}
+                    {activeBlock === 2 && (
+                      <div className="flex flex-col items-center justify-center space-y-24 text-center">
+                        <Block2 />
+                      </div>
+                    )}
+
+                    {/* Block 3 */}
+                    {activeBlock === 3 && (
+                      <div className="container flex flex-wrap mx-auto items-center">
+                        <Block3 />
+                      </div>
+                    )}
+                  </>
+                )}
               </div>
 
             </div>
