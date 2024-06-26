@@ -1,4 +1,4 @@
-import mongoose, { Document, Schema } from 'mongoose';
+import mongoose, { Document, Schema } from "mongoose";
 
 // Define the StudentPreference interface
 export interface IAdminPreference extends Document {
@@ -6,7 +6,7 @@ export interface IAdminPreference extends Document {
   courseOnEvening: number;
   havingDaysOff: number;
   PreferenceNumberOfHours: number;
-  admin:string;
+  admin: string;
 }
 
 // Define the AdminPreference schema
@@ -29,7 +29,7 @@ export const adminPreferenceSchema: Schema = new mongoose.Schema({
     min: 0,
     max: 10,
   },
-  PreferenceNumberOfHours: {
+  preferenceNumberOfHours: {
     type: Number,
     required: true,
     min: 3,
@@ -37,23 +37,26 @@ export const adminPreferenceSchema: Schema = new mongoose.Schema({
     multiple: 3,
     validate: {
       validator: (value: number) => value % 3 === 0,
-      message: 'Preferred number of hours must be a multiple of 3',
+      message: "Preferred number of hours must be a multiple of 3",
     },
   },
-  admin:{
+  admin: {
     type: Schema.Types.ObjectId,
-    ref: 'students',
-    required: true
-  }
+    ref: "students",
+    required: true,
+  },
 });
 
 // Define the AdminPreference model
 let AdminPreference: mongoose.Model<IAdminPreference>;
 
-if (!mongoose.models['adminPreferences']) {
-  AdminPreference = mongoose.model<IAdminPreference>('adminPreferences', adminPreferenceSchema);
+if (!mongoose.models["adminPreferences"]) {
+  AdminPreference = mongoose.model<IAdminPreference>(
+    "adminPreferences",
+    adminPreferenceSchema
+  );
 } else {
-  AdminPreference = mongoose.models['adminPreferences'];
+  AdminPreference = mongoose.models["adminPreferences"];
 }
 
 // Export the StudentPreference model

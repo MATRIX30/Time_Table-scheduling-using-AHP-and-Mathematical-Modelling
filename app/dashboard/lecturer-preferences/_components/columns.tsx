@@ -19,12 +19,12 @@ const columns: ColumnDef<LecturerPreferenceType>[] = [
     accessorKey: 'courseOnEvening',
   },
   {
-    header: 'Days Off',
+    header: 'Having Days Off',
     accessorKey: 'havingDaysOff',
   },
   {
     header: 'Preferred Number of Hours',
-    accessorKey: 'PreferenceNumberOfHours',
+    accessorKey: 'preferenceNumberOfHours',
   },
 ];
 

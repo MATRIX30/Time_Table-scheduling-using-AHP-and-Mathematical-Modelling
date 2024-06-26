@@ -5,6 +5,7 @@ import React from "react";
 import columns from "./_components/columns";
 import { useQuery } from "@tanstack/react-query";
 import { Loader } from "lucide-react";
+import { staticLecturerPreference } from "@/constants";
 
 type Props = {};
 
@@ -18,11 +19,16 @@ const page = (props: Props) => {
     queryKey: ["lecturer-preferences"],
     queryFn: () => getAllLecturerPreferences(),
   });
+  console.log(lecturerPreferences,staticLecturerPreference);
   return (
     <div className="flex-1 container mx-auto py-5">
       <h1 className="text-2xl font-bold">Lecturer Preferences</h1>
       {lecturerPreferences && (
-        <DataTable columns={columns} data={lecturerPreferences} />
+        <DataTable
+        columns={columns}
+        data={lecturerPreferences.length > 0 ? lecturerPreferences : staticLecturerPreference}
+          showSearch={false}
+        />
       )}
 
       {isError && <h1>{error.message}</h1>}

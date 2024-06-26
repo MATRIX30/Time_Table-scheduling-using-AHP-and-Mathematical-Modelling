@@ -1,15 +1,15 @@
 import { create } from "zustand";
 
-interface PrferenceStoreType {
+interface PreferenceStoreType {
   open: boolean;
   onOpen: () => void;
   onClose: () => void;
   setOpen:(value:boolean)=>void;
-  selectedPreference: PrferenceType | null;
-  setSelectedPreference: (prf: PrferenceType) => void;
+  selectedPreference: AdminstratorPreferenceType | null;
+  setSelectedPreference: (prf: AdminstratorPreferenceType) => void;
 }
 
-export const usePreferenceStore = create<PrferenceStoreType>((set) => ({
+export const usePreferenceStore = create<PreferenceStoreType>((set) => ({
   selectedPreference: null,
   setSelectedPreference: (prf) => set({ selectedPreference: prf }),
   open: false,

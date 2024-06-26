@@ -80,16 +80,16 @@ const Preferences = (props: Props) => {
                 className="shadow-md p-5 rounded-md relative group/preference"
               >
                 <p className="text-muted-foreground">
-                  Hours Weekend : {pref.hoursWeekend}
+                  Hours Weekend : {pref.courseOnEvening}
                 </p>
                 <p className="text-muted-foreground">
-                  Equilibre Programmation : {pref.equilibreProgrammation}
+                  Equilibre Programmation : {pref.courseOnMorning}
                 </p>
                 <p className="text-muted-foreground">
                   Matiere Multiple Professeurs :{" "}
-                  {pref.matiereMultipleProfesseurs}
+                  {pref.havingDaysOff}
                 </p>
-                <p className="text-muted-foreground">UserId : {pref.userId}</p>
+                <p className="text-muted-foreground">UserId : {pref.admin}</p>
                 <div className="absolute top-5 right-5 items-center hidden group-hover/preference:flex border rounded-md">
                   <Button
                     variant={"ghost"}

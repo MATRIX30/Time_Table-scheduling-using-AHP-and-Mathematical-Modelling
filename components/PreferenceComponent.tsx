@@ -42,7 +42,10 @@ export default function PreferenceComponent({
   const form = useForm<AdminPreferenceType>({
     resolver: zodResolver(adminPreferenceSchema),
     defaultValues: {
-
+        courseOnEvening:preference?.courseOnEvening|| 0,
+        havingDaysOff:preference?.havingDaysOff||0,
+        courseOnMorning:preference?.courseOnMorning||0,
+        preferenceNumberOfHours:preference?.preferenceNumberOfHours||0,
     },
     mode: "onChange",
   });
@@ -110,7 +113,7 @@ export default function PreferenceComponent({
                   <FormControl>
                     <Slider
                       max={10}
-                      defaultValue={[0]}
+                      defaultValue={[preference?.courseOnMorning||0]}
                       step={1}
                       onValueChange={(values) => {
                         if (values.length > 0) {
@@ -167,7 +170,7 @@ export default function PreferenceComponent({
                   <FormControl>
                     <Slider
                       max={10}
-                      defaultValue={[0]}
+                      defaultValue={[preference?.courseOnEvening||0]}
                       step={1}
                       onValueChange={(values) => {
                         if (values.length > 0) {
@@ -260,7 +263,7 @@ export default function PreferenceComponent({
                     /> */}
                     <Slider
                       max={10}
-                      defaultValue={[0]}
+                      defaultValue={[preference?.havingDaysOff||0]}
                       step={1}
                       onValueChange={(values) => {
                         if (values.length > 0) {
@@ -276,15 +279,15 @@ export default function PreferenceComponent({
             />
             <FormField
               control={form.control}
-              name="PreferenceNumberOfHours"
+              name="preferenceNumberOfHours"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Preference Number Of Hours</FormLabel>
                   <FormControl>
                    
                     <Slider
-                      max={10}
-                      defaultValue={[0]}
+                      max={15}
+                      defaultValue={[preference?.preferenceNumberOfHours||0]}
                       step={3}
                       onValueChange={(values) => {
                         if (values.length > 0) {
@@ -293,7 +296,7 @@ export default function PreferenceComponent({
                       }}
                     />
                   </FormControl>
-                  <FormDescription>{field.value} / 10</FormDescription>
+                  <FormDescription>{field.value} / 15</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}

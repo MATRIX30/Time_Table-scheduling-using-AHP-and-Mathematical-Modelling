@@ -29,7 +29,7 @@ export const lecturerPreferenceSchema: Schema = new mongoose.Schema({
     min: 0,
     max: 7,
   },
-  PreferenceNumberOfHours: {
+  preferenceNumberOfHours: {
     type: Number,
     required: true,
     min: 3,

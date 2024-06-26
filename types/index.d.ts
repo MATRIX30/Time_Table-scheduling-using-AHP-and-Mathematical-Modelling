@@ -2,7 +2,7 @@ declare interface PrferenceType {
   courseOnMorning: number;
   courseOnEvening: number;
   havingDaysOff: number;
-  PreferenceNumberOfHours: number;
+  preferenceNumberOfHours: number;
   admin:string;
   _id?: string;
   _v?: number;
@@ -12,7 +12,7 @@ declare interface AdminstratorPreferenceType {
   courseOnMorning: number;
   courseOnEvening: number;
   havingDaysOff: number;
-  PreferenceNumberOfHours: number;
+  preferenceNumberOfHours: number;
   admin:string;
   _id?: string;
   _v?: number;
@@ -30,19 +30,19 @@ declare interface UserType {
 
 declare interface LecturerPreferenceType {
   _id: string;
-  _v: number;
+  _v?: number;
   courseOnMorning: number;
   courseOnEvening: number;
   havingDaysOff: number;
-  PreferenceNumberOfHours: number;
+  preferenceNumberOfHours: number;
   teacher: string;
 }
 
 declare interface StudentPreference {
   _id: string;
-  _v: number;
+  _v?: number;
   courseOnMorning: number;
   courseOnEvening: number;
-  havingDayOff: number;
+  havingDaysOff: number;
   studentId: string;
 }

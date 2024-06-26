@@ -30,8 +30,8 @@ const DeletePreference = ({ preference,className }: Props) => {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button variant={"ghost"} size={"icon"} className={cn("",className)}>
-          <TrashIcon className="w-4 h-4 text-red-400" />
+        <Button variant={"ghost"} size={"icon"} className={cn("")}>
+          <TrashIcon className={cn("text-red-400",className)} />
         </Button>
       </AlertDialogTrigger>
       <AlertDialogContent>

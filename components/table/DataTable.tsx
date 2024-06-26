@@ -33,6 +33,7 @@ interface DataTableProps<TData, TValue> {
   data: TData[];
   className?: string;
   placeholder?: string;
+  showSearch?: boolean;
 }
 
 export function DataTable<TData, TValue>({
@@ -40,6 +41,7 @@ export function DataTable<TData, TValue>({
   data,
   className,
   placeholder = "",
+  showSearch = false,
 }: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
@@ -68,28 +70,31 @@ export function DataTable<TData, TValue>({
   return (
     <div>
       <div className="flex items-center py-4">
-        <Input
-          placeholder={placeholder}
-          value={table.getColumn("*")?.getFilterValue() as string}
-          onChange={(event) => {
-            table
-              .getAllColumns()
-              .filter(
-                (column) =>
-                  typeof column.accessorFn !== "undefined" &&
-                  column.getCanHide()
-              )
-              .map((column) => {
-                console.log("column.id : ", column.id);
-                if (column.id) {
-                  table
-                    .getColumn(column.id)
-                    ?.setFilterValue(event.target.value);
-                }
-              });
-          }}
-          className="max-w-sm"
-        />
+        {showSearch && (
+          <Input
+            placeholder={placeholder}
+            value={table.getColumn("*")?.getFilterValue() as string}
+            onChange={(event) => {
+              table
+                .getAllColumns()
+                .filter(
+                  (column) =>
+                    typeof column.accessorFn !== "undefined" &&
+                    column.getCanHide()
+                )
+                .map((column) => {
+                  console.log("column.id : ", column.id);
+                  if (column.id) {
+                    table
+                      .getColumn(column.id)
+                      ?.setFilterValue(event.target.value);
+                  }
+                });
+            }}
+            className="max-w-sm"
+          />
+        )}
+
         <DataTableViewOptions table={table} />
       </div>
       <div className="rounded-md border pb-1">

@@ -36,7 +36,7 @@ const page = (props: Props) => {
           <Loader className="animate-spin" />
         </div>
       )}
-      {preferences && <DataTable columns={columns} data={preferences} />}
+      {preferences && <DataTable  columns={columns} data={preferences} />}
       {isError && <h3>{error.message}</h3>}
     </div>
   );
