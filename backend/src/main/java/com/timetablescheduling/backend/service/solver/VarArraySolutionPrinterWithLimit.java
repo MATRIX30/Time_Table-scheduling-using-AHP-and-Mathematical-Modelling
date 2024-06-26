@@ -61,7 +61,7 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 		       	      		    isWorking = true;
 		       	      		    System.out.printf("  %s scheduled at day %s at time %s in room %s%n", allCourses.get(c).getName(), allDays.get(d).getName(), allTimeSlots.get(t).getTime(), allRooms.get(r).getName());
 
-								System.out.println("saving cell . . .");
+								//System.out.println("saving cell . . .");
 
 								TimeTableCell cell = save(allTimeSlots.get(t), allDays.get(d), allRooms.get(r), allCourses.get(c));
 								timetable.getTimetableCells().add(cell);
@@ -74,7 +74,6 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 				    	}
 
 	     	    	}
-					break;
 
 	          	}
 
@@ -82,7 +81,7 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 				timeTableService.save(timetable);
 				System.out.println("Save completed");
 
-				/*for (int c = 0; c < allCourses.size(); c++) {
+				for (int c = 0; c < allCourses.size(); c++) {
 					for (int l = 0; l < allLecturer.size(); l++) {
 						if (allLecturer.get(l).getCourse().getFiliere().getName().equals(allCourses.get(c).getFiliere().getName()) && booleanValue(teacherSchedules[c][l])) {
 							System.out.printf("   %s scheduled to teach course %s%n", allLecturer.get(l).getName(), allCourses.get(c).getName());
@@ -92,7 +91,6 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 						}
 					}
 				}
-				*/
 
 	          	solutionCount++;
 	          	if (solutionCount >= solutionLimit) {
@@ -114,8 +112,8 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
         timeTableCell.setFiliere(course.getFiliere());
         timeTableCell.setSemestre(course.getSemestre());
         timeTableCell.setLevel(course.getLevel());
-        Iterable<Lecturer> lecturers = lecturerService.getByCourse(course.getName());
-        Lecturer _lecturer = null;
+        Iterable<Lecturer> lecturers = lecturerService.getByCourseCode(course.getCode());
+        Lecturer _lecturer = new Lecturer("default", false);
         for (Lecturer lecturer : lecturers) {
             if (!lecturer.isAssistant()) _lecturer = lecturer;
         }

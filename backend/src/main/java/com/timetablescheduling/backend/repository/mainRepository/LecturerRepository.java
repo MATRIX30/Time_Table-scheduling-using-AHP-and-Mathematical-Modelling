@@ -1,11 +1,12 @@
 package com.timetablescheduling.backend.repository.mainRepository;
 
-import com.timetablescheduling.backend.models.mainModels.Lecturer;
+import java.util.Optional;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import com.timetablescheduling.backend.models.mainModels.Lecturer;
 
 @Repository
 public interface LecturerRepository extends MongoRepository<Lecturer, Integer> {
@@ -13,4 +14,8 @@ public interface LecturerRepository extends MongoRepository<Lecturer, Integer> {
     boolean existsByName(String name);
     @Query(" {'course.name' : ?0} ")
     Iterable<Lecturer> findByCourse(String course);
+
+    @Query(" {'course.code' : ?0} ")
+    Iterable<Lecturer> findByCourseCode(String code);
+
 }

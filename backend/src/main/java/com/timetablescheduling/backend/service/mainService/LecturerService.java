@@ -1,15 +1,13 @@
 package com.timetablescheduling.backend.service.mainService;
 
-import com.timetablescheduling.backend.models.mainModels.Course;
-import com.timetablescheduling.backend.models.mainModels.Filiere;
-import com.timetablescheduling.backend.models.mainModels.Lecturer;
-import com.timetablescheduling.backend.repository.mainRepository.FiliereRepository;
-import com.timetablescheduling.backend.repository.mainRepository.LecturerRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.timetablescheduling.backend.models.mainModels.Lecturer;
+import com.timetablescheduling.backend.repository.mainRepository.LecturerRepository;
 @Service
 public class LecturerService {
     @Autowired
@@ -34,5 +32,9 @@ public class LecturerService {
 
     public Iterable<Lecturer> getByCourse(String course) {
         return repository.findByCourse(course);
+    }
+
+    public Iterable<Lecturer> getByCourseCode(String code) {
+        return repository.findByCourseCode(code);
     }
 }

@@ -9,6 +9,7 @@ import com.timetablescheduling.backend.models.mainModels.Course;
 import com.timetablescheduling.backend.models.mainModels.Day;
 import com.timetablescheduling.backend.models.mainModels.Lecturer;
 import com.timetablescheduling.backend.models.mainModels.Room;
+import com.timetablescheduling.backend.models.mainModels.StudentLevel;
 import com.timetablescheduling.backend.models.mainModels.TimeSlot;
 import com.timetablescheduling.backend.repository.mainRepository.CourseRepository;
 import com.timetablescheduling.backend.repository.mainRepository.DayRepository;
@@ -18,6 +19,7 @@ import com.timetablescheduling.backend.repository.mainRepository.TimeSlotsReposi
 import com.timetablescheduling.backend.repository.mainRepository.TimeTableCellRepository;
 import com.timetablescheduling.backend.service.AHP.PreferenceCompute;
 import com.timetablescheduling.backend.service.mainService.LecturerService;
+import com.timetablescheduling.backend.service.mainService.StudentLevelService;
 import com.timetablescheduling.backend.service.mainService.TimeTableService;
 import com.timetablescheduling.backend.service.secondaryService.AdminPreferenceService;
 import com.timetablescheduling.backend.service.secondaryService.StudentPreferenceService;
@@ -42,8 +44,10 @@ public class TestService {
     private final StudentPreferenceService studentPreferenceService;
     private final TimeTableService timeTableService;
     private final TimeTableCellRepository  timeTableCellRepository;
+    private final StudentLevelService studentLevelService;
     
     public TestService(CourseRepository courseRepository,
+    StudentLevelService studentLevelService,
             LecturerService lecturerService,
             TimeTableCellRepository timeTableCellRepository,
             TimeTableService timeTableService,
@@ -55,6 +59,7 @@ public class TestService {
             AdminPreferenceService adminPreferenceService
         ) {
 
+        this.studentLevelService = studentLevelService;
         this.studentPreferenceService = studentPreferenceService;
         this.adminPreferenceService = adminPreferenceService;
         this.roomRepository = roomRepository;
@@ -94,8 +99,9 @@ public class TestService {
             List<Lecturer> allLecturers = lecturerRepository.findAll();
             List<TimeSlot> allTimeSlots = timeSlotsRepository.findAll();
             List<Day> allDays = dayRepository.findAll();
+            List<StudentLevel> allStudentLevels = studentLevelService.getAll();
 
-            TimeTableSolver solver = new TimeTableSolver(timeTableService, timeTableCellRepository, lecturerService, allLecturers,
+            TimeTableSolver solver = new TimeTableSolver(timeTableService, timeTableCellRepository, lecturerService, allStudentLevels, allLecturers,
                 allDays,
                 allTimeSlots,
                 allCourses,

@@ -7,11 +7,14 @@ import com.google.ortools.sat.CpModel;
 import com.google.ortools.sat.CpSolver;
 import com.google.ortools.sat.CpSolverStatus;
 import com.google.ortools.sat.DoubleLinearExpr;
+import com.google.ortools.sat.LinearExpr;
+import com.google.ortools.sat.LinearExprBuilder;
 import com.google.ortools.sat.Literal;
 import com.timetablescheduling.backend.models.mainModels.Course;
 import com.timetablescheduling.backend.models.mainModels.Day;
 import com.timetablescheduling.backend.models.mainModels.Lecturer;
 import com.timetablescheduling.backend.models.mainModels.Room;
+import com.timetablescheduling.backend.models.mainModels.StudentLevel;
 import com.timetablescheduling.backend.models.mainModels.TimeSlot;
 import com.timetablescheduling.backend.repository.mainRepository.TimeTableCellRepository;
 import com.timetablescheduling.backend.service.mainService.LecturerService;
@@ -49,6 +52,7 @@ public class TimeTableSolver {
 		TimeTableCellRepository timeTableCellRepository,
 		LecturerService lecturerService,
 		
+			List<StudentLevel> allStudentLevels,	
 			List<Lecturer> allLecturers,
 			List<Day> allDays,
 			List<TimeSlot> allTimeSlots,
@@ -59,6 +63,7 @@ public class TimeTableSolver {
 			AdminAndLecturerPreferenceResult averageAdminAndLecturerPreferences,
 			StudentPreferenceResult averageStudentPreferences
 			) {
+
 				this.allLecturers = allLecturers;
 				this.allCourses = allCourses;
 				this.allDays = allDays;
@@ -187,11 +192,17 @@ public class TimeTableSolver {
 			// Each teacher teaches at most 10 courses
 			for (int l=0; l < allLecturers.size(); l++) {
 				List<Literal> teacherCourses = new ArrayList<>();
+				LinearExprBuilder builder = LinearExpr.newBuilder();
 				for (int c=0; c < allCourses.size(); c++) {
 					if (allLecturers.get(l).getCourse().getFiliere().getName().equals(allCourses.get(c).getFiliere().getName())) {
 						teacherCourses.add(teacherSchedules[c][l]);
+						builder.add(teacherSchedules[c][l]);
 					}
+
 				}
+
+				cpModel.addLinearConstraint(builder.build(), 0, 8);
+
 			}
 
 
