@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 type ModalProps = {
-  onClose: () => void; // Function to handle modal close
+  onClose: () => void;
 };
 
 
