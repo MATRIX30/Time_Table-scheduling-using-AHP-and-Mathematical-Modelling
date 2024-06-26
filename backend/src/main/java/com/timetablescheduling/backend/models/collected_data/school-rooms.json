@@ -1,0 +1,491 @@
+{
+  "facultes": {
+    "sciences": {
+      "filiere": {
+        "Informatique": [
+          {
+            "num": "A1001",
+            "capacite": "1001",
+            "batiment": "AMPHI",
+            "filier": "INFO"
+          },
+          {
+            "num": "A1002",
+            "capacite": "1002",
+            "batiment": "AMPHI",
+            "filier": "INFO"
+          },
+          {
+            "num": "AI",
+            "capacite": "84",
+            "batiment": "AMPHI",
+            "filier": "INFO"
+          },
+          {
+            "num": "A250",
+            "capacite": "250",
+            "batiment": "AMPHI",
+            "filier": "INFO"
+          },
+          {
+            "num": "A135",
+            "capacite": "135",
+            "batiment": "AMPHI",
+            "filier": "INFO"
+          },
+          {
+            "num": "A502",
+            "capacite": "502",
+            "batiment": "AMPHI",
+            "filier": "INFO"
+          },
+          {
+            "num": "A350",
+            "capacite": "350",
+            "batiment": "AMPHI",
+            "filier": "INFO"
+          },
+          {
+            "num": "S006",
+            "capacite": "70",
+            "batiment": "EXTENSION 1",
+            "filier": "INFO"
+          },
+          {
+            "num": "S008",
+            "capacite": "115",
+            "batiment": "EXTENSION 1",
+            "filier": "INFO"
+          },
+          {
+            "num": "AIII",
+            "capacite": "156",
+            "batiment": "AMPHI",
+            "filier": "INFO"
+          },
+          {
+            "num": "S005",
+            "capacite": "56",
+            "batiment": "EXTENSION 2",
+            "filier": "INFO"
+          },
+          {
+            "num": "S003",
+            "capacite": "70",
+            "batiment": "EXTENSION 2",
+            "filier": "INFO"
+          },
+          {
+            "num": "R110",
+            "capacite": "54",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filier": "INFO"
+          },
+          {
+            "num": "E203",
+            "capacite": "36",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filier": "INFO"
+          },
+          {
+            "num": "R101",
+            "capacite": "126",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filier": "INFO"
+          },
+          {
+            "num": "R108",
+            "capacite": "126",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filier": "INFO"
+          }
+        ],
+        "Mathematique": [
+          {
+            "num": "A1001",
+            "capacite": "1001",
+            "batiment": "AMPHI",
+            "filier": "MATH"
+          },
+          {
+            "num": "A1002",
+            "capacite": "1002",
+            "batiment": "AMPHI",
+            "filier": "MATH"
+          },
+
+          {
+            "num": "A250",
+            "capacite": "250",
+            "batiment": "AMPHI",
+            "filier": "MATH"
+          },
+
+          {
+            "num": "A502",
+            "capacite": "502",
+            "batiment": "AMPHI",
+            "filier": "MATH"
+          },
+
+          {
+            "num": "A350",
+            "capacite": "350",
+            "batiment": "AMPHI",
+            "filier": "MATH"
+          },
+          {
+            "num": "S01",
+            "capacite": "40",
+            "batiment": "EXTENSION 1",
+            "filier": "MATH"
+          },
+          {
+            "num": "S101",
+            "capacite": "130",
+            "batiment": "EXTENSION 1",
+            "filier": "MATH"
+          },
+          {
+            "num": "S102",
+            "capacite": "130",
+            "batiment": "EXTENSION 1",
+            "filier": "MATH"
+          },
+          {
+            "num": "AII",
+            "capacite": "150",
+            "batiment": "AMPHI",
+            "filier": "MATH"
+          },
+          {
+            "num": "AI",
+            "capacite": "100",
+            "batiment": "AMPHI",
+            "filier": "MATH"
+          },
+          {
+            "num": "S103",
+            "capacite": "30",
+            "batiment": "EXTENSION 1",
+            "filier": "MATH"
+          },
+          {
+            "num": "S108",
+            "capacite": "30",
+            "batiment": "EXTENSION 1",
+            "filier": "MATH"
+          },
+          {
+            "num": "S110",
+            "capacite": "30",
+            "batiment": "EXTENSION 1",
+            "filier": "MATH"
+          },
+          {
+            "num": "R108",
+            "capacite": "30",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filier": "MATH"
+          }
+        ],
+        "Chimie": [
+          {
+            "num": "A1001",
+            "capacite": "1001",
+            "batiment": "AMPHI",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "A1002",
+            "capacite": "1002",
+            "batiment": "AMPHI",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "AI",
+            "capacite": "84",
+            "batiment": "AMPHI",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "AII",
+            "capacite": "84",
+            "batiment": "AMPHI",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "A502",
+            "capacite": "502",
+            "batiment": "AMPHI",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "A250",
+            "capacite": "250",
+            "batiment": "AMPHI",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "A350",
+            "capacite": "350",
+            "batiment": "AMPHI",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "AIII",
+            "capacite": "156",
+            "batiment": "AMPHI",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "S012",
+            "capacite": "70",
+            "batiment": "EXTENSION 2",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "R110",
+            "capacite": "54",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "E203",
+            "capacite": "36",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "E206/207",
+            "capacite": "54",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "CHIM"
+          },
+          {
+            "num": "R108",
+            "capacite": "126",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "CHIM"
+          }
+        ],
+        "Giosciences": [
+          {
+            "num": "A250",
+            "capacite": "250",
+            "batiment": "AMPHI",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "AII",
+            "capacite": "84",
+            "batiment": "AMPHI",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "A502",
+            "capacite": "502",
+            "batiment": "AMPHI",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "Polygone",
+            "capacite": "42",
+            "batiment": "POLYGONE",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "A350",
+            "capacite": "350",
+            "batiment": "AMPHI",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "AIII",
+            "capacite": "156",
+            "batiment": "AMPHI",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "S010",
+            "capacite": "60",
+            "batiment": "EXTENSION 2",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "R106",
+            "capacite": "36",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "R110",
+            "capacite": "54",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "E206/207",
+            "capacite": "54",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "R101",
+            "capacite": "126",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "GEOS"
+          },
+          {
+            "num": "R108",
+            "capacite": "126",
+            "batiment": "BLOC PEDAGOGIQUE",
+            "filiere": "GEOS"
+          }
+        ],
+        "Biosciences":[
+            {
+                "num": "A1001",
+                "capacite": "1001",
+                "batiment": "AMPHI",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "A1002",
+                "capacite": "1002",
+                "batiment": "AMPHI",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "AI",
+                "capacite": "84",
+                "batiment": "AMPHI",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "AII",
+                "capacite": "84",
+                "batiment": "AMPHI",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "AIII",
+                "capacite": "156",
+                "batiment": "AMPHI",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "A502",
+                "capacite": "502",
+                "batiment": "AMPHI",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "S24A",
+                "capacite": "",
+                "batiment": "",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "S24B",
+                "capacite": "",
+                "batiment": "",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "S48",
+                "capacite": "",
+                "batiment": "",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "S58",
+                "capacite": "",
+                "batiment": "",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "E206/207",
+                "capacite": "54",
+                "batiment": "BLOC PEDAGOGIQUE",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "A350",
+                "capacite": "350",
+                "batiment": "AMPHI",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "R101",
+                "capacite": "126",
+                "batiment": "BLOC PEDAGOGIQUE",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "A135",
+                "capacite": "135",
+                "batiment": "AMPHI",
+                "filier": "BIOS"
+            },
+            {
+                "num": "S012",
+                "capacite": "70",
+                "batiment": "EXTENSION 2",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "R110",
+                "capacite": "54",
+                "batiment": "BLOC PEDAGOGIQUE",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "AIII",
+                "capacite": "156",
+                "batiment": "AMPHI",
+                "filier": "BIOS"
+            },
+    
+            {
+                "num": "R108",
+                "capacite": "126",
+                "batiment": "BLOC PEDAGOGIQUE",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "R203",
+                "capacite": "",
+                "batiment": "",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "Poly I",
+                "capacite": "36",
+                "batiment": "POLYGONE",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "Poly II",
+                "capacite": "38",
+                "batiment": "POLYGONE",
+                "filiere": "BIOS"
+            },
+            {
+                "num": "R106",
+                "capacite": "36",
+                "batiment": "BLOC PEDAGOGIQUE",
+                "filier": "BIOS"
+            },
+            {
+                "num": "S01/02",
+                "capacite": "54",
+                "batiment": "BLOC PEDAGOGIQUE",
+                "filier": "BIOS"
+            }
+        ],
+        "Physique": []
+      }
+    }
+  }
+}
