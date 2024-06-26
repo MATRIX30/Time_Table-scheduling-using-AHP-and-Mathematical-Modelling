@@ -1,14 +1,14 @@
 "use server";
 import dbConnect from "@/lib/dbConnect";
+import AdminPreference, { IAdminPreference } from "@/models/AdminPreference";
 // import Preference, { IPreferences } from "@/models/Prefernces";
 import { revalidatePath } from "next/cache";
-import AdminPreference, { IAdminPreference } from "./models/AdminPreference";
 
 export const revalidatePage = (page: string) => {
   return revalidatePath(page);
 };
 
-export async function getPreferences(): Promise<AdminstratorPreferenceType[]> {
+export async function getAdminPreferences(): Promise<AdminstratorPreferenceType[]> {
   await dbConnect();
   try {
     const preferences = await AdminPreference.find({});
@@ -20,7 +20,7 @@ export async function getPreferences(): Promise<AdminstratorPreferenceType[]> {
   }
 }
 
-export async function createPreference(
+export async function createAdminPreference(
   body: AdminstratorPreferenceType
 ): Promise<AdminstratorPreferenceType> {
   await dbConnect();
@@ -35,7 +35,7 @@ export async function createPreference(
 }
 
 // Update AdminPreference
-export async function updatePreference(
+export async function updateAdminPreference(
   id: string,
   pref: Partial<IAdminPreference>
 ): Promise<AdminstratorPreferenceType> {
@@ -57,7 +57,7 @@ export async function updatePreference(
 }
 
 // Delete AdminPreference
-export async function deletePreference(id: string): Promise<AdminstratorPreferenceType> {
+export async function deleteAdminPreference(id: string): Promise<AdminstratorPreferenceType> {
   await dbConnect();
   try {
     const deletedPreference = await AdminPreference.findByIdAndDelete(id);

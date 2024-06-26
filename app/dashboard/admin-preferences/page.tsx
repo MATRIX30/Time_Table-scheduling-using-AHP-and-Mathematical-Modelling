@@ -6,6 +6,7 @@ import React from "react";
 import columns from "./_components/columns";
 import { useQuery } from "@tanstack/react-query";
 import AddPreferenceBtn from "@/components/AddPreferenceBtn";
+import { Loader } from "lucide-react";
 
 type Props = {};
 
@@ -30,7 +31,10 @@ const page = (props: Props) => {
           <AddPreferenceBtn size={"sm"} />
         )}
       </div>
-      <Preferences />
+      {/* <Preferences /> */}
+      {isPending && (<div className="flex-1 flex justify-center items-center">
+        <Loader className="animate-spin"/>
+      </div>)}
       {preferences && <DataTable columns={columns} data={preferences} />}
       {isError && <h3>{error.message}</h3>}
     </div>
