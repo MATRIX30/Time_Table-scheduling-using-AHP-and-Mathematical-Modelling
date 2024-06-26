@@ -1,68 +1,82 @@
 "use server";
 import dbConnect from "@/lib/dbConnect";
-import Preference, { IPreferences } from "@/models/Prefernces";
+// import Preference, { IPreferences } from "@/models/Prefernces";
 import { revalidatePath } from "next/cache";
+import AdminPreference, { IAdminPreference } from "./models/AdminPreference";
 
-export const revalidatePage = (page:string)=>{
-  return revalidatePath(page)
-}
+export const revalidatePage = (page: string) => {
+  return revalidatePath(page);
+};
 
-export async function getPreferences() {
+export async function getPreferences(): Promise<AdminstratorPreferenceType[]> {
   await dbConnect();
   try {
-    const preferences = await Preference.find({});
-    return preferences.map(pref=>JSON.parse(JSON.stringify(pref.toJSON())));
+    const preferences = await AdminPreference.find({});
+    return preferences.map((pref) =>
+      JSON.parse(JSON.stringify(pref.toJSON()))
+    ) as AdminstratorPreferenceType[];
   } catch (error: any) {
-    return error.message;
+    throw new Error(error.message);
   }
 }
 
-export async function createPreference(body:PrferenceType) {
+export async function createPreference(
+  body: AdminstratorPreferenceType
+): Promise<AdminstratorPreferenceType> {
   await dbConnect();
   try {
-    
-    const newPreference = await Preference.create(body);
-    revalidatePath("/")
+    const newPreference = await AdminPreference.create(body);
+    revalidatePath("/");
 
-    return JSON.parse(JSON.stringify(newPreference.toJSON())) as PrferenceType;
+    return JSON.parse(
+      JSON.stringify(newPreference.toJSON())
+    ) as AdminstratorPreferenceType;
   } catch (error: any) {
-    return error.message;
+    throw new Error(error.message);
   }
 }
 
-// Update Preference
+// Update AdminPreference
 export async function updatePreference(
   id: string,
-  pref: Partial<IPreferences>
-) {
+  pref: Partial<IAdminPreference>
+): Promise<AdminstratorPreferenceType> {
   await dbConnect();
   try {
-    const updatedPreference = await Preference.findByIdAndUpdate(id, pref, {
-      new: true,
-      runValidators: true,
-    });
+    const updatedPreference = await AdminPreference.findByIdAndUpdate(
+      id,
+      pref,
+      {
+        new: true,
+        runValidators: true,
+      }
+    );
     if (!updatedPreference) {
-      throw new Error("Preference not found");
+      throw new Error("AdminPreference not found");
     }
-    revalidatePath("/")
+    revalidatePath("/");
 
-    return JSON.parse(JSON.stringify(updatedPreference.toJSON()));
+    return JSON.parse(
+      JSON.stringify(updatedPreference.toJSON())
+    ) as AdminstratorPreferenceType;
   } catch (error: any) {
-    return error.message;
+    throw new Error(error.message);
   }
 }
 
-// Delete Preference
-export async function deletePreference(id: string) {
+// Delete AdminPreference
+export async function deletePreference(
+  id: string
+): Promise<AdminstratorPreferenceType> {
   await dbConnect();
   try {
-    const deletedPreference = await Preference.findByIdAndDelete(id);
+    const deletedPreference = await AdminPreference.findByIdAndDelete(id);
     if (!deletedPreference) {
-      throw new Error("Preference not found");
+      throw new Error("AdminPreference not found");
     }
-    revalidatePath("/")
+    revalidatePath("/");
     return JSON.parse(JSON.stringify(deletedPreference.toJSON()));
   } catch (error: any) {
-    return error.message;
+    throw new Error(error.message);
   }
 }

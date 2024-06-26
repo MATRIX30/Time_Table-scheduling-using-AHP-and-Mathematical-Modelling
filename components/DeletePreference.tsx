@@ -14,12 +14,14 @@ import { Button } from "./ui/button";
 import { TrashIcon } from "lucide-react";
 import toast from "react-hot-toast";
 import { deletePreference } from "@/actions";
+import { cn } from "@/lib/utils";
 
 type Props = {
   preference: PrferenceType;
+  className?:string;
 };
 
-const DeletePreference = ({ preference }: Props) => {
+const DeletePreference = ({ preference,className }: Props) => {
   const handleDelete = async () => {
     const promise = await deletePreference(preference._id!);
     toast.success("Preference deleted successfully")
@@ -28,8 +30,8 @@ const DeletePreference = ({ preference }: Props) => {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button variant={"ghost"} size={"icon"}>
-          <TrashIcon className="w-5 h-5 text-red-400" />
+        <Button variant={"ghost"} size={"icon"} className={cn("",className)}>
+          <TrashIcon className="w-4 h-4 text-red-400" />
         </Button>
       </AlertDialogTrigger>
       <AlertDialogContent>

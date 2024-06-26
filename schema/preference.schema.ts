@@ -4,7 +4,6 @@ export const PreferenceSchema = z.object({
   hoursWeekend: z.number(),
   equilibreProgrammation: z.number(),
   matiereMultipleProfesseurs: z.number(),
-  userId: z.number(),
 });
 
 // Type inference from Zod schema

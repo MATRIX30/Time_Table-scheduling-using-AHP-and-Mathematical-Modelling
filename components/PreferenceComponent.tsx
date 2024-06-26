@@ -1,7 +1,7 @@
 "use client";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {  useState } from "react";
+import { useState } from "react";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -19,6 +19,11 @@ import {
 import { createPreference, updatePreference } from "@/actions";
 import { usePreferenceStore } from "@/hooks/use-preferences";
 import { Loader } from "lucide-react";
+import { useMutation } from "@tanstack/react-query";
+import { getSession } from "@/lib/getSession";
+import { Progress } from "./ui/progress";
+import { Slider } from "./ui/slider";
+import adminPreferenceSchema, { AdminPreferenceType } from "@/schema/adminPreferences.chema";
 
 type PreferenceComponentProps = {
   onSave?: (data: PrferenceType) => void;
@@ -28,30 +33,38 @@ export default function PreferenceComponent({
   onSave,
 }: PreferenceComponentProps) {
   const { selectedPreference: preference } = usePreferenceStore();
-  const [isSubmitting,setIsSubmitting] = useState(false)
-  const form = useForm<PreferenceType>({
-    resolver: zodResolver(PreferenceSchema),
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { mutate: createPreferenceMutation, isPending: isPreferencePending } =
+    useMutation({
+      mutationFn: createPreference,
+    });
+
+  const form = useForm<AdminPreferenceType>({
+    resolver: zodResolver(adminPreferenceSchema),
     defaultValues: {
-      userId: preference?.userId || 0,
-      hoursWeekend: preference?.hoursWeekend || 0,
-      equilibreProgrammation: preference?.equilibreProgrammation || 0,
-      matiereMultipleProfesseurs: preference?.matiereMultipleProfesseurs || undefined,
+
     },
     mode: "onChange",
   });
 
-  async function onSubmit(values: PreferenceType) {
-    setIsSubmitting(true)
-    console.log(values);
+  async function onSubmit(values: AdminPreferenceType) {
+    setIsSubmitting(true);
     let _preference;
-    if(preference){
-      _preference = await updatePreference(preference?._id!,values)
-      
-      }else{
-      _preference = await createPreference(values);
+    let userId = "";
+    const session = await getSession();
+    if (session) {
+      userId = session.user._id!;
     }
-    setIsSubmitting(false)
-    
+    if (preference) {
+      _preference = await updatePreference(preference?._id!, {
+        admin:userId,
+        ...values,
+      });
+    } else {
+      _preference = await createPreference({ admin:userId, ...values });
+    }
+    setIsSubmitting(false);
+
     if (_preference._id) {
       toast("Preference added successfully!", {
         icon: "✔️",
@@ -65,10 +78,10 @@ export default function PreferenceComponent({
       toast.error("Could not add preference!");
     }
     // window.location.reload()
-    if (onSave && preference!==null) {
+    if (onSave && preference !== null) {
       onSave(preference);
     }
-    window.location.reload()
+    window.location.reload();
   }
 
   return (
@@ -81,7 +94,7 @@ export default function PreferenceComponent({
         >
           <div className="w-full">
             <h1 className="font-bold text-2xl">
-              {preference?._id ? "Update" : "Create"} Model Preferences
+              {preference?._id ? "Update" : "Create"} Admin Preferences
             </h1>
             <p className="text-muted-foreground">
               Fill the information below for the admin preference.
@@ -90,12 +103,22 @@ export default function PreferenceComponent({
           <div className="grid gap-6 w-full">
             <FormField
               control={form.control}
-              name="hoursWeekend"
+              name="courseOnMorning"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Hours per Weekend</FormLabel>
+                  <FormLabel>Course On Morning</FormLabel>
                   <FormControl>
-                    <Input
+                    <Slider
+                      max={10}
+                      defaultValue={[0]}
+                      step={1}
+                      onValueChange={(values) => {
+                        if (values.length > 0) {
+                          field.onChange(values[0]);
+                        }
+                      }}
+                    />
+                    {/* <Input
                       type="number"
                       min="0"
                       max="10"
@@ -111,10 +134,8 @@ export default function PreferenceComponent({
                           if (numberValue >= 0 && numberValue <= 10) {
                             field.onChange(numberValue);
                           } else {
-                            console.log("Value out of range");
                           }
                         } else {
-                          console.log("Invalid input: not a number");
                         }
                       }}
                       onBlur={(e) => {
@@ -130,21 +151,31 @@ export default function PreferenceComponent({
                           field.onChange(undefined);
                         }
                       }}
-                    />
+                    /> */}
                   </FormControl>
-                  <FormDescription></FormDescription>
+                  <FormDescription>{field.value} / 10</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <FormField
               control={form.control}
-              name="equilibreProgrammation"
+              name="courseOnEvening"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Programming Equilibrium</FormLabel>
+                  <FormLabel>Course on evening</FormLabel>
                   <FormControl>
-                    <Input
+                    <Slider
+                      max={10}
+                      defaultValue={[0]}
+                      step={1}
+                      onValueChange={(values) => {
+                        if (values.length > 0) {
+                          field.onChange(values[0]);
+                        }
+                      }}
+                    />
+                    {/* <Input
                       type="number"
                       min="0"
                       max="10"
@@ -160,10 +191,10 @@ export default function PreferenceComponent({
                           if (numberValue >= 0 && numberValue <= 10) {
                             field.onChange(numberValue);
                           } else {
-                            console.log("Value out of range");
+                           
                           }
                         } else {
-                          console.log("Invalid input: not a number");
+                          
                         }
                       }}
                       onBlur={(e) => {
@@ -179,21 +210,21 @@ export default function PreferenceComponent({
                           field.onChange(undefined);
                         }
                       }}
-                    />
+                    /> */}
                   </FormControl>
-                  <FormDescription></FormDescription>
+                  <FormDescription>{field.value} / 10</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <FormField
               control={form.control}
-              name="matiereMultipleProfesseurs"
+              name="havingDaysOff"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Multiple Professors per Subject</FormLabel>
+                  <FormLabel>Having Days Off</FormLabel>
                   <FormControl>
-                    <Input
+                    {/* <Input
                       type="number"
                       min="0"
                       max="10"
@@ -209,10 +240,8 @@ export default function PreferenceComponent({
                           if (numberValue >= 0 && numberValue <= 10) {
                             field.onChange(numberValue);
                           } else {
-                            console.log("Value out of range");
                           }
                         } else {
-                          console.log("Invalid input: not a number");
                         }
                       }}
                       onBlur={(e) => {
@@ -228,14 +257,48 @@ export default function PreferenceComponent({
                           field.onChange(undefined);
                         }
                       }}
+                    /> */}
+                    <Slider
+                      max={10}
+                      defaultValue={[0]}
+                      step={1}
+                      onValueChange={(values) => {
+                        if (values.length > 0) {
+                          field.onChange(values[0]);
+                        }
+                      }}
                     />
                   </FormControl>
-                  <FormDescription></FormDescription>
+                  <FormDescription>{field.value} / 10</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <FormField
+              control={form.control}
+              name="PreferenceNumberOfHours"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Preference Number Of Hours</FormLabel>
+                  <FormControl>
+                   
+                    <Slider
+                      max={10}
+                      defaultValue={[0]}
+                      step={1}
+                      onValueChange={(values) => {
+                        if (values.length > 0) {
+                          field.onChange(values[0]);
+                        }
+                      }}
+                    />
+                  </FormControl>
+                  <FormDescription>{field.value} / 10</FormDescription>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            {/* <FormField
               control={form.control}
               name="userId"
               render={({ field }) => (
@@ -259,7 +322,7 @@ export default function PreferenceComponent({
                         if (!isNaN(numberValue)) {
                           field.onChange(numberValue);
                         } else {
-                          console.log("Invalid input: not a number");
+                          
                         }
                       }}
                       onBlur={(e) => {
@@ -283,10 +346,13 @@ export default function PreferenceComponent({
                   <FormMessage />
                 </FormItem>
               )}
-            />
+            /> */}
           </div>
           <div className="justify-end">
-            <Button disabled={isSubmitting} type="submit">{isSubmitting && <Loader className="w-4 h-4 animate-ping"/>} Save Preferences</Button>
+            <Button disabled={isSubmitting} type="submit">
+              {isSubmitting && <Loader className="w-4 h-4 animate-spin" />} Save
+              Preferences
+            </Button>
           </div>
         </form>
       </Form>

@@ -4,7 +4,7 @@ export interface IPreferences extends Document {
   hoursWeekend: number;
   equilibreProgrammation: number;
   matiereMultipleProfesseurs: number;
-  userId: number;
+  userId: string;
 }
 
 export const preferenceSchema: Schema = new mongoose.Schema({
@@ -21,7 +21,7 @@ export const preferenceSchema: Schema = new mongoose.Schema({
     required: true, // Correct typo: use 'required' instead of 'require'
   },
   userId: {
-    type: Number,
+    type: String,
     required: true, // Correct typo: use 'required' instead of 'require'
   },
 });

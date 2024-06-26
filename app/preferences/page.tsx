@@ -11,8 +11,6 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FormEvent } from "react";
-import { createPreference } from "@/actions";
-import { IPreferences } from "@/models/Prefernces";
 
 export default function PreferencesPage() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -32,7 +30,6 @@ export default function PreferencesPage() {
       userId: parseInt(data.userId as string, 10),
     };
 
-    console.log({ preference });
 
     fetch("/api/preferences", {
       method: "POST",
@@ -40,8 +37,6 @@ export default function PreferencesPage() {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("Saved");
-        console.log({ data });
       });
   };
   return (

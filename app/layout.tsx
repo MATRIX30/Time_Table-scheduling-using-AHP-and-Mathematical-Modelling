@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import PreferenceModal from "@/components/modal/PreferenceModal";
+import { ThemeProvider } from "@/components/theme-provider";
+import ReactQueryProvider from "@/providers/ReactQueryProvider";
 
 const roboto = localFont({
   src: [
@@ -46,11 +48,20 @@ export default function RootLayout({
       <body
         suppressContentEditableWarning
         suppressHydrationWarning
-        className={`${roboto.variable} w-full h-screen p-0`}
+        className={`font-roboto w-full h-screen p-0`}
       >
-        <Toaster position="bottom-center" reverseOrder={false} />
-        <PreferenceModal/>
-        {children}
+        <ReactQueryProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Toaster position="bottom-center" reverseOrder={false} />
+            <PreferenceModal />
+            {children}
+          </ThemeProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );
