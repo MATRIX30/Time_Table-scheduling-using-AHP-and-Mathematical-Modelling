@@ -87,9 +87,9 @@ const Home: React.FC = () => {
             />
             </BoxReveal>
               <p className="text-gray-700 text-lg md:text-xl mb-8">
-                Manage your institution's operations with our comprehensive admin
-                dashboard. From scheduling to analytics, empower your team with the
-                tools they need to succeed.
+              This section of our application allows you to manage and display the preferences of all users, including Administrators, 
+              Students, and Lecturers. Easily configure some settings and personalize the experience for each user group 
+              to view their productivity and satisfaction.
               </p>
               <div className="flex space-x-4">
                 <button
