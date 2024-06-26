@@ -1,10 +1,8 @@
 package com.timetablescheduling.backend.service.secondaryService;
 
 import com.timetablescheduling.backend.models.secondaryModels.AdminPreferences;
-import com.timetablescheduling.backend.models.secondaryModels.StudentPreferences;
 import com.timetablescheduling.backend.repository.secondRepository.AdminPreferencesRepository;
 import com.timetablescheduling.backend.service.secondaryService.Results.AdminAndLecturerPreferenceResult;
-import com.timetablescheduling.backend.service.secondaryService.Results.StudentPreferenceResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,12 +24,15 @@ public class AdminPreferenceService {
         double havingDayOff = 0.0;
         double preferredNumberOfHour = 0.0;
         List<AdminPreferences> list = getAllAdminPreferences();
+        System.out.println(list);
         for (AdminPreferences item : list) {
             courseEvening += item.getCourseOnEvening();
             courseOnMorning += item.getCourseOnMorning();
             havingDayOff += item.getHavingDaysOff();
             preferredNumberOfHour += item.getPreferenceNumberOfHours();
+            System.out.println(item.getCourseOnEvening() + "," +item.getCourseOnMorning());
         }
+        System.out.println(list.size());
         return AdminAndLecturerPreferenceResult.builder()
                 .courseOnEvening(courseEvening / list.size())
                 .courseOnMorning(courseOnMorning / list.size())

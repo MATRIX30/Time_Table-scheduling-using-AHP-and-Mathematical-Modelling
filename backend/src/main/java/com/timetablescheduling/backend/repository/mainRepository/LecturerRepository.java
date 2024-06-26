@@ -1,5 +1,6 @@
 package com.timetablescheduling.backend.repository.mainRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -18,4 +19,6 @@ public interface LecturerRepository extends MongoRepository<Lecturer, Integer> {
     @Query(" {'course.code' : ?0} ")
     Iterable<Lecturer> findByCourseCode(String code);
 
+    @Query(" {'course.name' : ?0} ")
+    List<Lecturer> getByCourse(String course);
 }

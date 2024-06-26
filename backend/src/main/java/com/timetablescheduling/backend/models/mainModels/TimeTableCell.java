@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Document
 public class TimeTableCell extends BaseEntity {
     private TimeSlot timeSlot;
