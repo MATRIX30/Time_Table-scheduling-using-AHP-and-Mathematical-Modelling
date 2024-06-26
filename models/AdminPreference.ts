@@ -42,19 +42,21 @@ export const adminPreferenceSchema: Schema = new Schema({
 
 // Define the AdminPreference model
 let AdminPreference: mongoose.Model<IAdminPreference>;
-AdminPreference = mongoose.models["adminPreferences"];
+// AdminPreference = mongoose.models["adminPreferences"];
+// AdminPreference = mongoose.models["adminPreferences"];
+
 // AdminPreference = mongoose.model<IAdminPreference>(
 //   "adminPreferences",
 //   adminPreferenceSchema
 // );
-// if (!mongoose.models["adminPreferences"]) {
-//   AdminPreference = mongoose.model<IAdminPreference>(
-//     "adminPreferences",
-//     adminPreferenceSchema
-//   );
-// } else {
-//   AdminPreference = mongoose.models["adminPreferences"];
-// }
+if (!mongoose.models["adminPreferences"]) {
+  AdminPreference = mongoose.model<IAdminPreference>(
+    "adminPreferences",
+    adminPreferenceSchema
+  );
+} else {
+  AdminPreference = mongoose.models["adminPreferences"];
+}
 
 // Export the StudentPreference model
 export default AdminPreference;

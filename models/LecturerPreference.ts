@@ -49,12 +49,14 @@ export const lecturerPreferenceSchema: Schema = new Schema({
 // Define the LecturerPreference model
 let LecturerPreference: mongoose.Model<ILecturerPreference>;
 // LecturerPreference = mongoose.model<ILecturerPreference>('lecturerPreferences', lecturerPreferenceSchema);
-LecturerPreference = mongoose.models['lecturerPreferences'];
+// LecturerPreference = mongoose.models['lecturerPreferences'];
 
-// if (!mongoose.models['lecturerPreferences']) {
-// } else {
-//   LecturerPreference = mongoose.models['lecturerPreferences'];
-// }
+if (!mongoose.models['LecturerPreferences']) {
+LecturerPreference = mongoose.models['LecturerPreferences'];
+
+} else {
+  LecturerPreference = mongoose.models['LecturerPreferences'];
+}
 
 // Export the LecturerPreference model
 export default LecturerPreference;

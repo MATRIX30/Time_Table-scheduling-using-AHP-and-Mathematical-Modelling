@@ -17,28 +17,6 @@ type Props = {
 
 const layout = ({ children }: Props) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
-  console.log(sidebarRef.current);
-  const router = useRouter();
-
-  const handleResize = (e: UIEvent) => {
-    console.log(e);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  },[]);
-  // const user = getUserFromLocalStorage();
-  // useEffect(() => {
-  //   if (!user) {
-  //     router.replace("/");
-  //   }
-  // }, [user, router]);
-
-  // if (!user) {
-  //   return <div>Loading...</div>;
-  // }
   return (
     <ResizablePanelGroup
       direction="horizontal"

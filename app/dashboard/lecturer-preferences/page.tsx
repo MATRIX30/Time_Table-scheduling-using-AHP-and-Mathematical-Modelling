@@ -19,7 +19,7 @@ const page = (props: Props) => {
     queryKey: ["lecturer-preferences"],
     queryFn: () => getAllLecturerPreferences(),
   });
-  console.log(lecturerPreferences,staticLecturerPreference);
+  console.log(lecturerPreferences);
   return (
     <div className="flex-1 container mx-auto py-5">
       <h1 className="text-2xl font-bold">Lecturer Preferences</h1>
