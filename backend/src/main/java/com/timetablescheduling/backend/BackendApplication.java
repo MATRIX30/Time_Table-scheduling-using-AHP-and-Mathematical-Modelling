@@ -1,8 +1,5 @@
 package com.timetablescheduling.backend;
 
-import com.timetablescheduling.backend.utils.file.FileStorageImpl;
-import jakarta.annotation.Resource;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -29,5 +26,6 @@ public class BackendApplication {
             }
         };
     }
+
 
 }

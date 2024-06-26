@@ -16,7 +16,7 @@ public class PreferenceCompute {
             {"1/7","1/5", 1},
     };
 
-    static Double[] weightForLecturerPreferences (){
+    public static Double[] weightForLecturerPreferences (){
         Matrix matrix = new Matrix(Matrix.convertToDoubleMatrix(pairwiseMatrixForLecturer));
         ahp.setMatrix(matrix);
         Double[] criteriaWeight = ahp.calculateCriteriaWeights();
@@ -24,7 +24,7 @@ public class PreferenceCompute {
         return criteriaWeight;
     }
 
-    static Double[] weightForStudentPreferences (){
+    public static Double[] weightForStudentPreferences (){
         Matrix matrix = new Matrix(Matrix.convertToDoubleMatrix(pairwiseMatrixForStudents));
         ahp.setMatrix(matrix);
         Double[] criteriaWeight = ahp.calculateCriteriaWeights();

@@ -1,13 +1,18 @@
 package com.timetablescheduling.backend.models.mainModels;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import com.timetablescheduling.backend.models.BaseEntity;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Document
 public class TimeTableCell extends BaseEntity {
     private TimeSlot timeSlot;

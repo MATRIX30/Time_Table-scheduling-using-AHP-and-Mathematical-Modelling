@@ -1,8 +1,7 @@
 package com.timetablescheduling.backend.controllers;
 
-import com.timetablescheduling.backend.errors.CustomResponseEntity;
-import com.timetablescheduling.backend.utils.Utils;
-import com.timetablescheduling.backend.utils.file.FileStorageImpl;
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
+import com.timetablescheduling.backend.errors.CustomResponseEntity;
+import com.timetablescheduling.backend.service.TestService;
+import com.timetablescheduling.backend.utils.Utils;
+import com.timetablescheduling.backend.utils.file.FileStorageImpl;
+
 
 @RestController
 public class TestController {
@@ -23,6 +26,7 @@ public class TestController {
     @Autowired
     FileStorageImpl fileStorage;
 
+    @Autowired TestService testService;
     @GetMapping("/hello")
     public String hello() {
         return "Hello World";
@@ -37,4 +41,13 @@ public class TestController {
         System.out.println("http://localhost:8081/api"+_file);
         return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
     }
+
+    @PostMapping("/generate-timetable")
+    public ResponseEntity<?> postMethodName() {
+        
+        testService.generateTimeTable();
+
+        return CustomResponseEntity.fromKey("TRAITEMENT_SUCCESS", HttpStatus.OK);
+    }
+    
 }
