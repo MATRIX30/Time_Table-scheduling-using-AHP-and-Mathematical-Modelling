@@ -86,9 +86,6 @@ const Home: React.FC = () => {
               className=" text-2xl md:text-5xl lg:text-6xl font-bold  mb-4"
             />
             </BoxReveal>
-              {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-                Hello, SuperAdmin
-              </h1> */}
               <p className="text-gray-700 text-lg md:text-xl mb-8">
                 Manage your institution's operations with our comprehensive admin
                 dashboard. From scheduling to analytics, empower your team with the
