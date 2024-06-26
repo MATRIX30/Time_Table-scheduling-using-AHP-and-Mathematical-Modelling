@@ -42,7 +42,7 @@ export const lecturerPreferenceSchema: Schema = new mongoose.Schema({
   },
   teacher:{
     type: Schema.Types.ObjectId,
-    ref: 'Lecturer',
+    ref: 'User',
     required: true
   }
 });
@@ -50,10 +50,10 @@ export const lecturerPreferenceSchema: Schema = new mongoose.Schema({
 // Define the LecturerPreference model
 let LecturerPreference: mongoose.Model<ILecturerPreference>;
 
-if (!mongoose.models['LecturerPreferences']) {
-  LecturerPreference = mongoose.model<ILecturerPreference>('LecturerPreferences', lecturerPreferenceSchema);
+if (!mongoose.models['lecturerPreferences']) {
+  LecturerPreference = mongoose.model<ILecturerPreference>('lecturerPreferences', lecturerPreferenceSchema);
 } else {
-  LecturerPreference = mongoose.models['LecturerPreferences'];
+  LecturerPreference = mongoose.models['lecturerPreferences'];
 }
 
 // Export the LecturerPreference model

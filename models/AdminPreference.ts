@@ -50,10 +50,10 @@ export const adminPreferenceSchema: Schema = new mongoose.Schema({
 // Define the AdminPreference model
 let AdminPreference: mongoose.Model<IAdminPreference>;
 
-if (!mongoose.models['AdminPreference']) {
-  AdminPreference = mongoose.model<IAdminPreference>('AdminPreference', adminPreferenceSchema);
+if (!mongoose.models['adminPreferences']) {
+  AdminPreference = mongoose.model<IAdminPreference>('adminPreferences', adminPreferenceSchema);
 } else {
-  AdminPreference = mongoose.models['AdminPreference'];
+  AdminPreference = mongoose.models['adminPreferences'];
 }
 
 // Export the StudentPreference model

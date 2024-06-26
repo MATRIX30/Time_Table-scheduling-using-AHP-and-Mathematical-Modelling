@@ -38,10 +38,10 @@ export const studentPreferenceSchema: Schema = new mongoose.Schema({
 // Define the StudentPreference model
 let StudentPreference: mongoose.Model<IStudentPreference>;
 
-if (!mongoose.models['StudentPreferences']) {
-  StudentPreference = mongoose.model<IStudentPreference>('StudentPreferences', studentPreferenceSchema);
+if (!mongoose.models['studentPreferences']) {
+  StudentPreference = mongoose.model<IStudentPreference>('studentPreferences', studentPreferenceSchema);
 } else {
-  StudentPreference = mongoose.models['StudentPreferences'];
+  StudentPreference = mongoose.models['studentPreferences'];
 }
 
 // Export the StudentPreference model

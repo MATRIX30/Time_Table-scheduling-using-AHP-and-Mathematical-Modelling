@@ -44,6 +44,8 @@ const page = (props: Props) => {
                 icon={<Users2 className="text-muted-foreground" />}
               />
             )}
+            {isStudentLoading && (<CardComponent.Skeleton/>)}
+            
             {lecturerPreferences && (
               <CardComponent
                 label="Lecturer Preferences"
@@ -51,6 +53,8 @@ const page = (props: Props) => {
                 icon={<GraduationCap className="text-muted-foreground" />}
               />
             )}
+            {isLecturerLoading && (<CardComponent.Skeleton/>)}
+
 
             {adminPreferences && (
               <CardComponent
@@ -59,6 +63,9 @@ const page = (props: Props) => {
                 icon={<Settings2 className="text-muted-foreground" />}
               />
             )}
+
+{isAdminLoading && (<CardComponent.Skeleton/>)}
+
           </div>
         </div>
       </div>

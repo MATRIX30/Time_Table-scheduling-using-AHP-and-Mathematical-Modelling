@@ -285,7 +285,7 @@ export default function PreferenceComponent({
                     <Slider
                       max={10}
                       defaultValue={[0]}
-                      step={1}
+                      step={3}
                       onValueChange={(values) => {
                         if (values.length > 0) {
                           field.onChange(values[0]);
