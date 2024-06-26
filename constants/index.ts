@@ -1,9 +1,9 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 import { faker } from "@faker-js/faker";
 
 const generateRandomData = (): LecturerPreferenceType => {
   return {
-    _id:new mongoose.Types.ObjectId().toString(),
+    _id: new mongoose.Types.ObjectId().toString(),
     courseOnMorning: faker.number.int({ min: 0, max: 10 }),
     courseOnEvening: faker.number.int({ min: 0, max: 10 }),
     havingDaysOff: faker.number.int({ min: 0, max: 7 }),
@@ -21,23 +21,23 @@ const generateRandomList = (count: number): LecturerPreferenceType[] => {
 };
 
 const generateRandomStudentData = (): StudentPreference => {
-    return {
-      courseOnMorning: faker.number.int({ min: 0, max: 10 }),
-      courseOnEvening: faker.number.int({ min: 0, max: 10 }),
-      havingDaysOff: faker.number.int({ min: 0, max: 10 }),
-      studentId: new mongoose.Types.ObjectId().toString(), // Generate a random ObjectId
-    };
+  return {
+    _id: new mongoose.Types.ObjectId().toString(),
+    courseOnMorning: faker.number.int({ min: 0, max: 10 }),
+    courseOnEvening: faker.number.int({ min: 0, max: 10 }),
+    havingDaysOff: faker.number.int({ min: 0, max: 10 }),
+    studentId: new mongoose.Types.ObjectId().toString(), // Generate a random ObjectId
   };
-  
-  const generateRandomStudentList = (count: number): StudentPreference[] => {
-    const list = [];
-    for (let i = 0; i < count; i++) {
-      list.push(generateRandomStudentData());
-    }
-    return list;
-  };
-  
+};
+
+const generateRandomStudentList = (count: number): StudentPreference[] => {
+  const list = [];
+  for (let i = 0; i < count; i++) {
+    list.push(generateRandomStudentData());
+  }
+  return list;
+};
 
 export const staticAdminPreference: AdminstratorPreferenceType[] = [];
-export const staticLecturerPreference = generateRandomList(5);
-export const staticStudentPreference: AdminstratorPreferenceType[] = [];
+export const staticLecturerPreference = generateRandomList(8);
+export const staticStudentPreference = generateRandomStudentList(8);
