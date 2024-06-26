@@ -8,7 +8,7 @@ type ModalProps = {
   onClose: () => void; // Function to handle modal close
 };
 
-// Modal component for analytics popup
+
 const AnalyticsModal: React.FC<ModalProps> = ({ onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
