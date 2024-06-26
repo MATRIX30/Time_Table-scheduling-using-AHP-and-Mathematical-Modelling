@@ -40,7 +40,7 @@ export const authOptions: AuthOptions = {
     ],
     pages: {
         signIn: '/login',
-        // signOut: '/'
+        signOut: '/'
     },
     debug:true, //process.env.NODE_ENV === 'development',
     session: {

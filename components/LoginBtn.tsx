@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,12 +10,19 @@ import { useModalStore } from "@/hooks/use-modal";
 import RegisterForm from "./RegisterForm";
 import { useUserStore } from "@/hooks/user-user";
 import { cn } from "@/lib/utils";
+import { useQuery } from "@tanstack/react-query";
+import { getSession } from "@/lib/getSession";
 
 type Props = {};
 
 const LoginBtn = (props: Props) => {
   const { isOpen, setOpen } = useModalStore();
-  const { user } = useUserStore();
+  // const { user } = useUserStore();
+  const {data:session} = useQuery({
+    queryKey:["user"],
+    queryFn:()=>getSession()
+  })
+
 
   return (
     <Dialog
@@ -23,7 +31,7 @@ const LoginBtn = (props: Props) => {
         setOpen(value);
       }}
     >
-      <DialogTrigger asChild className={cn("", { "hidden": user !== null })}>
+      <DialogTrigger asChild className={cn("", {"hidden":session?.user })}>
         <Button
           size={"sm"}
           onClick={() => setOpen(true)}

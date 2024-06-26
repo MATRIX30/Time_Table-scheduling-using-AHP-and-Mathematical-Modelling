@@ -16,10 +16,6 @@ const columns: ColumnDef<AdminstratorPreferenceType>[] = [
     accessorKey: "_id",
   },
   {
-    header: "Admin ID",
-    accessorKey: "admin",
-  },
-  {
     header: "Course on Morning",
     accessorKey: "courseOnMorning",
   },

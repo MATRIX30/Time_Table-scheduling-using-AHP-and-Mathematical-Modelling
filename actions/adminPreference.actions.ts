@@ -1,7 +1,6 @@
 "use server";
 import dbConnect from "@/lib/dbConnect";
 import AdminPreference, { IAdminPreference } from "@/models/AdminPreference";
-// import Preference, { IPreferences } from "@/models/Prefernces";
 import { revalidatePath } from "next/cache";
 
 export const revalidatePage = (page: string) => {

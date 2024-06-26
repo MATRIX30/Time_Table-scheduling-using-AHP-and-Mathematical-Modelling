@@ -6,10 +6,10 @@ const columns: ColumnDef<StudentPreference>[] = [
     header: 'ID',
     accessorKey: '_id',
   },
-  {
-    header: 'Teacher ID',
-    accessorKey: 'teacher',
-  },
+  // {
+  //   header: 'Teacher ID',
+  //   accessorKey: 'teacher',
+  // },
   {
     header: 'Course on Morning',
     accessorKey: 'courseOnMorning',
@@ -21,10 +21,6 @@ const columns: ColumnDef<StudentPreference>[] = [
   {
     header: 'Days Off',
     accessorKey: 'havingDaysOff',
-  },
-  {
-    header: 'Preferred Number of Hours',
-    accessorKey: 'PreferenceNumberOfHours',
   },
 ];
 

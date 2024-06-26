@@ -19,6 +19,7 @@ const page = (props: Props) => {
     queryKey: ["student-preferneces"],
     queryFn: () => getAllStudentPreferences(),
   });
+  console.log({preferences})
   return (
     <div className="flex-1 flex flex-col container mx-auto py-5">
       <div className="flex items-center justify-between">

@@ -13,24 +13,28 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useUserStore } from "@/hooks/user-user";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { signOut } from "next-auth/react";
+import { useQuery } from "@tanstack/react-query";
+import { getSession } from "@/lib/getSession";
 
 type Props = {};
 
 const UserInfo = (props: Props) => {
-  const { user, logout } = useUserStore();
-  if(!user){
-    return null
-  }
+  const {data:session} = useQuery({
+    queryKey:["user"],
+    queryFn:()=>getSession()
+  })
+  console.log({session})
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
         asChild
-        className={cn("", { hidden: user === undefined })}
+        className={cn("", {"hidden":!session?.user  })}
       >
         <Avatar className="cursor-pointer hover:opacity-75 select-none">
-          <AvatarImage src={`https://github.com/${user?.username}.png`} />
+          <AvatarImage src={`https://github.com/${session?.user.username}.png`} />
           <AvatarFallback className="uppercase">
-            {user?.username.charAt(0)}
+            {session?.user.username.charAt(0)}
           </AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
@@ -41,7 +45,9 @@ const UserInfo = (props: Props) => {
           <Link href="/dashboard">Dashboard</Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem onClick={logout}>Sign out</DropdownMenuItem>
+        <DropdownMenuItem onClick={()=>{
+          signOut();
+        }}>Sign out</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

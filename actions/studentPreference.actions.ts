@@ -67,7 +67,7 @@ export async function getAllStudentPreferences(): Promise<StudentPreference[]> {
   await dbConnect();
 
   try {
-    const lecturerPreferences = await StudentPreference.find();
+    const lecturerPreferences = await StudentPreference.find({});
     return JSON.parse(JSON.stringify(lecturerPreferences)) as StudentPreference[];
   } catch (error: any) {
     throw new Error(error.message);

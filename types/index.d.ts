@@ -3,7 +3,6 @@ declare interface PrferenceType {
   courseOnEvening: number;
   havingDaysOff: number;
   preferenceNumberOfHours: number;
-  admin:string;
   _id?: string;
   _v?: number;
 }
@@ -13,7 +12,6 @@ declare interface AdminstratorPreferenceType {
   courseOnEvening: number;
   havingDaysOff: number;
   preferenceNumberOfHours: number;
-  admin:string;
   _id?: string;
   _v?: number;
 }

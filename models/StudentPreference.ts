@@ -1,15 +1,20 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
-// Define the StudentPreference interface
+// Define the interface for the student preferences
 export interface IStudentPreference extends Document {
+  studentId: mongoose.Types.ObjectId;
   courseOnMorning: number;
   courseOnEvening: number;
   havingDaysOff: number;
-  studentId: string;
 }
 
-// Define the StudentPreference schema
-export const studentPreferenceSchema: Schema = new mongoose.Schema({
+// Define the student preference schema
+export const studentPreferenceSchema: Schema = new Schema({
+  studentId: {
+    type: Schema.Types.ObjectId,
+    required: true,
+    ref: 'students', // Assuming you have a students collection
+  },
   courseOnMorning: {
     type: Number,
     required: true,
@@ -28,21 +33,21 @@ export const studentPreferenceSchema: Schema = new mongoose.Schema({
     min: 0,
     max: 10,
   },
-  studentId:{
-    type: Schema.Types.ObjectId,
-    ref: 'students',
-    required: true
-  }
 });
+
 
 // Define the StudentPreference model
 let StudentPreference: mongoose.Model<IStudentPreference>;
+StudentPreference = mongoose.models['studentPreferences'];
 
-if (!mongoose.models['studentPreferences']) {
-  StudentPreference = mongoose.model<IStudentPreference>('studentPreferences', studentPreferenceSchema);
-} else {
-  StudentPreference = mongoose.models['studentPreferences'];
-}
+// if (!mongoose.models['studentPreferences']) {
+//   StudentPreference = mongoose.model<IStudentPreference>(
+//     'studentPreferences',
+//     studentPreferenceSchema
+//   );
+// } else {
+//   StudentPreference = mongoose.models['studentPreferences'];
+// }
 
-// Export the StudentPreference model
+// Export the studentPreferences model
 export default StudentPreference;

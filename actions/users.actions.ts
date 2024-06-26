@@ -3,10 +3,10 @@ import dbConnect from "@/lib/dbConnect";
 import User from "@/models/User";
 import bcrypt from "bcrypt";
 
-const DB_NAME = "super-admin";
+// const DB_NAME = "super-admin";
 
 export async function checkUsername(username: string) {
-  await dbConnect(DB_NAME);
+  await dbConnect();
 
   try {
     const user = await User.findOne({ username: username });
@@ -17,7 +17,7 @@ export async function checkUsername(username: string) {
 }
 
 export async function checkEmail(email: string) {
-  await dbConnect(DB_NAME);
+  await dbConnect();
 
   try {
     const user = await User.findOne({ email: email });
@@ -32,7 +32,7 @@ export async function createUser(
   username: string,
   password: string
 ): Promise<UserType> {
-  await dbConnect(DB_NAME);
+  await dbConnect();
 
   try {
     // Hash the password
@@ -47,7 +47,7 @@ export async function createUser(
 }
 
 export async function getAllUsers() {
-  await dbConnect(DB_NAME);
+  await dbConnect();
 
   try {
     const users = await User.find();
@@ -61,7 +61,7 @@ export async function updateUser(
   userId: string,
   updateData: Partial<{ email: string; username: string; password: string }>
 ): Promise<UserType> {
-  await dbConnect(DB_NAME);
+  await dbConnect();
 
   try {
     // Hash the password if provided
@@ -79,7 +79,7 @@ export async function updateUser(
 }
 
 export async function getUser(userId: string): Promise<UserType> {
-  await dbConnect(DB_NAME);
+  await dbConnect();
 
   try {
     const user = await User.findById(userId);
@@ -90,7 +90,7 @@ export async function getUser(userId: string): Promise<UserType> {
 }
 
 export async function deleteUser(userId: string): Promise<UserType> {
-  await dbConnect(DB_NAME);
+  await dbConnect();
 
   try {
     const deletedUser = await User.findByIdAndDelete(userId);
@@ -104,7 +104,7 @@ export async function loginUser(
   email: string,
   password: string
 ): Promise<UserType | null> {
-  await dbConnect(DB_NAME);
+  await dbConnect();
 
   try {
     const user = await User.findOne({ email });

@@ -26,6 +26,7 @@ const generateRandomStudentData = (): StudentPreference => {
     courseOnMorning: faker.number.int({ min: 0, max: 10 }),
     courseOnEvening: faker.number.int({ min: 0, max: 10 }),
     havingDaysOff: faker.number.int({ min: 0, max: 10 }),
+    
     studentId: new mongoose.Types.ObjectId().toString(), // Generate a random ObjectId
   };
 };

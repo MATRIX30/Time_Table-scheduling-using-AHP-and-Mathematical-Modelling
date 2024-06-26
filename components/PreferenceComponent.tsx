@@ -60,11 +60,10 @@ export default function PreferenceComponent({
     }
     if (preference) {
       _preference = await updatePreference(preference?._id!, {
-        admin:userId,
         ...values,
       });
     } else {
-      _preference = await createPreference({ admin:userId, ...values });
+      _preference = await createPreference({ ...values });
     }
     setIsSubmitting(false);
 

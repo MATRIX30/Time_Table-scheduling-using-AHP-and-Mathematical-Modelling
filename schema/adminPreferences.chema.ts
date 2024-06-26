@@ -8,7 +8,7 @@ const adminPreferenceSchema = z.object({
   preferenceNumberOfHours: z.number().min(3).max(15).refine(value => value % 3 === 0, {
     message: 'Preferred number of hours must be a multiple of 3',
   }),
-  admin: z.string().regex(/^[0-9a-fA-F]{24}$/, 'Invalid ObjectId').optional(), // Assuming admin is an ObjectId stored as a string
+  // admin: z.string().regex(/^[0-9a-fA-F]{24}$/, 'Invalid ObjectId').optional(), // Assuming admin is an ObjectId stored as a string
 });
 
 export type AdminPreferenceType = z.infer<typeof adminPreferenceSchema>;

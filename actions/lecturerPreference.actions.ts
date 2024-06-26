@@ -67,7 +67,7 @@ export async function getAllLecturerPreferences(): Promise<LecturerPreferenceTyp
   
   try {
     await dbConnect();
-    const lecturerPreferences = await LecturerPreference.find();
+    const lecturerPreferences = await LecturerPreference.find({});
     return JSON.parse(JSON.stringify(lecturerPreferences)) as LecturerPreferenceType[];
   } catch (error: any) {
     throw new Error(error.message);
