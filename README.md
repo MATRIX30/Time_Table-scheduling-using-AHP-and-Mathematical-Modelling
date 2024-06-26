@@ -71,4 +71,11 @@ Role  : Concepteur Modéle mathématique
 Name  : KAMDA MALVINA EVA
 Email : kamdaeva@gmail.com
 Role  : Data Collection section
+```
+
+```
+Name  : TCHIAGUIA christophe
+Email : tchiaguiachristophe25@gmail.com
+Role  : Backend Developper
+```
 
