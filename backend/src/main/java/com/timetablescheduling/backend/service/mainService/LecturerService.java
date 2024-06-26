@@ -5,6 +5,7 @@ import com.timetablescheduling.backend.models.mainModels.Filiere;
 import com.timetablescheduling.backend.models.mainModels.Lecturer;
 import com.timetablescheduling.backend.repository.mainRepository.FiliereRepository;
 import com.timetablescheduling.backend.repository.mainRepository.LecturerRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,5 +35,14 @@ public class LecturerService {
 
     public Iterable<Lecturer> getByCourse(String course) {
         return repository.findByCourse(course);
+    }
+
+    public Lecturer setLecturer(String course) {
+        List<Lecturer> lecturers = repository.getByCourse(course);
+        if (!lecturers.isEmpty()) {
+            return lecturers.get(0);
+        } else {
+            return new Lecturer("DefaultLecturer", false);
+        }
     }
 }

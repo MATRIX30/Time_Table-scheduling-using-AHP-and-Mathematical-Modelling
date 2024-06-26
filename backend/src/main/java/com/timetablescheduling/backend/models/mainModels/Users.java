@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @EqualsAndHashCode(callSuper = true)
 @Document
 @Data
-public class SuperUsers extends BaseEntity {
+public class Users extends BaseEntity {
     private String name;
     @Indexed(unique = true)
     private String matricule;
