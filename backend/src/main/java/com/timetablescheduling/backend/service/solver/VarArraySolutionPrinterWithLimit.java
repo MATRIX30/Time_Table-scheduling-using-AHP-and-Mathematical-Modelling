@@ -1,9 +1,8 @@
 package com.timetablescheduling.backend.service.solver;
 
 
+import java.util.ArrayList;
 import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.google.ortools.sat.CpSolverSolutionCallback;
 import com.google.ortools.sat.Literal;
@@ -20,15 +19,15 @@ import com.timetablescheduling.backend.service.mainService.TimeTableService;
 
 class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 
-	@Autowired
-	private  TimeTableService timeTableService;
-    @Autowired
-    private TimeTableCellRepository timeTableCellRepository;
-    @Autowired
-    private LecturerService lecturerService;
+	private  final TimeTableService timeTableService;
+    private final TimeTableCellRepository timeTableCellRepository;
+    private final LecturerService lecturerService;
 
 
 	        public VarArraySolutionPrinterWithLimit(
+				TimeTableService timeTableService,
+				TimeTableCellRepository timeTableCellRepository,
+				LecturerService lecturerService,
 	            List<Course> allCourses, List<Day> allDays, List<TimeSlot> allTimeSlots, List<Room> allRooms, List<Lecturer> allLecturers, Literal[][][][] schedules, Literal[][] teacherSchedules, int limit) {
 	            solutionCount = 0;
 				this.teacherSchedules = teacherSchedules;
@@ -39,12 +38,16 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 	            solutionLimit = limit;
                 this.allRooms = allRooms;
                 this.allLecturer = allLecturers;
+				this.timeTableCellRepository = timeTableCellRepository;
+				this.timeTableService = timeTableService;
+				this.lecturerService = lecturerService;
 	          }
 
           	@Override
           	public void onSolutionCallback() {
 
 				Timetable timetable = new Timetable();
+				timetable.setTimetableCells(new ArrayList<TimeTableCell>());
 	          	  System.out.printf("Solution #%d:%n", solutionCount);
 
 	          	  for (int d=0; d < allDays.size(); d++){
@@ -71,6 +74,7 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 				    	}
 
 	     	    	}
+					break;
 
 	          	}
 
@@ -78,7 +82,7 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 				timeTableService.save(timetable);
 				System.out.println("Save completed");
 
-				for (int c = 0; c < allCourses.size(); c++) {
+				/*for (int c = 0; c < allCourses.size(); c++) {
 					for (int l = 0; l < allLecturer.size(); l++) {
 						if (allLecturer.get(l).getCourse().getFiliere().getName().equals(allCourses.get(c).getFiliere().getName()) && booleanValue(teacherSchedules[c][l])) {
 							System.out.printf("   %s scheduled to teach course %s%n", allLecturer.get(l).getName(), allCourses.get(c).getName());
@@ -88,6 +92,7 @@ class VarArraySolutionPrinterWithLimit extends CpSolverSolutionCallback {
 						}
 					}
 				}
+				*/
 
 	          	solutionCount++;
 	          	if (solutionCount >= solutionLimit) {

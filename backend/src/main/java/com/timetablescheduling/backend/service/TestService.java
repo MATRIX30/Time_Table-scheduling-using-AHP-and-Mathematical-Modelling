@@ -15,7 +15,10 @@ import com.timetablescheduling.backend.repository.mainRepository.DayRepository;
 import com.timetablescheduling.backend.repository.mainRepository.LecturerRepository;
 import com.timetablescheduling.backend.repository.mainRepository.RoomRepository;
 import com.timetablescheduling.backend.repository.mainRepository.TimeSlotsRepository;
+import com.timetablescheduling.backend.repository.mainRepository.TimeTableCellRepository;
 import com.timetablescheduling.backend.service.AHP.PreferenceCompute;
+import com.timetablescheduling.backend.service.mainService.LecturerService;
+import com.timetablescheduling.backend.service.mainService.TimeTableService;
 import com.timetablescheduling.backend.service.secondaryService.AdminPreferenceService;
 import com.timetablescheduling.backend.service.secondaryService.StudentPreferenceService;
 import com.timetablescheduling.backend.service.secondaryService.Results.AdminAndLecturerPreferenceResult;
@@ -34,10 +37,16 @@ public class TestService {
     private final LecturerRepository lecturerRepository;
     private final TimeSlotsRepository timeSlotsRepository;
     private final DayRepository dayRepository;
+    private final LecturerService lecturerService;  
     private final AdminPreferenceService adminPreferenceService;
     private final StudentPreferenceService studentPreferenceService;
+    private final TimeTableService timeTableService;
+    private final TimeTableCellRepository  timeTableCellRepository;
     
     public TestService(CourseRepository courseRepository,
+            LecturerService lecturerService,
+            TimeTableCellRepository timeTableCellRepository,
+            TimeTableService timeTableService,
             LecturerRepository lecturerRepository,
             TimeSlotsRepository timeSlotsRepository,
             RoomRepository roomRepository,
@@ -49,10 +58,13 @@ public class TestService {
         this.studentPreferenceService = studentPreferenceService;
         this.adminPreferenceService = adminPreferenceService;
         this.roomRepository = roomRepository;
+        this.lecturerService = lecturerService;
         this.timeSlotsRepository = timeSlotsRepository;
         this.lecturerRepository = lecturerRepository;
         this.courseRepository = courseRepository;
         this.dayRepository =dayRepository;
+        this.timeTableService = timeTableService;
+        this.timeTableCellRepository = timeTableCellRepository;
     }
 
     public CompletableFuture<Void> generateTimeTable() {
@@ -83,7 +95,7 @@ public class TestService {
             List<TimeSlot> allTimeSlots = timeSlotsRepository.findAll();
             List<Day> allDays = dayRepository.findAll();
 
-            TimeTableSolver solver = new TimeTableSolver(allLecturers,
+            TimeTableSolver solver = new TimeTableSolver(timeTableService, timeTableCellRepository, lecturerService, allLecturers,
                 allDays,
                 allTimeSlots,
                 allCourses,

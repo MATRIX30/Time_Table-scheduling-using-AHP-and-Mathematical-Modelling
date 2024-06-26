@@ -13,6 +13,9 @@ import com.timetablescheduling.backend.models.mainModels.Day;
 import com.timetablescheduling.backend.models.mainModels.Lecturer;
 import com.timetablescheduling.backend.models.mainModels.Room;
 import com.timetablescheduling.backend.models.mainModels.TimeSlot;
+import com.timetablescheduling.backend.repository.mainRepository.TimeTableCellRepository;
+import com.timetablescheduling.backend.service.mainService.LecturerService;
+import com.timetablescheduling.backend.service.mainService.TimeTableService;
 import com.timetablescheduling.backend.service.secondaryService.Results.AdminAndLecturerPreferenceResult;
 import com.timetablescheduling.backend.service.secondaryService.Results.StudentPreferenceResult;
 
@@ -36,9 +39,17 @@ public class TimeTableSolver {
 		private final AdminAndLecturerPreferenceResult averageAdminAndLecturerPreferences;
 		private final StudentPreferenceResult averageStudentPreferences;
 
+	private  final TimeTableService timeTableService;
+    private final TimeTableCellRepository timeTableCellRepository;
+    private final LecturerService lecturerService;
 
-
-        public TimeTableSolver(List<Lecturer> allLecturers,
+        public TimeTableSolver(
+			
+		TimeTableService timeTableService,
+		TimeTableCellRepository timeTableCellRepository,
+		LecturerService lecturerService,
+		
+			List<Lecturer> allLecturers,
 			List<Day> allDays,
 			List<TimeSlot> allTimeSlots,
 			List<Course> allCourses,
@@ -61,6 +72,9 @@ public class TimeTableSolver {
 				this.averageAdminAndLecturerPreferences = averageAdminAndLecturerPreferences;
 				this.averageStudentPreferences = averageStudentPreferences;
 
+				this.timeTableCellRepository = timeTableCellRepository;
+				this.timeTableService = timeTableService;
+				this.lecturerService = lecturerService;
 	            this.cpModel = new CpModel();
 	            this.solver = new CpSolver();
 
@@ -71,7 +85,9 @@ public class TimeTableSolver {
 
     	    //intialize the variables
 
+
     	    //initialize the course schedules
+			System.out.println("Starting ...");
             for (int d=0; d < allDays.size(); d++) {
 
     	        for (int t=0; t < allTimeSlots.size(); t++) {
@@ -119,7 +135,9 @@ public class TimeTableSolver {
 
 					DoubleLinearExpr expression = new DoubleLinearExpr(vars, coefs,0);
 
+					System.out.println("Begin optimization function definition. . .");
 					cpModel.maximize(expression);
+					System.out.println("End optimization funcion definition");
 
     	        }
             }
@@ -195,10 +213,10 @@ public class TimeTableSolver {
             // [END parameters]
 
             // [START solution_printer]
-            final int solutionLimit = 8;
+            final int solutionLimit = 1;
 
             // [END solution_printer]
-		VarArraySolutionPrinterWithLimit cb = new VarArraySolutionPrinterWithLimit(allCourses, allDays, allTimeSlots, allRooms, allLecturers, courseSchedules, teacherSchedules, solutionLimit);
+		VarArraySolutionPrinterWithLimit cb = new VarArraySolutionPrinterWithLimit(timeTableService, timeTableCellRepository, lecturerService, allCourses, allDays, allTimeSlots, allRooms, allLecturers, courseSchedules, teacherSchedules, solutionLimit);
 
             // Creates a solver and solves the model.
             // [START solve]
