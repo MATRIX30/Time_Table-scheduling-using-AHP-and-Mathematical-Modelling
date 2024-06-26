@@ -26,4 +26,5 @@ public class Course extends BaseEntity {
         this.code = code;
         this.category = category;
     }
+
 }

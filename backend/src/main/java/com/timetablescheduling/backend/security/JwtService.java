@@ -1,6 +1,6 @@
 package com.timetablescheduling.backend.security;
 
-import com.timetablescheduling.backend.models.mainModels.SuperUsers;
+import com.timetablescheduling.backend.models.mainModels.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
@@ -20,7 +20,7 @@ public class JwtService {
     @Autowired
     private JwtEncoder jwtEncoder;
 
-    public String generateToken(SuperUsers users){
+    public String generateToken(Users users){
         Instant instant = Instant.now();
 
         JwtClaimsSet jwtClaimsSet = JwtClaimsSet.builder()
