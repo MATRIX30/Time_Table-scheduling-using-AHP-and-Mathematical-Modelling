@@ -3,7 +3,7 @@ const router = express.Router()
 const authMiddleware = require("../middlewares/auth.middleware")
 const { preferenceController } = require("../controllers/index.controller.js")
 
-router.get("", preferenceController.create)
-router.post("", preferenceController.read)
+router.post("", preferenceController.create)
+router.get("", preferenceController.read)
 
 module.exports = router
