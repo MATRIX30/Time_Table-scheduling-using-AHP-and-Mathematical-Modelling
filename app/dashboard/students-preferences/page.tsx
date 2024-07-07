@@ -32,7 +32,7 @@ const page = (props: Props) => {
       {isPending && (<div className="flex-1 flex justify-center items-center">
         <Loader className="animate-spin"/>
       </div>)}
-      {preferences && <DataTable columns={columns} data={preferences.length >0 ? preferences :staticStudentPreference} />}
+      {preferences && <DataTable columns={columns} data={preferences} />}
       {isError && <h3>{error.message}</h3>}
     </div>
   )

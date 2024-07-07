@@ -6,6 +6,7 @@ import columns from "./_components/columns";
 import { useQuery } from "@tanstack/react-query";
 import AddPreferenceBtn from "@/components/AddPreferenceBtn";
 import { Loader } from "lucide-react";
+import { getAdminPreferences } from "@/actions/adminPreference.actions";
 
 type Props = {};
 
@@ -17,7 +18,7 @@ const page = (props: Props) => {
     error,
   } = useQuery({
     queryKey: ["admin-preferneces"],
-    queryFn: () => getPreferences(),
+    queryFn: () => getAdminPreferences(),
   });
 
   
@@ -26,9 +27,9 @@ const page = (props: Props) => {
     <div className="flex-1 flex flex-col container mx-auto py-5">
       <div className="flex items-center justify-between">
         <h1 className="font-bold text-lg md:text-xl lg:text-2xl">
-          Admin Preferences
+          Administrator Preferences
         </h1>
-        {preferences && <AddPreferenceBtn size={"sm"} />}
+        {/* {preferences && <AddPreferenceBtn size={"sm"} />} */}
       </div>
       {/* <Preferences /> */}
       {isPending && (

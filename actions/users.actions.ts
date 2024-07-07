@@ -1,6 +1,7 @@
 "use server";
 import dbConnect from "@/lib/dbConnect";
 import User from "@/models/User";
+import { UserType } from "@/types";
 import bcrypt from "bcrypt";
 
 // const DB_NAME = "super-admin";

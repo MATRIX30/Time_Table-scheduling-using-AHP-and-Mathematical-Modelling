@@ -164,7 +164,7 @@ const RegisterForm = (props: Props) => {
           {isSubmitting && (
             <LoaderIcon className="w-4 h-4 mr-2 animate-spin" />
           )}{" "}
-          Login
+          Register
         </Button>
       </form>
     </Form>

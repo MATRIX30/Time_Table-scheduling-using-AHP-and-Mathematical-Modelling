@@ -26,7 +26,7 @@ const page = (props: Props) => {
       {lecturerPreferences && (
         <DataTable
         columns={columns}
-        data={lecturerPreferences.length > 0 ? lecturerPreferences : staticLecturerPreference}
+        data={lecturerPreferences}
           showSearch={false}
         />
       )}

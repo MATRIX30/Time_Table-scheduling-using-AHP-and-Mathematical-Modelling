@@ -1,3 +1,5 @@
+import { ObjectId } from "mongoose";
+
 declare interface PrferenceType {
   courseOnMorning: number;
   courseOnEvening: number;

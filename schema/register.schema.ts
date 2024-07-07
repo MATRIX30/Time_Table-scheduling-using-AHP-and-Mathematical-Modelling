@@ -29,10 +29,11 @@ export const registerSchema = z
     email: z
       .string()
       .email({ message: "Invalid email address" })
-      .refine(checkEmailExists, {
-        message: "Email already exists",
-        path: ["email"], // Path to show the error message
-      }),
+      // .refine(checkEmailExists, {
+      //   message: "Email already exists",
+      //   path: ["email"], // Path to show the error message
+      // })
+      ,
     username: z.string().min(5,"Username should be atleast 5 characters long").refine(checkUsernameExists, {
       message: "Username already exists",
       path: ["username"], // Path to show the error message
