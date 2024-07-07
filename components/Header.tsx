@@ -15,7 +15,7 @@ const Header = (props: Props) => {
       <div className="container mx-auto w-full flex items-center justify-between">
         <Link href={"/"} className="flex items-center space-x-2">
           <CalendarIcon className="font-bold w-6 h-6" />
-          <h1 className="text-2xl font-bold">Schedule</h1>
+          <h1 className="text-2xl font-bold">Scheduling</h1>
         </Link>
         <nav className="flex items-center justify-items-start gap-2">
           <UserInfo />
