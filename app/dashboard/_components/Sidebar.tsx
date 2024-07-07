@@ -1,4 +1,5 @@
 import {
+  CalendarDaysIcon,
   GraduationCap,
   LayoutDashboard,
   Settings2,
@@ -20,7 +21,8 @@ const Sidebar = (props: Props) => {
   return (
     <div className="h-full flex-1 w-full flex flex-col font-roboto">
       <div className="py-6 px-3 flex items-center justify-start select-none">
-        <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent w-full">
+        <CalendarDaysIcon className="w-8 h-8 mr-2"/>
+        <h1 className="text-3xl font-bold bg-clip-text w-full">
           Shedule 
         </h1>
         {/* <h1 className="text-3xl font-bold ">S</h1> */}
