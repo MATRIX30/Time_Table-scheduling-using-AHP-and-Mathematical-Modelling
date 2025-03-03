@@ -21,5 +21,4 @@ public class Room extends BaseEntity {
         this.batiment = batiment;
     }
 
-
 }

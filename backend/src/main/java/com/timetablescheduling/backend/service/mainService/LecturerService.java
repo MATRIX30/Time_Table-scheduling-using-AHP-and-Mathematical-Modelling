@@ -33,4 +33,17 @@ public class LecturerService {
     public Iterable<Lecturer> getByCourse(String course) {
         return repository.findByCourse(course);
     }
+
+    public Lecturer setLecturer(String course) {
+        List<Lecturer> lecturers = repository.getByCourse(course);
+        if (!lecturers.isEmpty()) {
+            return lecturers.get(0);
+        } else {
+            return new Lecturer("DefaultLecturer", false);
+        }
+    }
+
+    public Iterable<Lecturer> getByCourseCode(String code) {
+        return repository.findByCourseCode(code);
+    }
 }
