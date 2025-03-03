@@ -1,11 +1,12 @@
 package com.timetablescheduling.backend.models;
 
-import lombok.Data;
+import java.util.Date;
+
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
+import lombok.Data;
 
 @Document
 @Data

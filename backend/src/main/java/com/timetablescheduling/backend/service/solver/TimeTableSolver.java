@@ -6,9 +6,11 @@ import java.util.List;
 import com.google.ortools.sat.CpModel;
 import com.google.ortools.sat.CpSolver;
 import com.google.ortools.sat.CpSolverStatus;
+
 import com.google.ortools.sat.DoubleLinearExpr;
 import com.google.ortools.sat.LinearExpr;
 import com.google.ortools.sat.LinearExprBuilder;
+
 import com.google.ortools.sat.Literal;
 import com.timetablescheduling.backend.models.mainModels.Course;
 import com.timetablescheduling.backend.models.mainModels.Day;
@@ -16,6 +18,7 @@ import com.timetablescheduling.backend.models.mainModels.Lecturer;
 import com.timetablescheduling.backend.models.mainModels.Room;
 import com.timetablescheduling.backend.models.mainModels.StudentLevel;
 import com.timetablescheduling.backend.models.mainModels.TimeSlot;
+
 import com.timetablescheduling.backend.repository.mainRepository.TimeTableCellRepository;
 import com.timetablescheduling.backend.service.mainService.LecturerService;
 import com.timetablescheduling.backend.service.mainService.TimeTableService;
@@ -30,6 +33,10 @@ public class TimeTableSolver {
 	    private List<Room> allRooms;
 	    private List<Lecturer> allLecturers;
 
+		private List<StudentLevel> allStudentLevels;
+=======
+
+
 		//variables and parameters
         private final Literal[][][][] courseSchedules;
 	    private final Literal[][] teacherSchedules;
@@ -37,6 +44,24 @@ public class TimeTableSolver {
 
 		private final CpModel cpModel;
         private final CpSolver solver;
+
+
+
+
+        public TimeTableSolver(List<Lecturer> allLecturers, List<Day> allDays, List<TimeSlot> allTimeSlots, List<Course> allCourses, List<Room> allRooms, List<StudentLevel> allStudentLevels) {
+			this.allLecturers = allLecturers;
+			this.allCourses = allCourses;
+			this.allDays = allDays;
+			this.allTimeSlots = allTimeSlots;
+			this.allRooms = allRooms;
+			this.allStudentLevels = allStudentLevels;
+            this.courseSchedules = new Literal[allDays.size()][allTimeSlots.size()][allRooms.size()][allCourses.size()];
+    	    this.teacherSchedules = new Literal[allCourses.size()][allLecturers.size()];
+    		this.coursePerWeek = new Literal[allDays.size()][allTimeSlots.size()][allCourses.size()];
+
+            this.cpModel = new CpModel();
+            this.solver = new CpSolver();
+=======
 		private final AdminAndLecturerPreferenceResult adminAndLectuererCriteriaWeights;
 		private final StudentPreferenceResult studentCriteriaWeights;
 		private final AdminAndLecturerPreferenceResult averageAdminAndLecturerPreferences;
@@ -83,16 +108,25 @@ public class TimeTableSolver {
 	            this.cpModel = new CpModel();
 	            this.solver = new CpSolver();
 
+
         }
 
         private void initialiseConstraints () {
+
+                    // [END data]
+=======
+
 
 
     	    //intialize the variables
 
 
     	    //initialize the course schedules
+=======
+
+    	    //initialize the course schedules
 			System.out.println("Starting ...");
+
             for (int d=0; d < allDays.size(); d++) {
 
     	        for (int t=0; t < allTimeSlots.size(); t++) {
@@ -101,6 +135,18 @@ public class TimeTableSolver {
     					coursePerWeek[d][t][c] = cpModel.newBoolVar("coursePerWeek" + d + "d" + t + "t" + c + "c");
 
     					for (int l=0; l < allLecturers.size(); l++) {
+
+    						teacherSchedules[c][l] = cpModel.newBoolVar("teacherSchedule" + c + "c" + l + "l");
+    					}
+    				}
+
+    			    for (int r=0; r < allRooms.size(); r++) {	
+    	        	    for (int c=0; c < allCourses.size(); c++) {
+    	       		   	   	courseSchedules[d][t][r][c] = cpModel.newBoolVar("courseSchedule" + d + "d" + t + "t" + r + "r" + c + "c");
+    	        	    }
+    			    }
+
+=======
 							if (allLecturers.get(l).getCourse().getFiliere().getName().equals(allCourses.get(c).getFiliere().getName())) {
     							teacherSchedules[c][l] = cpModel.newBoolVar("teacherSchedule" + c + "c" + l + "l");
 							}
@@ -144,6 +190,7 @@ public class TimeTableSolver {
 					cpModel.maximize(expression);
 					System.out.println("End optimization funcion definition");
 
+
     	        }
             }
 
@@ -159,6 +206,12 @@ public class TimeTableSolver {
     					List<Literal> courses = new ArrayList<>();
     					for (int c=0; c < allCourses.size(); c++) {
 
+    							courses.add(courseSchedules[d][t][r][c]);
+
+    						List<Literal> lecturers = new ArrayList<>();
+    						for (int l=0; l < allLecturers.size(); l++) {
+    								lecturers.add(teacherSchedules[c][l]);
+=======
     						courses.add(courseSchedules[d][t][r][c]);
 
     						List<Literal> lecturers = new ArrayList<>();
@@ -166,6 +219,7 @@ public class TimeTableSolver {
 								if (allLecturers.get(l).getCourse().getFiliere().getName().equals(allCourses.get(c).getFiliere().getName())) {
 	    							lecturers.add(teacherSchedules[c][l]);
 								}
+
     						}
     						this.cpModel.addExactlyOne(lecturers);
     					}
@@ -192,6 +246,11 @@ public class TimeTableSolver {
 			// Each teacher teaches at most 10 courses
 			for (int l=0; l < allLecturers.size(); l++) {
 				List<Literal> teacherCourses = new ArrayList<>();
+
+				for (int c=0; c < allCourses.size(); c++) {
+						teacherCourses.add(teacherSchedules[c][l]);
+				}
+
 				LinearExprBuilder builder = LinearExpr.newBuilder();
 				for (int c=0; c < allCourses.size(); c++) {
 					if (allLecturers.get(l).getCourse().getFiliere().getName().equals(allCourses.get(c).getFiliere().getName())) {
@@ -202,6 +261,7 @@ public class TimeTableSolver {
 				}
 
 				cpModel.addLinearConstraint(builder.build(), 0, 8);
+
 
 			}
 
@@ -218,16 +278,26 @@ public class TimeTableSolver {
 			System.out.println("finished initialize constraints");
             // [START parameters]
             solver.getParameters().setLinearizationLevel(0);
+
+=======
 			solver.getParameters().setLogSearchProgress(true);
+
             // Tell the solver to enumerate all solutions.
             solver.getParameters().setEnumerateAllSolutions(true);
             // [END parameters]
 
             // [START solution_printer]
+
+            final int solutionLimit = 8;
+
+            // [END solution_printer]
+		VarArraySolutionPrinterWithLimit cb = new VarArraySolutionPrinterWithLimit(allCourses, allDays, allTimeSlots, allRooms, allLecturers, courseSchedules, teacherSchedules, solutionLimit);
+
             final int solutionLimit = 1;
 
             // [END solution_printer]
 		VarArraySolutionPrinterWithLimit cb = new VarArraySolutionPrinterWithLimit(timeTableService, timeTableCellRepository, lecturerService, allCourses, allDays, allTimeSlots, allRooms, allLecturers, courseSchedules, teacherSchedules, solutionLimit);
+
 
             // Creates a solver and solves the model.
             // [START solve]

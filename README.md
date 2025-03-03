@@ -8,6 +8,7 @@ final project presentation on the course INF4178 Software Engineering II
 Core to this project is the Application of AHP and Mathematical Modelling to realizing a time table scheduling
 platform for the University of Yaounde I.
 
+
 ### Features of Application
 
 #### Application to gets preferences of teachers
@@ -58,6 +59,7 @@ platform for the University of Yaounde I.
 - OTHERS : GOOGLE OR-TOOLS
 
 ### Team Members
+
 
 ```bash
 Name: Tekoh Palma

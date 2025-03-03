@@ -146,6 +146,7 @@ Caused by: java.io.FileNotFoundException: .env
 	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:163)
 	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:160)
 	... 16 common frames omitted
+
 10:51:44.101 [restartedMain] INFO  c.t.backend.BackendApplication - Starting BackendApplication using Java 17.0.11 with PID 1903231 (/home/patrick/Documents/projects/school/time-table-ahp/backend/target/classes started by patrick in /home/patrick/Documents/projects/school/time-table-ahp)
 10:51:44.104 [restartedMain] INFO  c.t.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
 10:51:44.176 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -183,3 +184,4 @@ Caused by: java.io.FileNotFoundException: .env
 	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:163)
 	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:160)
 	... 16 common frames omitted
+
